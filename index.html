@@ -1,8 +1,15 @@
 <html>
 <body>
-<a href="MEA_19890312_19890314.html">MEA_19890312_19890314</a><br/>
-<a href="MMB20031029_20031031.html">MMB20031029_20031031.html</a><br/>
-<a href="NUR20031029_20031031.html">NUR20031029_20031031.html</a><br/>
-<a href="OTT_19890312_19890314.html">OTT_19890312_19890314.html</a><br/>
+
+<form name="change">
+<select name="options" onchange="document.getElementById('iframeid').src = this.options[this.selectedIndex].value">
+<option value="about:blank" selected="selected">Select Map</option><br/>
+<option value="MEA_19890312_19890314.html">MEA_19890312_19890314</option><br/>
+<option value="MMB20031029_20031031.html">MMB20031029_20031031.html</option><br/>
+<option value="NUR20031029_20031031.html">NUR20031029_20031031.html</option><br/>
+<option value="OTT_19890312_19890314.html">OTT_19890312_19890314.html</option><br/>
+</select>
+<iframe name="iframe" id="iframeid" src="" style="width:100%; height:95%"></iframe>
+
 </body>
 </html>
