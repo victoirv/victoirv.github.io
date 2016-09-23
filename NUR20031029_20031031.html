@@ -14,20 +14,13 @@
         height: 100%;
       }
     </style>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <script>
-    function betaToColor(n) {
-    	var R = (255 * n)
-    	var G = 0
-    	var B = (255 * (1-n))
-	return "#" + hex(R) + hex(G) + hex(B);
-    }
-function hex(x) {
-         return ("0" + parseInt(x).toString(16)).slice(-2);
-	     }
-
-    </script>
+  <div id="legend" style="position:relative; width:200px; height:30px; margin: 10px 0 0 10px; ">
+  <div id="legendGradient" style="width:100%; height:15px;"></div>
+  </div>
+    <br/>
     <div id="map"></div>
     <script>
 var stations = {
@@ -596,2240 +589,2240 @@ center: {lat: 52.4900, lng: -109.9975},
 beta: 0.2246,
 betaNorm: -0.6485,
 betaFactorAverage: "0.3267",
-stationName: "ABT001-1996"
+stationName: "ABT001"
 },
 MTTFLithoprobeABT00219931996: {
 center: {lat: 52.5668, lng: -110.1668},
 beta: 0.2643,
 betaNorm: -0.5780,
 betaFactorAverage: "0.3205",
-stationName: "ABT002-1996"
+stationName: "ABT002"
 },
 MTTFLithoprobeABT00319931996: {
 center: {lat: 52.4833, lng: -110.2944},
 beta: 0.2433,
 betaNorm: -0.6139,
 betaFactorAverage: "0.3198",
-stationName: "ABT003-1996"
+stationName: "ABT003"
 },
 MTTFLithoprobeABT00419931996: {
 center: {lat: 52.5164, lng: -110.4492},
 beta: 0.2478,
 betaNorm: -0.6059,
 betaFactorAverage: "0.3193",
-stationName: "ABT004-1996"
+stationName: "ABT004"
 },
 MTTFLithoprobeABT00519931996: {
 center: {lat: 52.5533, lng: -110.6694},
 beta: 0.3169,
 betaNorm: -0.4991,
 betaFactorAverage: "0.3216",
-stationName: "ABT005-1996"
+stationName: "ABT005"
 },
 MTTFLithoprobeABT00619931996: {
 center: {lat: 52.6069, lng: -110.8614},
 beta: 0.3255,
 betaNorm: -0.4874,
 betaFactorAverage: "0.3192",
-stationName: "ABT006-1996"
+stationName: "ABT006"
 },
 MTTFLithoprobeABT00719931996: {
 center: {lat: 52.5006, lng: -111.1753},
 beta: 0.3598,
 betaNorm: -0.4439,
 betaFactorAverage: "NaN",
-stationName: "ABT007-1996"
+stationName: "ABT007"
 },
 MTTFLithoprobeABT00819931996: {
 center: {lat: 52.5450, lng: -111.3464},
 beta: 0.2989,
 betaNorm: -0.5245,
 betaFactorAverage: "NaN",
-stationName: "ABT008-1996"
+stationName: "ABT008"
 },
 MTTFLithoprobeABT00919931996: {
 center: {lat: 52.6019, lng: -111.5422},
 beta: 0.3739,
 betaNorm: -0.4273,
 betaFactorAverage: "NaN",
-stationName: "ABT009-1996"
+stationName: "ABT009"
 },
 MTTFLithoprobeABT01019931996: {
 center: {lat: 52.6028, lng: -111.7247},
 beta: 0.3603,
 betaNorm: -0.4434,
 betaFactorAverage: "NaN",
-stationName: "ABT010-1996"
+stationName: "ABT010"
 },
 MTTFLithoprobeABT01119931996: {
 center: {lat: 52.3458, lng: -111.9700},
 beta: 0.3440,
 betaNorm: -0.4634,
 betaFactorAverage: "NaN",
-stationName: "ABT011-1996"
+stationName: "ABT011"
 },
 MTTFLithoprobeABT01219931996: {
 center: {lat: 52.6822, lng: -112.0036},
 beta: 0.3593,
 betaNorm: -0.4446,
 betaFactorAverage: "NaN",
-stationName: "ABT012-1996"
+stationName: "ABT012"
 },
 MTTFLithoprobeABT01319931996: {
 center: {lat: 52.5331, lng: -112.2889},
 beta: 0.3486,
 betaNorm: -0.4577,
 betaFactorAverage: "NaN",
-stationName: "ABT013-1996"
+stationName: "ABT013"
 },
 MTTFLithoprobeABT01419931996: {
 center: {lat: 52.4794, lng: -112.4075},
 beta: 0.3275,
 betaNorm: -0.4848,
 betaFactorAverage: "NaN",
-stationName: "ABT014-1996"
+stationName: "ABT014"
 },
 MTTFLithoprobeABT01519931996: {
 center: {lat: 52.5247, lng: -112.5217},
 beta: 0.3789,
 betaNorm: -0.4215,
 betaFactorAverage: "NaN",
-stationName: "ABT015-1996"
+stationName: "ABT015"
 },
 MTTFLithoprobeABT01619931996: {
 center: {lat: 52.4669, lng: -112.7002},
 beta: 0.4088,
 betaNorm: -0.3885,
 betaFactorAverage: "NaN",
-stationName: "ABT016-1996"
+stationName: "ABT016"
 },
 MTTFLithoprobeABT01719931996: {
 center: {lat: 52.5567, lng: -112.8567},
 beta: 0.4528,
 betaNorm: -0.3441,
 betaFactorAverage: "NaN",
-stationName: "ABT017-1996"
+stationName: "ABT017"
 },
 MTTFLithoprobeABT01819931996: {
 center: {lat: 52.6539, lng: -113.1286},
 beta: 0.4397,
 betaNorm: -0.3568,
 betaFactorAverage: "0.3653",
-stationName: "ABT018-1996"
+stationName: "ABT018"
 },
 MTTFLithoprobeABT01919931996: {
 center: {lat: 52.5633, lng: -113.2214},
 beta: 0.5059,
 betaNorm: -0.2960,
 betaFactorAverage: "0.3977",
-stationName: "ABT019-1996"
+stationName: "ABT019"
 },
 MTTFLithoprobeABT02019931996: {
 center: {lat: 52.6306, lng: -113.3669},
 beta: 0.4946,
 betaNorm: -0.3057,
 betaFactorAverage: "0.4110",
-stationName: "ABT020-1996"
+stationName: "ABT020"
 },
 MTTFLithoprobeABT02119931996: {
 center: {lat: 52.6236, lng: -113.9233},
 beta: 0.5313,
 betaNorm: -0.2747,
 betaFactorAverage: "0.4589",
-stationName: "ABT021-1996"
+stationName: "ABT021"
 },
 MTTFLithoprobeABT02219931996: {
 center: {lat: 52.7119, lng: -114.0517},
 beta: 0.5455,
 betaNorm: -0.2632,
 betaFactorAverage: "0.4781",
-stationName: "ABT022-1996"
+stationName: "ABT022"
 },
 MTTFLithoprobeABT02319931996: {
 center: {lat: 52.8092, lng: -114.2358},
 beta: 0.5404,
 betaNorm: -0.2673,
 betaFactorAverage: "0.4889",
-stationName: "ABT023-1996"
+stationName: "ABT023"
 },
 MTTFLithoprobeABT02419931996: {
 center: {lat: 52.8994, lng: -114.2594},
 beta: 0.5467,
 betaNorm: -0.2622,
 betaFactorAverage: "0.4857",
-stationName: "ABT024-1996"
+stationName: "ABT024"
 },
 MTTFLithoprobeABT02519931996: {
 center: {lat: 52.9775, lng: -114.2425},
 beta: 0.4944,
 betaNorm: -0.3059,
 betaFactorAverage: "0.4737",
-stationName: "ABT025-1996"
+stationName: "ABT025"
 },
 MTTFLithoprobeABT02619931996: {
 center: {lat: 53.0656, lng: -114.6344},
 beta: 0.5745,
 betaNorm: -0.2407,
 betaFactorAverage: "0.5054",
-stationName: "ABT026-1996"
+stationName: "ABT026"
 },
 MTTFLithoprobeABT02719931996: {
 center: {lat: 53.0844, lng: -114.7719},
 beta: 0.5581,
 betaNorm: -0.2533,
 betaFactorAverage: "0.5157",
-stationName: "ABT027-1996"
+stationName: "ABT027"
 },
 MTTFLithoprobeABT02819931996: {
 center: {lat: 53.2658, lng: -114.7622},
 beta: 0.5123,
 betaNorm: -0.2904,
 betaFactorAverage: "0.5037",
-stationName: "ABT028-1996"
+stationName: "ABT028"
 },
 MTTFLithoprobeABT02919931996: {
 center: {lat: 53.3742, lng: -114.7222},
 beta: 0.5176,
 betaNorm: -0.2860,
 betaFactorAverage: "NaN",
-stationName: "ABT029-1996"
+stationName: "ABT029"
 },
 MTTFLithoprobeABT03019931996: {
 center: {lat: 53.4264, lng: -114.8228},
 beta: 0.4485,
 betaNorm: -0.3483,
 betaFactorAverage: "NaN",
-stationName: "ABT030-1996"
+stationName: "ABT030"
 },
 MTTFLithoprobeABT03119931996: {
 center: {lat: 52.1467, lng: -113.4811},
 beta: 0.4511,
 betaNorm: -0.3457,
 betaFactorAverage: "NaN",
-stationName: "ABT031-1996"
+stationName: "ABT031"
 },
 MTTFLithoprobeABT03219931996: {
 center: {lat: 52.7025, lng: -114.4186},
 beta: 0.5215,
 betaNorm: -0.2827,
 betaFactorAverage: "0.4899",
-stationName: "ABT032-1996"
+stationName: "ABT032"
 },
 MTTFLithoprobeABT03319931996: {
 center: {lat: 51.9500, lng: -112.8833},
 beta: 0.2521,
 betaNorm: -0.5984,
 betaFactorAverage: "NaN",
-stationName: "ABT033-1996"
+stationName: "ABT033"
 },
 MTTFLithoprobeABT03419931996: {
 center: {lat: 51.8803, lng: -112.5078},
 beta: 0.2758,
 betaNorm: -0.5595,
 betaFactorAverage: "NaN",
-stationName: "ABT034-1996"
+stationName: "ABT034"
 },
 MTTFLithoprobeABT03519931996: {
 center: {lat: 51.9097, lng: -112.1381},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT035-1996"
+stationName: "ABT035"
 },
 MTTFLithoprobeABT03619931996: {
 center: {lat: 51.9947, lng: -113.3375},
 beta: 0.4303,
 betaNorm: -0.3663,
 betaFactorAverage: "NaN",
-stationName: "ABT036-1996"
+stationName: "ABT036"
 },
 MTTFLithoprobeABT03719931996: {
 center: {lat: 52.2628, lng: -114.6067},
 beta: 0.5168,
 betaNorm: -0.2867,
 betaFactorAverage: "0.4857",
-stationName: "ABT037-1996"
+stationName: "ABT037"
 },
 MTTFLithoprobeABT03819931996: {
 center: {lat: 51.9856, lng: -113.0483},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ABT038-1996"
+stationName: "ABT038"
 },
 MTTFLithoprobeABT03919931996: {
 center: {lat: 51.2742, lng: -112.7950},
 beta: 0.3710,
 betaNorm: -0.4307,
 betaFactorAverage: "NaN",
-stationName: "ABT039-1996"
+stationName: "ABT039"
 },
 MTTFLithoprobeABT04019931996: {
 center: {lat: 51.2353, lng: -112.7019},
 beta: 0.3181,
 betaNorm: -0.4975,
 betaFactorAverage: "NaN",
-stationName: "ABT040-1996"
+stationName: "ABT040"
 },
 MTTFLithoprobeABT04119931996: {
 center: {lat: 51.1772, lng: -112.5111},
 beta: 0.3125,
 betaNorm: -0.5051,
 betaFactorAverage: "NaN",
-stationName: "ABT041-1996"
+stationName: "ABT041"
 },
 MTTFLithoprobeABT04219931996: {
 center: {lat: 51.1286, lng: -112.3739},
 beta: 0.3636,
 betaNorm: -0.4394,
 betaFactorAverage: "NaN",
-stationName: "ABT042-1996"
+stationName: "ABT042"
 },
 MTTFLithoprobeABT04319931996: {
 center: {lat: 51.3936, lng: -112.9450},
 beta: 0.3038,
 betaNorm: -0.5174,
 betaFactorAverage: "NaN",
-stationName: "ABT043-1996"
+stationName: "ABT043"
 },
 MTTFLithoprobeABT04419931996: {
 center: {lat: 51.5536, lng: -113.0261},
 beta: 0.3373,
 betaNorm: -0.4720,
 betaFactorAverage: "NaN",
-stationName: "ABT044-1996"
+stationName: "ABT044"
 },
 MTTFLithoprobeABT04519931996: {
 center: {lat: 51.6272, lng: -113.1636},
 beta: 0.3178,
 betaNorm: -0.4978,
 betaFactorAverage: "NaN",
-stationName: "ABT045-1996"
+stationName: "ABT045"
 },
 MTTFLithoprobeABT04619931996: {
 center: {lat: 51.6656, lng: -113.4139},
 beta: 0.4361,
 betaNorm: -0.3604,
 betaFactorAverage: "NaN",
-stationName: "ABT046-1996"
+stationName: "ABT046"
 },
 MTTFLithoprobeABT04719931996: {
 center: {lat: 51.1106, lng: -112.1911},
 beta: 0.3541,
 betaNorm: -0.4509,
 betaFactorAverage: "NaN",
-stationName: "ABT047-1996"
+stationName: "ABT047"
 },
 MTTFLithoprobeABT04819931996: {
 center: {lat: 51.0611, lng: -112.0133},
 beta: 0.3621,
 betaNorm: -0.4411,
 betaFactorAverage: "NaN",
-stationName: "ABT048-1996"
+stationName: "ABT048"
 },
 MTTFLithoprobeABT04919931996: {
 center: {lat: 51.0881, lng: -111.5592},
 beta: 0.3991,
 betaNorm: -0.3989,
 betaFactorAverage: "NaN",
-stationName: "ABT049-1996"
+stationName: "ABT049"
 },
 MTTFLithoprobeABT05019931996: {
 center: {lat: 51.2361, lng: -111.4367},
 beta: 0.3514,
 betaNorm: -0.4542,
 betaFactorAverage: "NaN",
-stationName: "ABT050-1996"
+stationName: "ABT050"
 },
 MTTFLithoprobeABT05119931996: {
 center: {lat: 51.4094, lng: -111.5944},
 beta: 0.3474,
 betaNorm: -0.4592,
 betaFactorAverage: "NaN",
-stationName: "ABT051-1996"
+stationName: "ABT051"
 },
 MTTFLithoprobeABT05219931996: {
 center: {lat: 50.9817, lng: -111.6942},
 beta: 0.3792,
 betaNorm: -0.4212,
 betaFactorAverage: "0.3082",
-stationName: "ABT052-1996"
+stationName: "ABT052"
 },
 MTTFLithoprobeABT05319931996: {
 center: {lat: 50.9097, lng: -111.7756},
 beta: 0.4247,
 betaNorm: -0.3720,
 betaFactorAverage: "NaN",
-stationName: "ABT053-1996"
+stationName: "ABT053"
 },
 MTTFLithoprobeABT05419931996: {
 center: {lat: 51.8678, lng: -111.9442},
 beta: 0.3017,
 betaNorm: -0.5204,
 betaFactorAverage: "NaN",
-stationName: "ABT054-1996"
+stationName: "ABT054"
 },
 MTTFLithoprobeABT05519931996: {
 center: {lat: 51.8806, lng: -111.5150},
 beta: 0.3026,
 betaNorm: -0.5192,
 betaFactorAverage: "NaN",
-stationName: "ABT055-1996"
+stationName: "ABT055"
 },
 MTTFLithoprobeABT05619931996: {
 center: {lat: 51.7667, lng: -111.2819},
 beta: 0.3237,
 betaNorm: -0.4898,
 betaFactorAverage: "NaN",
-stationName: "ABT056-1996"
+stationName: "ABT056"
 },
 MTTFLithoprobeABT05719931996: {
 center: {lat: 51.7861, lng: -110.9503},
 beta: 0.3355,
 betaNorm: -0.4744,
 betaFactorAverage: "NaN",
-stationName: "ABT057-1996"
+stationName: "ABT057"
 },
 MTTFLithoprobeABT05819931996: {
 center: {lat: 51.7531, lng: -110.6467},
 beta: 0.3213,
 betaNorm: -0.4931,
 betaFactorAverage: "0.3083",
-stationName: "ABT058-1996"
+stationName: "ABT058"
 },
 MTTFLithoprobeABT05919931996: {
 center: {lat: 51.6606, lng: -110.4106},
 beta: 0.3420,
 betaNorm: -0.4659,
 betaFactorAverage: "0.3243",
-stationName: "ABT059-1996"
+stationName: "ABT059"
 },
 MTTFLithoprobeABT06019931996: {
 center: {lat: 51.6911, lng: -110.2728},
 beta: 0.3505,
 betaNorm: -0.4553,
 betaFactorAverage: "0.3201",
-stationName: "ABT060-1996"
+stationName: "ABT060"
 },
 MTTFLithoprobeABT06119931996: {
 center: {lat: 51.6983, lng: -110.0497},
 beta: 0.3315,
 betaNorm: -0.4796,
 betaFactorAverage: "0.3220",
-stationName: "ABT061-1996"
+stationName: "ABT061"
 },
 MTTFLithoprobeABT06219931996: {
 center: {lat: 50.8417, lng: -112.0497},
 beta: 0.4067,
 betaNorm: -0.3907,
 betaFactorAverage: "NaN",
-stationName: "ABT062-1996"
+stationName: "ABT062"
 },
 MTTFLithoprobeABT06319931996: {
 center: {lat: 50.6850, lng: -112.0500},
 beta: 0.4166,
 betaNorm: -0.3803,
 betaFactorAverage: "NaN",
-stationName: "ABT063-1996"
+stationName: "ABT063"
 },
 MTTFLithoprobeABT06419931996: {
 center: {lat: 50.6158, lng: -112.0806},
 beta: 0.4078,
 betaNorm: -0.3895,
 betaFactorAverage: "NaN",
-stationName: "ABT064-1996"
+stationName: "ABT064"
 },
 MTTFLithoprobeABT06519931996: {
 center: {lat: 50.4714, lng: -111.8475},
 beta: 0.4226,
 betaNorm: -0.3741,
 betaFactorAverage: "NaN",
-stationName: "ABT065-1996"
+stationName: "ABT065"
 },
 MTTFLithoprobeABT06619931996: {
 center: {lat: 50.3261, lng: -111.7953},
 beta: 0.4596,
 betaNorm: -0.3376,
 betaFactorAverage: "NaN",
-stationName: "ABT066-1996"
+stationName: "ABT066"
 },
 MTTFLithoprobeABT06719931996: {
 center: {lat: 50.2661, lng: -111.7439},
 beta: 0.4637,
 betaNorm: -0.3338,
 betaFactorAverage: "NaN",
-stationName: "ABT067-1996"
+stationName: "ABT067"
 },
 MTTFLithoprobeABT06819931996: {
 center: {lat: 51.7133, lng: -113.1578},
 beta: 0.3250,
 betaNorm: -0.4881,
 betaFactorAverage: "NaN",
-stationName: "ABT068-1996"
+stationName: "ABT068"
 },
 MTTFLithoprobeABT06919931996: {
 center: {lat: 51.7506, lng: -113.5006},
 beta: 0.3986,
 betaNorm: -0.3995,
 betaFactorAverage: "NaN",
-stationName: "ABT069-1996"
+stationName: "ABT069"
 },
 MTTFLithoprobeABT07019931996: {
 center: {lat: 51.6931, lng: -113.6475},
 beta: 0.4594,
 betaNorm: -0.3378,
 betaFactorAverage: "0.3526",
-stationName: "ABT070-1996"
+stationName: "ABT070"
 },
 MTTFLithoprobeABT07119931996: {
 center: {lat: 51.7714, lng: -113.7161},
 beta: 0.5159,
 betaNorm: -0.2875,
 betaFactorAverage: "0.3678",
-stationName: "ABT071-1996"
+stationName: "ABT071"
 },
 MTTFLithoprobeABT07219931996: {
 center: {lat: 51.8097, lng: -113.7831},
 beta: 0.5752,
 betaNorm: -0.2402,
 betaFactorAverage: "0.3741",
-stationName: "ABT072-1996"
+stationName: "ABT072"
 },
 MTTFLithoprobeABT07319931996: {
 center: {lat: 51.8667, lng: -113.8761},
 beta: 0.5011,
 betaNorm: -0.3001,
 betaFactorAverage: "0.3872",
-stationName: "ABT073-1996"
+stationName: "ABT073"
 },
 MTTFLithoprobeABT07419931996: {
 center: {lat: 51.9547, lng: -113.9256},
 beta: 0.5146,
 betaNorm: -0.2885,
 betaFactorAverage: "0.3991",
-stationName: "ABT074-1996"
+stationName: "ABT074"
 },
 MTTFLithoprobeABT07519931996: {
 center: {lat: 51.9169, lng: -114.1706},
 beta: 0.5793,
 betaNorm: -0.2371,
 betaFactorAverage: "0.4050",
-stationName: "ABT075-1996"
+stationName: "ABT075"
 },
 MTTFLithoprobeABT07619931996: {
 center: {lat: 52.0203, lng: -114.2153},
 beta: 0.5570,
 betaNorm: -0.2542,
 betaFactorAverage: "0.4093",
-stationName: "ABT076-1996"
+stationName: "ABT076"
 },
 MTTFLithoprobeABT07719931996: {
 center: {lat: 52.0714, lng: -114.3672},
 beta: 0.5176,
 betaNorm: -0.2860,
 betaFactorAverage: "0.4202",
-stationName: "ABT077-1996"
+stationName: "ABT077"
 },
 MTTFLithoprobeABT07819931996: {
 center: {lat: 52.1306, lng: -114.4353},
 beta: 0.6083,
 betaNorm: -0.2159,
 betaFactorAverage: "0.4360",
-stationName: "ABT078-1996"
+stationName: "ABT078"
 },
 MTTFLithoprobeABT07919931996: {
 center: {lat: 52.1864, lng: -114.5719},
 beta: 0.5090,
 betaNorm: -0.2932,
 betaFactorAverage: "0.4624",
-stationName: "ABT079-1996"
+stationName: "ABT079"
 },
 MTTFLithoprobeABT08019931996: {
 center: {lat: 52.2125, lng: -114.8919},
 beta: 0.5779,
 betaNorm: -0.2382,
 betaFactorAverage: "0.5077",
-stationName: "ABT080-1996"
+stationName: "ABT080"
 },
 MTTFLithoprobeABT08119931996: {
 center: {lat: 52.3303, lng: -115.0169},
 beta: 0.5153,
 betaNorm: -0.2879,
 betaFactorAverage: "0.5225",
-stationName: "ABT081-1996"
+stationName: "ABT081"
 },
 MTTFLithoprobeABT08219931996: {
 center: {lat: 52.5631, lng: -113.4922},
 beta: 0.5179,
 betaNorm: -0.2858,
 betaFactorAverage: "0.4127",
-stationName: "ABT082-1996"
+stationName: "ABT082"
 },
 MTTFLithoprobeABT08319931996: {
 center: {lat: 52.5433, lng: -113.7575},
 beta: 0.5424,
 betaNorm: -0.2657,
 betaFactorAverage: "0.4309",
-stationName: "ABT083-1996"
+stationName: "ABT083"
 },
 MTTFLithoprobeABT08419931996: {
 center: {lat: 53.0950, lng: -114.3728},
 beta: 0.6027,
 betaNorm: -0.2199,
 betaFactorAverage: "0.4766",
-stationName: "ABT084-1996"
+stationName: "ABT084"
 },
 MTTFLithoprobeABT08519931996: {
 center: {lat: 53.1514, lng: -114.6894},
 beta: 0.5323,
 betaNorm: -0.2738,
 betaFactorAverage: "0.4969",
-stationName: "ABT085-1996"
+stationName: "ABT085"
 },
 MTTFLithoprobeABT08619931996: {
 center: {lat: 54.4367, lng: -113.5786},
 beta: 0.5642,
 betaNorm: -0.2486,
 betaFactorAverage: "NaN",
-stationName: "ABT086-1996"
+stationName: "ABT086"
 },
 MTTFLithoprobeABT08719931996: {
 center: {lat: 53.5397, lng: -114.8133},
 beta: 0.4951,
 betaNorm: -0.3053,
 betaFactorAverage: "NaN",
-stationName: "ABT087-1996"
+stationName: "ABT087"
 },
 MTTFLithoprobeABT08819931996: {
 center: {lat: 53.6469, lng: -114.9631},
 beta: 0.4633,
 betaNorm: -0.3341,
 betaFactorAverage: "NaN",
-stationName: "ABT088-1996"
+stationName: "ABT088"
 },
 MTTFLithoprobeABT08919931996: {
 center: {lat: 53.7306, lng: -114.9211},
 beta: 0.5117,
 betaNorm: -0.2910,
 betaFactorAverage: "NaN",
-stationName: "ABT089-1996"
+stationName: "ABT089"
 },
 MTTFLithoprobeABT09019931996: {
 center: {lat: 53.7656, lng: -115.1053},
 beta: 0.5735,
 betaNorm: -0.2415,
 betaFactorAverage: "NaN",
-stationName: "ABT090-1996"
+stationName: "ABT090"
 },
 MTTFLithoprobeABT09119931996: {
 center: {lat: 53.8111, lng: -115.3147},
 beta: 0.5237,
 betaNorm: -0.2809,
 betaFactorAverage: "NaN",
-stationName: "ABT091-1996"
+stationName: "ABT091"
 },
 MTTFLithoprobeABT09219931996: {
 center: {lat: 53.8728, lng: -115.4525},
 beta: 0.6286,
 betaNorm: -0.2016,
 betaFactorAverage: "NaN",
-stationName: "ABT092-1996"
+stationName: "ABT092"
 },
 MTTFLithoprobeABT09319931996: {
 center: {lat: 53.9497, lng: -115.3981},
 beta: 0.7135,
 betaNorm: -0.1466,
 betaFactorAverage: "NaN",
-stationName: "ABT093-1996"
+stationName: "ABT093"
 },
 MTTFLithoprobeABT09419931996: {
 center: {lat: 54.0311, lng: -115.4967},
 beta: 0.4512,
 betaNorm: -0.3456,
 betaFactorAverage: "NaN",
-stationName: "ABT094-1996"
+stationName: "ABT094"
 },
 MTTFLithoprobeABT09519931996: {
 center: {lat: 54.1289, lng: -115.2756},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT095-1996"
+stationName: "ABT095"
 },
 MTTFLithoprobeABT09619931996: {
 center: {lat: 51.6267, lng: -113.0083},
 beta: 0.2611,
 betaNorm: -0.5832,
 betaFactorAverage: "NaN",
-stationName: "ABT096-1996"
+stationName: "ABT096"
 },
 MTTFLithoprobeABT09719931996: {
 center: {lat: 54.6511, lng: -114.2008},
 beta: 0.5037,
 betaNorm: -0.2979,
 betaFactorAverage: "NaN",
-stationName: "ABT097-1996"
+stationName: "ABT097"
 },
 MTTFLithoprobeABT09819931996: {
 center: {lat: 54.4997, lng: -114.1564},
 beta: 0.4156,
 betaNorm: -0.3813,
 betaFactorAverage: "NaN",
-stationName: "ABT098-1996"
+stationName: "ABT098"
 },
 MTTFLithoprobeABT09919931996: {
 center: {lat: 54.4208, lng: -114.0283},
 beta: 0.4659,
 betaNorm: -0.3317,
 betaFactorAverage: "NaN",
-stationName: "ABT099-1996"
+stationName: "ABT099"
 },
 MTTFLithoprobeABT10019931996: {
 center: {lat: 54.4744, lng: -113.7389},
 beta: 0.4748,
 betaNorm: -0.3235,
 betaFactorAverage: "NaN",
-stationName: "ABT100-1996"
+stationName: "ABT100"
 },
 MTTFLithoprobeABT10119931996: {
 center: {lat: 54.3764, lng: -113.4331},
 beta: 0.4756,
 betaNorm: -0.3228,
 betaFactorAverage: "NaN",
-stationName: "ABT101-1996"
+stationName: "ABT101"
 },
 MTTFLithoprobeABT10219931996: {
 center: {lat: 54.3172, lng: -113.3136},
 beta: 0.5017,
 betaNorm: -0.2995,
 betaFactorAverage: "NaN",
-stationName: "ABT102-1996"
+stationName: "ABT102"
 },
 MTTFLithoprobeABT10319931996: {
 center: {lat: 54.2308, lng: -113.1617},
 beta: 0.4673,
 betaNorm: -0.3304,
 betaFactorAverage: "NaN",
-stationName: "ABT103-1996"
+stationName: "ABT103"
 },
 MTTFLithoprobeABT10419931996: {
 center: {lat: 54.2136, lng: -112.9678},
 beta: 0.4913,
 betaNorm: -0.3087,
 betaFactorAverage: "NaN",
-stationName: "ABT104-1996"
+stationName: "ABT104"
 },
 MTTFLithoprobeABT10519931996: {
 center: {lat: 54.1578, lng: -112.8153},
 beta: 0.5147,
 betaNorm: -0.2885,
 betaFactorAverage: "NaN",
-stationName: "ABT105-1996"
+stationName: "ABT105"
 },
 MTTFLithoprobeABT10619931996: {
 center: {lat: 54.0444, lng: -112.6939},
 beta: 0.5145,
 betaNorm: -0.2886,
 betaFactorAverage: "NaN",
-stationName: "ABT106-1996"
+stationName: "ABT106"
 },
 MTTFLithoprobeABT10719931996: {
 center: {lat: 54.0131, lng: -112.4422},
 beta: 0.5078,
 betaNorm: -0.2943,
 betaFactorAverage: "NaN",
-stationName: "ABT107-1996"
+stationName: "ABT107"
 },
 MTTFLithoprobeABT10819931996: {
 center: {lat: 53.9167, lng: -112.3194},
 beta: 0.4450,
 betaNorm: -0.3516,
 betaFactorAverage: "NaN",
-stationName: "ABT108-1996"
+stationName: "ABT108"
 },
 MTTFLithoprobeABT10919931996: {
 center: {lat: 53.9244, lng: -112.1039},
 beta: 0.4770,
 betaNorm: -0.3215,
 betaFactorAverage: "NaN",
-stationName: "ABT109-1996"
+stationName: "ABT109"
 },
 MTTFLithoprobeABT11019931996: {
 center: {lat: 53.8761, lng: -111.8175},
 beta: 0.4366,
 betaNorm: -0.3600,
 betaFactorAverage: "NaN",
-stationName: "ABT110-1996"
+stationName: "ABT110"
 },
 MTTFLithoprobeABT11119931996: {
 center: {lat: 53.7772, lng: -111.6617},
 beta: 0.3674,
 betaNorm: -0.4349,
 betaFactorAverage: "NaN",
-stationName: "ABT111-1996"
+stationName: "ABT111"
 },
 MTTFLithoprobeABT11219931996: {
 center: {lat: 53.6206, lng: -111.5825},
 beta: 0.7211,
 betaNorm: -0.1420,
 betaFactorAverage: "NaN",
-stationName: "ABT112-1996"
+stationName: "ABT112"
 },
 MTTFLithoprobeABT11319931996: {
 center: {lat: 53.6053, lng: -111.4050},
 beta: 0.4337,
 betaNorm: -0.3628,
 betaFactorAverage: "NaN",
-stationName: "ABT113-1996"
+stationName: "ABT113"
 },
 MTTFLithoprobeABT11419931996: {
 center: {lat: 53.5472, lng: -111.1836},
 beta: 0.4177,
 betaNorm: -0.3791,
 betaFactorAverage: "NaN",
-stationName: "ABT114-1996"
+stationName: "ABT114"
 },
 MTTFLithoprobeABT11519931996: {
 center: {lat: 53.4894, lng: -111.0356},
 beta: 0.3578,
 betaNorm: -0.4463,
 betaFactorAverage: "0.3354",
-stationName: "ABT115-1996"
+stationName: "ABT115"
 },
 MTTFLithoprobeABT11619931996: {
 center: {lat: 53.4286, lng: -110.7769},
 beta: 0.3677,
 betaNorm: -0.4345,
 betaFactorAverage: "0.3306",
-stationName: "ABT116-1996"
+stationName: "ABT116"
 },
 MTTFLithoprobeABT11719931996: {
 center: {lat: 53.2750, lng: -110.6153},
 beta: 0.3359,
 betaNorm: -0.4738,
 betaFactorAverage: "0.3149",
-stationName: "ABT117-1996"
+stationName: "ABT117"
 },
 MTTFLithoprobeABT11819931996: {
 center: {lat: 53.2958, lng: -110.4481},
 beta: 0.3847,
 betaNorm: -0.4149,
 betaFactorAverage: "0.3182",
-stationName: "ABT118-1996"
+stationName: "ABT118"
 },
 MTTFLithoprobeABT11919931996: {
 center: {lat: 53.2542, lng: -110.2692},
 beta: 0.3102,
 betaNorm: -0.5083,
 betaFactorAverage: "0.3180",
-stationName: "ABT119-1996"
+stationName: "ABT119"
 },
 MTTFLithoprobeABT12019931996: {
 center: {lat: 53.1331, lng: -110.0989},
 beta: 0.3164,
 betaNorm: -0.4998,
 betaFactorAverage: "0.2958",
-stationName: "ABT120-1996"
+stationName: "ABT120"
 },
 MTTFLithoprobeABT12119931996: {
 center: {lat: 53.0733, lng: -110.0383},
 beta: 0.3252,
 betaNorm: -0.4879,
 betaFactorAverage: "0.2981",
-stationName: "ABT121-1996"
+stationName: "ABT121"
 },
 MTTFLithoprobeABT12219931996: {
 center: {lat: 52.5150, lng: -109.9156},
 beta: 0.3180,
 betaNorm: -0.4975,
 betaFactorAverage: "0.3259",
-stationName: "ABT122-1996"
+stationName: "ABT122"
 },
 MTTFLithoprobeABT12319931996: {
 center: {lat: 52.4975, lng: -109.7683},
 beta: 0.2969,
 betaNorm: -0.5274,
 betaFactorAverage: "0.3325",
-stationName: "ABT123-1996"
+stationName: "ABT123"
 },
 MTTFLithoprobeABT12419931996: {
 center: {lat: 52.4989, lng: -109.5872},
 beta: 0.3162,
 betaNorm: -0.5001,
 betaFactorAverage: "0.3280",
-stationName: "ABT124-1996"
+stationName: "ABT124"
 },
 MTTFLithoprobeABT12519931996: {
 center: {lat: 52.4864, lng: -109.4322},
 beta: 0.2781,
 betaNorm: -0.5559,
 betaFactorAverage: "0.3376",
-stationName: "ABT125-1996"
+stationName: "ABT125"
 },
 MTTFLithoprobeABT12619931996: {
 center: {lat: 52.5578, lng: -109.3131},
 beta: 0.2839,
 betaNorm: -0.5469,
 betaFactorAverage: "0.3386",
-stationName: "ABT126-1996"
+stationName: "ABT126"
 },
 MTTFLithoprobeABT12719931996: {
 center: {lat: 52.5186, lng: -109.1150},
 beta: 0.3060,
 betaNorm: -0.5143,
 betaFactorAverage: "0.3400",
-stationName: "ABT127-1996"
+stationName: "ABT127"
 },
 MTTFLithoprobeABT12819931996: {
 center: {lat: 52.4792, lng: -108.9125},
 beta: 0.2999,
 betaNorm: -0.5231,
 betaFactorAverage: "0.2884",
-stationName: "ABT128-1996"
+stationName: "ABT128"
 },
 MTTFLithoprobeABT12919931996: {
 center: {lat: 52.4792, lng: -108.7097},
 beta: 0.3411,
 betaNorm: -0.4671,
 betaFactorAverage: "0.2929",
-stationName: "ABT129-1996"
+stationName: "ABT129"
 },
 MTTFLithoprobeABT13019931996: {
 center: {lat: 49.6047, lng: -110.9356},
 beta: 0.5418,
 betaNorm: -0.2662,
 betaFactorAverage: "NaN",
-stationName: "ABT130-1996"
+stationName: "ABT130"
 },
 MTTFLithoprobeABT13119931996: {
 center: {lat: 51.6006, lng: -110.1400},
 beta: 0.3339,
 betaNorm: -0.4763,
 betaFactorAverage: "0.3273",
-stationName: "ABT131-1996"
+stationName: "ABT131"
 },
 MTTFLithoprobeABT13219931996: {
 center: {lat: 53.5167, lng: -110.0033},
 beta: 0.1850,
 betaNorm: -0.7327,
 betaFactorAverage: "0.3712",
-stationName: "ABT132-1996"
+stationName: "ABT132"
 },
 MTTFLithoprobeABT13519931996: {
 center: {lat: 54.3908, lng: -110.1144},
 beta: 0.6140,
 betaNorm: -0.2118,
 betaFactorAverage: "NaN",
-stationName: "ABT135-1996"
+stationName: "ABT135"
 },
 MTTFLithoprobeABT13619931996: {
 center: {lat: 54.2308, lng: -109.8181},
 beta: 0.6088,
 betaNorm: -0.2155,
 betaFactorAverage: "NaN",
-stationName: "ABT136-1996"
+stationName: "ABT136"
 },
 MTTFLithoprobeABT13719931996: {
 center: {lat: 54.3694, lng: -110.5881},
 beta: 0.4907,
 betaNorm: -0.3092,
 betaFactorAverage: "NaN",
-stationName: "ABT137-1996"
+stationName: "ABT137"
 },
 MTTFLithoprobeABT13819931996: {
 center: {lat: 54.4294, lng: -110.8075},
 beta: 0.6618,
 betaNorm: -0.1793,
 betaFactorAverage: "NaN",
-stationName: "ABT138-1996"
+stationName: "ABT138"
 },
 MTTFLithoprobeABT13919931996: {
 center: {lat: 54.4942, lng: -110.9506},
 beta: 0.8686,
 betaNorm: -0.0612,
 betaFactorAverage: "NaN",
-stationName: "ABT139-1996"
+stationName: "ABT139"
 },
 MTTFLithoprobeABT14019931996: {
 center: {lat: 54.5031, lng: -111.1689},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT140-1996"
+stationName: "ABT140"
 },
 MTTFLithoprobeABT14119931996: {
 center: {lat: 54.3806, lng: -111.3419},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT141-1996"
+stationName: "ABT141"
 },
 MTTFLithoprobeABT14219931996: {
 center: {lat: 54.5261, lng: -111.6289},
 beta: 0.6231,
 betaNorm: -0.2054,
 betaFactorAverage: "NaN",
-stationName: "ABT142-1996"
+stationName: "ABT142"
 },
 MTTFLithoprobeABT14319931996: {
 center: {lat: 54.5442, lng: -111.8931},
 beta: 0.6909,
 betaNorm: -0.1606,
 betaFactorAverage: "NaN",
-stationName: "ABT143-1996"
+stationName: "ABT143"
 },
 MTTFLithoprobeABT14419931996: {
 center: {lat: 54.6336, lng: -112.1086},
 beta: 0.6707,
 betaNorm: -0.1734,
 betaFactorAverage: "NaN",
-stationName: "ABT144-1996"
+stationName: "ABT144"
 },
 MTTFLithoprobeABT14519931996: {
 center: {lat: 54.7586, lng: -112.3178},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT145-1996"
+stationName: "ABT145"
 },
 MTTFLithoprobeABT14619931996: {
 center: {lat: 54.8044, lng: -112.4828},
 beta: 0.6813,
 betaNorm: -0.1667,
 betaFactorAverage: "NaN",
-stationName: "ABT146-1996"
+stationName: "ABT146"
 },
 MTTFLithoprobeABT14719931996: {
 center: {lat: 54.8414, lng: -112.6408},
 beta: 0.6048,
 betaNorm: -0.2184,
 betaFactorAverage: "NaN",
-stationName: "ABT147-1996"
+stationName: "ABT147"
 },
 MTTFLithoprobeABT14819931996: {
 center: {lat: 54.8994, lng: -113.0156},
 beta: 0.6058,
 betaNorm: -0.2176,
 betaFactorAverage: "NaN",
-stationName: "ABT148-1996"
+stationName: "ABT148"
 },
 MTTFLithoprobeABT14919931996: {
 center: {lat: 54.3006, lng: -110.5067},
 beta: 0.5122,
 betaNorm: -0.2906,
 betaFactorAverage: "NaN",
-stationName: "ABT149-1996"
+stationName: "ABT149"
 },
 MTTFLithoprobeABT15019931996: {
 center: {lat: 55.8719, lng: -120.2947},
 beta: 0.3905,
 betaNorm: -0.4084,
 betaFactorAverage: "NaN",
-stationName: "ABT150-1996"
+stationName: "ABT150"
 },
 MTTFLithoprobeABT15119931996: {
 center: {lat: 55.9275, lng: -119.9078},
 beta: 0.4056,
 betaNorm: -0.3920,
 betaFactorAverage: "NaN",
-stationName: "ABT151-1996"
+stationName: "ABT151"
 },
 MTTFLithoprobeABT15219931996: {
 center: {lat: 55.8864, lng: -119.7217},
 beta: 0.4465,
 betaNorm: -0.3502,
 betaFactorAverage: "NaN",
-stationName: "ABT152-1996"
+stationName: "ABT152"
 },
 MTTFLithoprobeABT15319931996: {
 center: {lat: 55.8958, lng: -119.4367},
 beta: 0.4135,
 betaNorm: -0.3835,
 betaFactorAverage: "0.4327",
-stationName: "ABT153-1996"
+stationName: "ABT153"
 },
 MTTFLithoprobeABT15419931996: {
 center: {lat: 55.8258, lng: -119.0964},
 beta: 0.5256,
 betaNorm: -0.2793,
 betaFactorAverage: "NaN",
-stationName: "ABT154-1996"
+stationName: "ABT154"
 },
 MTTFLithoprobeABT15519931996: {
 center: {lat: 55.8619, lng: -118.8400},
 beta: 0.4828,
 betaNorm: -0.3162,
 betaFactorAverage: "NaN",
-stationName: "ABT155-1996"
+stationName: "ABT155"
 },
 MTTFLithoprobeABT15619931996: {
 center: {lat: 55.8317, lng: -118.7403},
 beta: 0.4590,
 betaNorm: -0.3381,
 betaFactorAverage: "NaN",
-stationName: "ABT156-1996"
+stationName: "ABT156"
 },
 MTTFLithoprobeABT15719931996: {
 center: {lat: 55.8542, lng: -118.5136},
 beta: 0.3855,
 betaNorm: -0.4140,
 betaFactorAverage: "NaN",
-stationName: "ABT157-1996"
+stationName: "ABT157"
 },
 MTTFLithoprobeABT15819931996: {
 center: {lat: 55.7661, lng: -118.2489},
 beta: 0.3234,
 betaNorm: -0.4902,
 betaFactorAverage: "NaN",
-stationName: "ABT158-1996"
+stationName: "ABT158"
 },
 MTTFLithoprobeABT15919931996: {
 center: {lat: 55.8761, lng: -118.0003},
 beta: 0.2884,
 betaNorm: -0.5400,
 betaFactorAverage: "NaN",
-stationName: "ABT159-1996"
+stationName: "ABT159"
 },
 MTTFLithoprobeABT16019931996: {
 center: {lat: 55.8986, lng: -117.7608},
 beta: 0.3815,
 betaNorm: -0.4185,
 betaFactorAverage: "NaN",
-stationName: "ABT160-1996"
+stationName: "ABT160"
 },
 MTTFLithoprobeABT16119931996: {
 center: {lat: 55.8500, lng: -117.5633},
 beta: 0.3833,
 betaNorm: -0.4165,
 betaFactorAverage: "NaN",
-stationName: "ABT161-1996"
+stationName: "ABT161"
 },
 MTTFLithoprobeABT16219931996: {
 center: {lat: 55.8814, lng: -117.3178},
 beta: 0.4020,
 betaNorm: -0.3958,
 betaFactorAverage: "NaN",
-stationName: "ABT162-1996"
+stationName: "ABT162"
 },
 MTTFLithoprobeABT16319931996: {
 center: {lat: 55.7603, lng: -117.0664},
 beta: 0.3603,
 betaNorm: -0.4433,
 betaFactorAverage: "NaN",
-stationName: "ABT163-1996"
+stationName: "ABT163"
 },
 MTTFLithoprobeABT16419931996: {
 center: {lat: 55.5678, lng: -116.5650},
 beta: 0.4316,
 betaNorm: -0.3649,
 betaFactorAverage: "NaN",
-stationName: "ABT164-1996"
+stationName: "ABT164"
 },
 MTTFLithoprobeABT16519931996: {
 center: {lat: 55.8492, lng: -120.6297},
 beta: 0.4215,
 betaNorm: -0.3752,
 betaFactorAverage: "NaN",
-stationName: "ABT165-1996"
+stationName: "ABT165"
 },
 MTTFLithoprobeABT16619931996: {
 center: {lat: 55.8639, lng: -120.8311},
 beta: 0.4775,
 betaNorm: -0.3210,
 betaFactorAverage: "NaN",
-stationName: "ABT166-1996"
+stationName: "ABT166"
 },
 MTTFLithoprobeABT16719931996: {
 center: {lat: 55.8572, lng: -120.4225},
 beta: 0.3464,
 betaNorm: -0.4604,
 betaFactorAverage: "NaN",
-stationName: "ABT167-1996"
+stationName: "ABT167"
 },
 MTTFLithoprobeABT16819931996: {
 center: {lat: 55.8372, lng: -121.0200},
 beta: 0.4381,
 betaNorm: -0.3584,
 betaFactorAverage: "NaN",
-stationName: "ABT168-1996"
+stationName: "ABT168"
 },
 MTTFLithoprobeABT16919931996: {
 center: {lat: 55.9256, lng: -120.1500},
 beta: 0.4635,
 betaNorm: -0.3340,
 betaFactorAverage: "NaN",
-stationName: "ABT169-1996"
+stationName: "ABT169"
 },
 MTTFLithoprobeABT17019931996: {
 center: {lat: 56.3856, lng: -117.0431},
 beta: 0.6493,
 betaNorm: -0.1875,
 betaFactorAverage: "NaN",
-stationName: "ABT170-1996"
+stationName: "ABT170"
 },
 MTTFLithoprobeABT17119931996: {
 center: {lat: 56.2317, lng: -117.0700},
 beta: 0.6447,
 betaNorm: -0.1906,
 betaFactorAverage: "NaN",
-stationName: "ABT171-1996"
+stationName: "ABT171"
 },
 MTTFLithoprobeABT17219931996: {
 center: {lat: 56.0661, lng: -117.0714},
 beta: 0.4706,
 betaNorm: -0.3274,
 betaFactorAverage: "NaN",
-stationName: "ABT172-1996"
+stationName: "ABT172"
 },
 MTTFLithoprobeABT17319931996: {
 center: {lat: 55.9400, lng: -116.9855},
 beta: 0.4658,
 betaNorm: -0.3318,
 betaFactorAverage: "NaN",
-stationName: "ABT173-1996"
+stationName: "ABT173"
 },
 MTTFLithoprobeABT17419931996: {
 center: {lat: 55.6425, lng: -117.0400},
 beta: 0.3563,
 betaNorm: -0.4482,
 betaFactorAverage: "NaN",
-stationName: "ABT174-1996"
+stationName: "ABT174"
 },
 MTTFLithoprobeABT17519931996: {
 center: {lat: 55.3844, lng: -116.9622},
 beta: 0.3536,
 betaNorm: -0.4514,
 betaFactorAverage: "NaN",
-stationName: "ABT175-1996"
+stationName: "ABT175"
 },
 MTTFLithoprobeABT17619931996: {
 center: {lat: 55.2328, lng: -116.9192},
 beta: 0.3063,
 betaNorm: -0.5139,
 betaFactorAverage: "NaN",
-stationName: "ABT176-1996"
+stationName: "ABT176"
 },
 MTTFLithoprobeABT17719931996: {
 center: {lat: 55.0472, lng: -116.8825},
 beta: 0.2495,
 betaNorm: -0.6029,
 betaFactorAverage: "NaN",
-stationName: "ABT177-1996"
+stationName: "ABT177"
 },
 MTTFLithoprobeABT17819931996: {
 center: {lat: 54.8742, lng: -117.3067},
 beta: 0.3564,
 betaNorm: -0.4481,
 betaFactorAverage: "NaN",
-stationName: "ABT178-1996"
+stationName: "ABT178"
 },
 MTTFLithoprobeABT17919931996: {
 center: {lat: 55.4425, lng: -116.1972},
 beta: 0.4372,
 betaNorm: -0.3593,
 betaFactorAverage: "NaN",
-stationName: "ABT179-1996"
+stationName: "ABT179"
 },
 MTTFLithoprobeABT18019931996: {
 center: {lat: 55.3528, lng: -115.9833},
 beta: 0.4108,
 betaNorm: -0.3864,
 betaFactorAverage: "NaN",
-stationName: "ABT180-1996"
+stationName: "ABT180"
 },
 MTTFLithoprobeABT18119931996: {
 center: {lat: 55.7211, lng: -121.2886},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT181-1996"
+stationName: "ABT181"
 },
 MTTFLithoprobeABT18219931996: {
 center: {lat: 55.7511, lng: -121.1544},
 beta: 0.5733,
 betaNorm: -0.2416,
 betaFactorAverage: "NaN",
-stationName: "ABT182-1996"
+stationName: "ABT182"
 },
 MTTFLithoprobeABT18319931996: {
 center: {lat: 55.4092, lng: -118.0028},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT183-1996"
+stationName: "ABT183"
 },
 MTTFLithoprobeABT18419931996: {
 center: {lat: 55.3558, lng: -117.3394},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT184-1996"
+stationName: "ABT184"
 },
 MTTFLithoprobeABT18519931996: {
 center: {lat: 58.5286, lng: -117.2747},
 beta: 0.5754,
 betaNorm: -0.2400,
 betaFactorAverage: "NaN",
-stationName: "ABT185-1996"
+stationName: "ABT185"
 },
 MTTFLithoprobeABT18619931996: {
 center: {lat: 58.5650, lng: -117.7078},
 beta: 0.4255,
 betaNorm: -0.3711,
 betaFactorAverage: "NaN",
-stationName: "ABT186-1996"
+stationName: "ABT186"
 },
 MTTFLithoprobeABT18719931996: {
 center: {lat: 58.5944, lng: -118.1458},
 beta: 0.5976,
 betaNorm: -0.2236,
 betaFactorAverage: "NaN",
-stationName: "ABT187-1996"
+stationName: "ABT187"
 },
 MTTFLithoprobeABT18819931996: {
 center: {lat: 58.5864, lng: -118.3231},
 beta: 0.6420,
 betaNorm: -0.1924,
 betaFactorAverage: "NaN",
-stationName: "ABT188-1996"
+stationName: "ABT188"
 },
 MTTFLithoprobeABT18919931996: {
 center: {lat: 58.5942, lng: -118.5431},
 beta: 0.5235,
 betaNorm: -0.2811,
 betaFactorAverage: "NaN",
-stationName: "ABT189-1996"
+stationName: "ABT189"
 },
 MTTFLithoprobeABT19019931996: {
 center: {lat: 58.6017, lng: -118.8358},
 beta: 0.4270,
 betaNorm: -0.3696,
 betaFactorAverage: "NaN",
-stationName: "ABT190-1996"
+stationName: "ABT190"
 },
 MTTFLithoprobeABT19119931996: {
 center: {lat: 58.4333, lng: -119.4356},
 beta: 0.4625,
 betaNorm: -0.3349,
 betaFactorAverage: "NaN",
-stationName: "ABT191-1996"
+stationName: "ABT191"
 },
 MTTFLithoprobeABT19219931996: {
 center: {lat: 58.4503, lng: -117.1281},
 beta: 0.5762,
 betaNorm: -0.2394,
 betaFactorAverage: "NaN",
-stationName: "ABT192-1996"
+stationName: "ABT192"
 },
 MTTFLithoprobeABT19319931996: {
 center: {lat: 58.4719, lng: -116.9444},
 beta: 0.6343,
 betaNorm: -0.1977,
 betaFactorAverage: "NaN",
-stationName: "ABT193-1996"
+stationName: "ABT193"
 },
 MTTFLithoprobeABT19419931996: {
 center: {lat: 58.5281, lng: -116.7208},
 beta: 0.6223,
 betaNorm: -0.2060,
 betaFactorAverage: "NaN",
-stationName: "ABT194-1996"
+stationName: "ABT194"
 },
 MTTFLithoprobeABT19519931996: {
 center: {lat: 58.4778, lng: -116.4442},
 beta: 0.6127,
 betaNorm: -0.2127,
 betaFactorAverage: "NaN",
-stationName: "ABT195-1996"
+stationName: "ABT195"
 },
 MTTFLithoprobeABT19619931996: {
 center: {lat: 58.5064, lng: -116.1994},
 beta: 0.5049,
 betaNorm: -0.2968,
 betaFactorAverage: "NaN",
-stationName: "ABT196-1996"
+stationName: "ABT196"
 },
 MTTFLithoprobeABT19719931996: {
 center: {lat: 58.4992, lng: -115.9664},
 beta: 0.5854,
 betaNorm: -0.2325,
 betaFactorAverage: "NaN",
-stationName: "ABT197-1996"
+stationName: "ABT197"
 },
 MTTFLithoprobeABT19819931996: {
 center: {lat: 58.5128, lng: -115.6964},
 beta: 0.5902,
 betaNorm: -0.2290,
 betaFactorAverage: "NaN",
-stationName: "ABT198-1996"
+stationName: "ABT198"
 },
 MTTFLithoprobeABT20019931996: {
 center: {lat: 58.5986, lng: -118.6331},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT200-1996"
+stationName: "ABT200"
 },
 MTTFLithoprobeABT20119931996: {
 center: {lat: 49.4281, lng: -113.7344},
 beta: 0.2525,
 betaNorm: -0.5977,
 betaFactorAverage: "NaN",
-stationName: "ABT201-1996"
+stationName: "ABT201"
 },
 MTTFLithoprobeABT20219931996: {
 center: {lat: 49.4311, lng: -113.4447},
 beta: 0.3155,
 betaNorm: -0.5010,
 betaFactorAverage: "NaN",
-stationName: "ABT202-1996"
+stationName: "ABT202"
 },
 MTTFLithoprobeABT20319931996: {
 center: {lat: 49.4525, lng: -112.9606},
 beta: 0.5247,
 betaNorm: -0.2801,
 betaFactorAverage: "NaN",
-stationName: "ABT203-1996"
+stationName: "ABT203"
 },
 MTTFLithoprobeABT20419931996: {
 center: {lat: 49.5831, lng: -112.8383},
 beta: 0.5336,
 betaNorm: -0.2728,
 betaFactorAverage: "NaN",
-stationName: "ABT204-1996"
+stationName: "ABT204"
 },
 MTTFLithoprobeABT20519931996: {
 center: {lat: 49.5447, lng: -112.6639},
 beta: 0.6571,
 betaNorm: -0.1824,
 betaFactorAverage: "NaN",
-stationName: "ABT205-1996"
+stationName: "ABT205"
 },
 MTTFLithoprobeABT20619931996: {
 center: {lat: 49.5681, lng: -112.4492},
 beta: 0.6963,
 betaNorm: -0.1572,
 betaFactorAverage: "NaN",
-stationName: "ABT206-1996"
+stationName: "ABT206"
 },
 MTTFLithoprobeABT20719931996: {
 center: {lat: 49.6889, lng: -112.2367},
 beta: 0.6399,
 betaNorm: -0.1939,
 betaFactorAverage: "NaN",
-stationName: "ABT207-1996"
+stationName: "ABT207"
 },
 MTTFLithoprobeABT20819931996: {
 center: {lat: 49.6458, lng: -111.9369},
 beta: 0.6526,
 betaNorm: -0.1854,
 betaFactorAverage: "NaN",
-stationName: "ABT208-1996"
+stationName: "ABT208"
 },
 MTTFLithoprobeABT20919931996: {
 center: {lat: 49.7131, lng: -111.7981},
 beta: 0.6082,
 betaNorm: -0.2159,
 betaFactorAverage: "NaN",
-stationName: "ABT209-1996"
+stationName: "ABT209"
 },
 MTTFLithoprobeABT21019931996: {
 center: {lat: 49.7686, lng: -111.5750},
 beta: 0.5724,
 betaNorm: -0.2423,
 betaFactorAverage: "NaN",
-stationName: "ABT210-1996"
+stationName: "ABT210"
 },
 MTTFLithoprobeABT21119931996: {
 center: {lat: 49.7800, lng: -111.3917},
 beta: 0.5884,
 betaNorm: -0.2303,
 betaFactorAverage: "NaN",
-stationName: "ABT211-1996"
+stationName: "ABT211"
 },
 MTTFLithoprobeABT21219931996: {
 center: {lat: 49.7986, lng: -111.2094},
 beta: 0.5000,
 betaNorm: -0.3011,
 betaFactorAverage: "NaN",
-stationName: "ABT212-1996"
+stationName: "ABT212"
 },
 MTTFLithoprobeABT21319931996: {
 center: {lat: 49.8033, lng: -110.9356},
 beta: 0.5368,
 betaNorm: -0.2702,
 betaFactorAverage: "NaN",
-stationName: "ABT213-1996"
+stationName: "ABT213"
 },
 MTTFLithoprobeABT21419931996: {
 center: {lat: 49.9214, lng: -111.3822},
 beta: 0.5383,
 betaNorm: -0.2690,
 betaFactorAverage: "NaN",
-stationName: "ABT214-1996"
+stationName: "ABT214"
 },
 MTTFLithoprobeABT21519931996: {
 center: {lat: 50.0825, lng: -111.7578},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT215-1996"
+stationName: "ABT215"
 },
 MTTFLithoprobeABT21619931996: {
 center: {lat: 50.1667, lng: -111.7897},
 beta: 0.5118,
 betaNorm: -0.2909,
 betaFactorAverage: "NaN",
-stationName: "ABT216-1996"
+stationName: "ABT216"
 },
 MTTFLithoprobeABT21719931996: {
 center: {lat: 49.7456, lng: -110.7306},
 beta: 0.4504,
 betaNorm: -0.3464,
 betaFactorAverage: "NaN",
-stationName: "ABT217-1996"
+stationName: "ABT217"
 },
 MTTFLithoprobeABT21819931996: {
 center: {lat: 49.7953, lng: -110.4564},
 beta: 0.3777,
 betaNorm: -0.4228,
 betaFactorAverage: "NaN",
-stationName: "ABT218-1996"
+stationName: "ABT218"
 },
 MTTFLithoprobeABT21919931996: {
 center: {lat: 49.7233, lng: -110.2692},
 beta: 0.3398,
 betaNorm: -0.4688,
 betaFactorAverage: "0.4289",
-stationName: "ABT219-1996"
+stationName: "ABT219"
 },
 MTTFLithoprobeABT22019931996: {
 center: {lat: 49.7403, lng: -110.0072},
 beta: 0.3282,
 betaNorm: -0.4838,
 betaFactorAverage: "0.4104",
-stationName: "ABT220-1996"
+stationName: "ABT220"
 },
 MTTFLithoprobeABT22119931996: {
 center: {lat: 49.8889, lng: -109.8728},
 beta: 0.3217,
 betaNorm: -0.4925,
 betaFactorAverage: "0.3956",
-stationName: "ABT221-1996"
+stationName: "ABT221"
 },
 MTTFLithoprobeABT22219931996: {
 center: {lat: 49.7511, lng: -109.7083},
 beta: 0.3345,
 betaNorm: -0.4756,
 betaFactorAverage: "0.3872",
-stationName: "ABT222-1996"
+stationName: "ABT222"
 },
 MTTFLithoprobeABT22319931996: {
 center: {lat: 49.8297, lng: -109.4433},
 beta: 0.3564,
 betaNorm: -0.4481,
 betaFactorAverage: "0.3183",
-stationName: "ABT223-1996"
+stationName: "ABT223"
 },
 MTTFLithoprobeABT22419931996: {
 center: {lat: 49.6544, lng: -109.2817},
 beta: 0.2552,
 betaNorm: -0.5931,
 betaFactorAverage: "NaN",
-stationName: "ABT224-1996"
+stationName: "ABT224"
 },
 MTTFLithoprobeABT22519931996: {
 center: {lat: 49.5742, lng: -109.0792},
 beta: 0.2833,
 betaNorm: -0.5477,
 betaFactorAverage: "NaN",
-stationName: "ABT225-1996"
+stationName: "ABT225"
 },
 MTTFLithoprobeABT22619931996: {
 center: {lat: 49.4600, lng: -108.8744},
 beta: 0.2534,
 betaNorm: -0.5961,
 betaFactorAverage: "NaN",
-stationName: "ABT226-1996"
+stationName: "ABT226"
 },
 MTTFLithoprobeABT22719931996: {
 center: {lat: 49.4106, lng: -108.6286},
 beta: 0.2680,
 betaNorm: -0.5719,
 betaFactorAverage: "NaN",
-stationName: "ABT227-1996"
+stationName: "ABT227"
 },
 MTTFLithoprobeABT22819931996: {
 center: {lat: 49.3792, lng: -108.3878},
 beta: 0.2903,
 betaNorm: -0.5372,
 betaFactorAverage: "NaN",
-stationName: "ABT228-1996"
+stationName: "ABT228"
 },
 MTTFLithoprobeABT22919931996: {
 center: {lat: 49.3356, lng: -108.2575},
 beta: 0.3180,
 betaNorm: -0.4976,
 betaFactorAverage: "NaN",
-stationName: "ABT229-1996"
+stationName: "ABT229"
 },
 MTTFLithoprobeABT23019931996: {
 center: {lat: 49.3167, lng: -108.0658},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT230-1996"
+stationName: "ABT230"
 },
 MTTFLithoprobeABT23119931996: {
 center: {lat: 49.1961, lng: -107.9136},
 beta: 0.4275,
 betaNorm: -0.3691,
 betaFactorAverage: "NaN",
-stationName: "ABT231-1996"
+stationName: "ABT231"
 },
 MTTFLithoprobeABT23219931996: {
 center: {lat: 49.1214, lng: -107.6542},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT232-1996"
+stationName: "ABT232"
 },
 MTTFLithoprobeABT23319931996: {
 center: {lat: 49.6167, lng: -119.4830},
 beta: 0.3549,
 betaNorm: -0.4499,
 betaFactorAverage: "0.3549",
-stationName: "ABT233-1996"
+stationName: "ABT233"
 },
 MTTFLithoprobeABT23419931996: {
 center: {lat: 49.7781, lng: -113.4486},
 beta: 0.3807,
 betaNorm: -0.4195,
 betaFactorAverage: "NaN",
-stationName: "ABT234-1996"
+stationName: "ABT234"
 },
 MTTFLithoprobeABT23519931996: {
 center: {lat: 49.8353, lng: -113.6730},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT235-1996"
+stationName: "ABT235"
 },
 MTTFLithoprobeABT23619931996: {
 center: {lat: 49.9486, lng: -113.7111},
 beta: 0.3377,
 betaNorm: -0.4714,
 betaFactorAverage: "NaN",
-stationName: "ABT236-1996"
+stationName: "ABT236"
 },
 MTTFLithoprobeABT23719931996: {
 center: {lat: 50.1131, lng: -113.6839},
 beta: 0.4491,
 betaNorm: -0.3477,
 betaFactorAverage: "NaN",
-stationName: "ABT237-1996"
+stationName: "ABT237"
 },
 MTTFLithoprobeABT23819931996: {
 center: {lat: 50.2467, lng: -113.8120},
 beta: 0.4947,
 betaNorm: -0.3057,
 betaFactorAverage: "NaN",
-stationName: "ABT238-1996"
+stationName: "ABT238"
 },
 MTTFLithoprobeABT23919931996: {
 center: {lat: 50.3783, lng: -113.8881},
 beta: 0.4432,
 betaNorm: -0.3534,
 betaFactorAverage: "NaN",
-stationName: "ABT239-1996"
+stationName: "ABT239"
 },
 MTTFLithoprobeABT24019931996: {
 center: {lat: 50.4619, lng: -114.0967},
 beta: 0.4160,
 betaNorm: -0.3809,
 betaFactorAverage: "NaN",
-stationName: "ABT240-1996"
+stationName: "ABT240"
 },
 MTTFLithoprobeABT24119931996: {
 center: {lat: 50.5803, lng: -114.1614},
 beta: 0.5114,
 betaNorm: -0.2912,
 betaFactorAverage: "NaN",
-stationName: "ABT241-1996"
+stationName: "ABT241"
 },
 MTTFLithoprobeABT24219931996: {
 center: {lat: 50.6806, lng: -114.4022},
 beta: 0.7185,
 betaNorm: -0.1436,
 betaFactorAverage: "NaN",
-stationName: "ABT242-1996"
+stationName: "ABT242"
 },
 MTTFLithoprobeABT24319931996: {
 center: {lat: 50.7667, lng: -114.3975},
 beta: 0.5988,
 betaNorm: -0.2227,
 betaFactorAverage: "NaN",
-stationName: "ABT243-1996"
+stationName: "ABT243"
 },
 MTTFLithoprobeABT24419931996: {
 center: {lat: 50.8372, lng: -114.5056},
 beta: 0.5368,
 betaNorm: -0.2702,
 betaFactorAverage: "NaN",
-stationName: "ABT244-1996"
+stationName: "ABT244"
 },
 MTTFLithoprobeABT24519931996: {
 center: {lat: 51.0767, lng: -114.5011},
 beta: 0.3794,
 betaNorm: -0.4209,
 betaFactorAverage: "NaN",
-stationName: "ABT245-1996"
+stationName: "ABT245"
 },
 MTTFLithoprobeABT24619931996: {
 center: {lat: 51.1419, lng: -114.6656},
 beta: 0.5906,
 betaNorm: -0.2287,
 betaFactorAverage: "NaN",
-stationName: "ABT246-1996"
+stationName: "ABT246"
 },
 MTTFLithoprobeABT24719931996: {
 center: {lat: 51.2589, lng: -114.4461},
 beta: 0.5503,
 betaNorm: -0.2594,
 betaFactorAverage: "NaN",
-stationName: "ABT247-1996"
+stationName: "ABT247"
 },
 MTTFLithoprobeABT24819931996: {
 center: {lat: 51.3658, lng: -114.6006},
 beta: 0.5091,
 betaNorm: -0.2932,
 betaFactorAverage: "NaN",
-stationName: "ABT248-1996"
+stationName: "ABT248"
 },
 MTTFLithoprobeABT24919931996: {
 center: {lat: 50.9678, lng: -114.6108},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT249-1996"
+stationName: "ABT249"
 },
 MTTFLithoprobeABT25019931996: {
 center: {lat: 51.5700, lng: -114.4553},
 beta: 0.5491,
 betaNorm: -0.2604,
 betaFactorAverage: "NaN",
-stationName: "ABT250-1996"
+stationName: "ABT250"
 },
 MTTFLithoprobeABT25119931996: {
 center: {lat: 50.5497, lng: -113.0378},
 beta: 0.4027,
 betaNorm: -0.3950,
 betaFactorAverage: "NaN",
-stationName: "ABT251-1996"
+stationName: "ABT251"
 },
 MTTFLithoprobeABT25219931996: {
 center: {lat: 50.7944, lng: -113.3625},
 beta: 0.4897,
 betaNorm: -0.3101,
 betaFactorAverage: "NaN",
-stationName: "ABT252-1996"
+stationName: "ABT252"
 },
 MTTFLithoprobeABT25319931996: {
 center: {lat: 50.2456, lng: -112.8781},
 beta: 0.4880,
 betaNorm: -0.3115,
 betaFactorAverage: "NaN",
-stationName: "ABT253-1996"
+stationName: "ABT253"
 },
 MTTFLithoprobeABT25419931996: {
 center: {lat: 51.2008, lng: -113.3908},
 beta: 0.4069,
 betaNorm: -0.3905,
 betaFactorAverage: "NaN",
-stationName: "ABT254-1996"
+stationName: "ABT254"
 },
 MTTFLithoprobeABT25519931996: {
 center: {lat: 50.6522, lng: -113.2450},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT255-1996"
+stationName: "ABT255"
 },
 MTTFLithoprobeABT25619931996: {
 center: {lat: 50.9628, lng: -113.3886},
 beta: 0.4139,
 betaNorm: -0.3831,
 betaFactorAverage: "NaN",
-stationName: "ABT256-1996"
+stationName: "ABT256"
 },
 MTTFLithoprobeABT25719931996: {
 center: {lat: 54.9028, lng: -113.1964},
 beta: 0.6836,
 betaNorm: -0.1652,
 betaFactorAverage: "NaN",
-stationName: "ABT257-1996"
+stationName: "ABT257"
 },
 MTTFLithoprobeABT25819931996: {
 center: {lat: 54.8561, lng: -113.5964},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT258-1996"
+stationName: "ABT258"
 },
 MTTFLithoprobeABT25919931996: {
 center: {lat: 54.9956, lng: -113.8950},
 beta: 0.4951,
 betaNorm: -0.3053,
 betaFactorAverage: "NaN",
-stationName: "ABT259-1996"
+stationName: "ABT259"
 },
 MTTFLithoprobeABT26019931996: {
 center: {lat: 55.2844, lng: -114.6783},
 beta: 0.5250,
 betaNorm: -0.2798,
 betaFactorAverage: "NaN",
-stationName: "ABT260-1996"
+stationName: "ABT260"
 },
 MTTFLithoprobeABT26119931996: {
 center: {lat: 55.3847, lng: -115.1289},
 beta: 0.4502,
 betaNorm: -0.3466,
 betaFactorAverage: "0.4479",
-stationName: "ABT261-1996"
+stationName: "ABT261"
 },
 MTTFLithoprobeABT26219931996: {
 center: {lat: 55.3053, lng: -115.2981},
 beta: 0.4305,
 betaNorm: -0.3660,
 betaFactorAverage: "0.4479",
-stationName: "ABT262-1996"
+stationName: "ABT262"
 },
 MTTFLithoprobeABT26319931996: {
 center: {lat: 55.3378, lng: -115.5406},
 beta: 0.4039,
 betaNorm: -0.3938,
 betaFactorAverage: "0.4067",
-stationName: "ABT263-1996"
+stationName: "ABT263"
 },
 MTTFLithoprobeABT26419931996: {
 center: {lat: 55.0094, lng: -112.4911},
 beta: 0.8934,
 betaNorm: -0.0489,
 betaFactorAverage: "NaN",
-stationName: "ABT264-1996"
+stationName: "ABT264"
 },
 MTTFLithoprobeABT26519931996: {
 center: {lat: 55.1575, lng: -112.5761},
 beta: 0.9056,
 betaNorm: -0.0431,
 betaFactorAverage: "NaN",
-stationName: "ABT265-1996"
+stationName: "ABT265"
 },
 MTTFLithoprobeABT26619931996: {
 center: {lat: 55.3972, lng: -112.4936},
 beta: 0.9888,
 betaNorm: -0.0049,
 betaFactorAverage: "NaN",
-stationName: "ABT266-1996"
+stationName: "ABT266"
 },
 MTTFLithoprobeABT26719931996: {
 center: {lat: 55.5556, lng: -112.3914},
 beta: 0.7555,
 betaNorm: -0.1217,
 betaFactorAverage: "NaN",
-stationName: "ABT267-1996"
+stationName: "ABT267"
 },
 MTTFLithoprobeABT26819931996: {
 center: {lat: 55.7144, lng: -112.1878},
 beta: 0.9528,
 betaNorm: -0.0210,
 betaFactorAverage: "0.9321",
-stationName: "ABT268-1996"
+stationName: "ABT268"
 },
 MTTFLithoprobeABT26919931996: {
 center: {lat: 56.1181, lng: -111.7758},
 beta: 0.9521,
 betaNorm: -0.0213,
 betaFactorAverage: "0.9310",
-stationName: "ABT269-1996"
+stationName: "ABT269"
 },
 MTTFLithoprobeABT27019931996: {
 center: {lat: 55.9847, lng: -112.0014},
 beta: 0.9976,
 betaNorm: -0.0011,
 betaFactorAverage: "0.9279",
-stationName: "ABT270-1996"
+stationName: "ABT270"
 },
 MTTFLithoprobeABT27119931996: {
 center: {lat: 56.4025, lng: -111.2928},
 beta: 1.0108,
 betaNorm: 0.0047,
 betaFactorAverage: "0.9546",
-stationName: "ABT271-1996"
+stationName: "ABT271"
 },
 MTTFLithoprobeABT27219931996: {
 center: {lat: 56.7844, lng: -111.7403},
 beta: 0.8598,
 betaNorm: -0.0656,
 betaFactorAverage: "0.9551",
-stationName: "ABT272-1996"
+stationName: "ABT272"
 },
 MTTFLithoprobeABT27319931996: {
 center: {lat: 55.2175, lng: -113.9206},
 beta: 0.5429,
 betaNorm: -0.2653,
 betaFactorAverage: "NaN",
-stationName: "ABT273-1996"
+stationName: "ABT273"
 },
 MTTFLithoprobeABT27419931996: {
 center: {lat: 55.2103, lng: -114.4058},
 beta: 0.5956,
 betaNorm: -0.2250,
 betaFactorAverage: "NaN",
-stationName: "ABT274-1996"
+stationName: "ABT274"
 },
 MTTFLithoprobeABT27519931996: {
 center: {lat: 55.1086, lng: -115.2414},
 beta: 0.3588,
 betaNorm: -0.4452,
 betaFactorAverage: "0.4515",
-stationName: "ABT275-1996"
+stationName: "ABT275"
 },
 MTTFLithoprobeABT27619931996: {
 center: {lat: 56.4736, lng: -116.2419},
 beta: 0.5643,
 betaNorm: -0.2485,
 betaFactorAverage: "0.5013",
-stationName: "ABT276-1996"
+stationName: "ABT276"
 },
 MTTFLithoprobeABT27719931996: {
 center: {lat: 56.4842, lng: -116.6975},
 beta: 0.5197,
 betaNorm: -0.2843,
 betaFactorAverage: "0.4668",
-stationName: "ABT277-1996"
+stationName: "ABT277"
 },
 MTTFLithoprobeABT27819931996: {
 center: {lat: 56.4006, lng: -117.3981},
 beta: 0.4761,
 betaNorm: -0.3223,
 betaFactorAverage: "NaN",
-stationName: "ABT278-1996"
+stationName: "ABT278"
 },
 MTTFLithoprobeABT27919931996: {
 center: {lat: 56.5428, lng: -117.9522},
 beta: 0.4231,
 betaNorm: -0.3736,
 betaFactorAverage: "0.4390",
-stationName: "ABT279-1996"
+stationName: "ABT279"
 },
 MTTFLithoprobeABT28019931996: {
 center: {lat: 56.3281, lng: -118.2439},
 beta: 0.3423,
 betaNorm: -0.4656,
 betaFactorAverage: "NaN",
-stationName: "ABT280-1996"
+stationName: "ABT280"
 },
 MTTFLithoprobeABT28119931996: {
 center: {lat: 56.4919, lng: -118.6533},
 beta: 0.3216,
 betaNorm: -0.4927,
 betaFactorAverage: "0.4196",
-stationName: "ABT281-1996"
+stationName: "ABT281"
 },
 MTTFLithoprobeABT28219931996: {
 center: {lat: 56.4978, lng: -118.9672},
 beta: 0.3520,
 betaNorm: -0.4535,
 betaFactorAverage: "0.4215",
-stationName: "ABT282-1996"
+stationName: "ABT282"
 },
 MTTFLithoprobeABT28319931996: {
 center: {lat: 56.4578, lng: -119.3225},
 beta: 0.3904,
 betaNorm: -0.4085,
 betaFactorAverage: "0.4289",
-stationName: "ABT283-1996"
+stationName: "ABT283"
 },
 MTTFLithoprobeABT28419931996: {
 center: {lat: 56.3672, lng: -119.7244},
 beta: 0.4241,
 betaNorm: -0.3725,
 betaFactorAverage: "0.4345",
-stationName: "ABT284-1996"
+stationName: "ABT284"
 },
 MTTFLithoprobeABT28519931996: {
 center: {lat: 56.4589, lng: -120.1289},
 beta: 0.5121,
 betaNorm: -0.2906,
 betaFactorAverage: "0.4382",
-stationName: "ABT285-1996"
+stationName: "ABT285"
 },
 MTTFLithoprobeABT28619931996: {
 center: {lat: 56.4181, lng: -120.4997},
 beta: 0.5702,
 betaNorm: -0.2440,
 betaFactorAverage: "NaN",
-stationName: "ABT286-1996"
+stationName: "ABT286"
 },
 MTTFLithoprobeABT28719931996: {
 center: {lat: 56.4986, lng: -120.8333},
 beta: 0.4946,
 betaNorm: -0.3057,
 betaFactorAverage: "NaN",
-stationName: "ABT287-1996"
+stationName: "ABT287"
 },
 MTTFLithoprobeABT28819931996: {
 center: {lat: 56.6164, lng: -120.9275},
 beta: 0.4953,
 betaNorm: -0.3051,
 betaFactorAverage: "0.4438",
-stationName: "ABT288-1996"
+stationName: "ABT288"
 },
 MTTFLithoprobeABT28919931996: {
 center: {lat: 56.7903, lng: -121.1758},
 beta: 0.4369,
 betaNorm: -0.3597,
 betaFactorAverage: "0.4514",
-stationName: "ABT289-1996"
+stationName: "ABT289"
 },
 MTTFLithoprobeABT29019931996: {
 center: {lat: 56.7197, lng: -121.7189},
 beta: 0.3314,
 betaNorm: -0.4796,
 betaFactorAverage: "0.4413",
-stationName: "ABT290-1996"
+stationName: "ABT290"
 },
 MTTFLithoprobeABT29119931996: {
 center: {lat: 56.9933, lng: -121.8767},
 beta: 0.3193,
 betaNorm: -0.4959,
 betaFactorAverage: "0.4155",
-stationName: "ABT291-1996"
+stationName: "ABT291"
 },
 MTTFLithoprobeABT29219931996: {
 center: {lat: 56.8086, lng: -117.5219},
 beta: 0.4250,
 betaNorm: -0.3716,
 betaFactorAverage: "0.4816",
-stationName: "ABT292-1996"
+stationName: "ABT292"
 },
 MTTFLithoprobeABT29319931996: {
 center: {lat: 57.0567, lng: -117.3636},
 beta: 0.5368,
 betaNorm: -0.2702,
 betaFactorAverage: "0.5274",
-stationName: "ABT293-1996"
+stationName: "ABT293"
 },
 MTTFLithoprobeABT29419931996: {
 center: {lat: 57.2506, lng: -117.3208},
 beta: 0.5351,
 betaNorm: -0.2716,
 betaFactorAverage: "NaN",
-stationName: "ABT294-1996"
+stationName: "ABT294"
 },
 MTTFLithoprobeABT29519931996: {
 center: {lat: 55.6508, lng: -117.3628},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT295-1996"
+stationName: "ABT295"
 },
 MTTFLithoprobeABT29619931996: {
 center: {lat: 55.5050, lng: -117.5439},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT296-1996"
+stationName: "ABT296"
 },
 MTTFLithoprobeABT29719931996: {
 center: {lat: 55.3203, lng: -118.3894},
 beta: 0.4410,
 betaNorm: -0.3556,
 betaFactorAverage: "NaN",
-stationName: "ABT297-1996"
+stationName: "ABT297"
 },
 MTTFLithoprobeABT29819931996: {
 center: {lat: 55.2508, lng: -118.9011},
 beta: 0.5028,
 betaNorm: -0.2986,
 betaFactorAverage: "NaN",
-stationName: "ABT298-1996"
+stationName: "ABT298"
 },
 MTTFLithoprobeABT29919931996: {
 center: {lat: 55.1969, lng: -119.2972},
 beta: 0.5158,
 betaNorm: -0.2876,
 betaFactorAverage: "NaN",
-stationName: "ABT299-1996"
+stationName: "ABT299"
 },
 MTTFLithoprobeABT30019931996: {
 center: {lat: 55.0547, lng: -119.7678},
 beta: 0.6101,
 betaNorm: -0.2146,
 betaFactorAverage: "0.4601",
-stationName: "ABT300-1996"
+stationName: "ABT300"
 },
 MTTFLithoprobeABT30119931996: {
 center: {lat: 57.7675, lng: -117.0233},
 beta: 0.6849,
 betaNorm: -0.1644,
 betaFactorAverage: "NaN",
-stationName: "ABT301-1996"
+stationName: "ABT301"
 },
 MTTFLithoprobeABT30219931996: {
 center: {lat: 58.0369, lng: -116.8614},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT302-1996"
+stationName: "ABT302"
 },
 MTTFLithoprobeABT30319931996: {
 center: {lat: 54.7064, lng: -117.0831},
 beta: 0.3850,
 betaNorm: -0.4145,
 betaFactorAverage: "NaN",
-stationName: "ABT303-1996"
+stationName: "ABT303"
 },
 MTTFLithoprobeABT30419931996: {
 center: {lat: 54.4456, lng: -116.9064},
 beta: 0.3913,
 betaNorm: -0.4075,
 betaFactorAverage: "0.4052",
-stationName: "ABT304-1996"
+stationName: "ABT304"
 },
 MTTFLithoprobeABT30519931996: {
 center: {lat: 54.2142, lng: -116.5714},
 beta: 0.4479,
 betaNorm: -0.3488,
 betaFactorAverage: "NaN",
-stationName: "ABT305-1996"
+stationName: "ABT305"
 },
 MTTFLithoprobeABT30619931996: {
 center: {lat: 54.3206, lng: -116.1625},
 beta: 0.4628,
 betaNorm: -0.3346,
 betaFactorAverage: "NaN",
-stationName: "ABT306-1996"
+stationName: "ABT306"
 },
 MTTFLithoprobeABT30719931996: {
 center: {lat: 54.0950, lng: -115.7203},
 beta: 0.5741,
 betaNorm: -0.2410,
 betaFactorAverage: "NaN",
-stationName: "ABT307-1996"
+stationName: "ABT307"
 },
 MTTFLithoprobeABT30819931996: {
 center: {lat: 53.4706, lng: -117.6367},
 beta: 0.2990,
 betaNorm: -0.5243,
 betaFactorAverage: "NaN",
-stationName: "ABT308-1996"
+stationName: "ABT308"
 },
 MTTFLithoprobeABT30919931996: {
 center: {lat: 53.5689, lng: -117.1933},
 beta: 0.3761,
 betaNorm: -0.4247,
 betaFactorAverage: "NaN",
-stationName: "ABT309-1996"
+stationName: "ABT309"
 },
 MTTFLithoprobeABT31019931996: {
 center: {lat: 53.5781, lng: -116.7017},
 beta: 0.4535,
 betaNorm: -0.3435,
 betaFactorAverage: "NaN",
-stationName: "ABT310-1996"
+stationName: "ABT310"
 },
 MTTFLithoprobeABT31119931996: {
 center: {lat: 53.7142, lng: -116.2556},
 beta: 0.5100,
 betaNorm: -0.2924,
 betaFactorAverage: "NaN",
-stationName: "ABT311-1996"
+stationName: "ABT311"
 },
 MTTFLithoprobeABT31219931996: {
 center: {lat: 53.5886, lng: -115.7064},
 beta: 0.5590,
 betaNorm: -0.2526,
 betaFactorAverage: "NaN",
-stationName: "ABT312-1996"
+stationName: "ABT312"
 },
 MTTFLithoprobeABT31319931996: {
 center: {lat: 53.7350, lng: -115.3506},
 beta: 0.5444,
 betaNorm: -0.2641,
 betaFactorAverage: "NaN",
-stationName: "ABT313-1996"
+stationName: "ABT313"
 },
 MTTFLithoprobeABT31419931996: {
 center: {lat: 53.9872, lng: -115.0292},
 beta: 0.6299,
 betaNorm: -0.2007,
 betaFactorAverage: "NaN",
-stationName: "ABT314-1996"
+stationName: "ABT314"
 },
 MTTFLithoprobeABT31519931996: {
 center: {lat: 54.1022, lng: -114.7856},
 beta: 0.6211,
 betaNorm: -0.2068,
 betaFactorAverage: "NaN",
-stationName: "ABT315-1996"
+stationName: "ABT315"
 },
 MTTFLithoprobeABT31619931996: {
 center: {lat: 54.2014, lng: -114.4322},
 beta: 0.4896,
 betaNorm: -0.3102,
 betaFactorAverage: "NaN",
-stationName: "ABT316-1996"
+stationName: "ABT316"
 },
 MTTFLithoprobeABT31719931996: {
 center: {lat: 54.2758, lng: -114.1444},
 beta: 0.5063,
 betaNorm: -0.2956,
 betaFactorAverage: "NaN",
-stationName: "ABT317-1996"
+stationName: "ABT317"
 },
 MTTFLithoprobeABT31819931996: {
 center: {lat: 54.6078, lng: -113.3531},
 beta: 0.5600,
 betaNorm: -0.2518,
 betaFactorAverage: "NaN",
-stationName: "ABT318-1996"
+stationName: "ABT318"
 },
 MTTFLithoprobeABT31919931996: {
 center: {lat: 55.1422, lng: -117.1447},
 beta: 0.2727,
 betaNorm: -0.5643,
 betaFactorAverage: "NaN",
-stationName: "ABT319-1996"
+stationName: "ABT319"
 },
 MTTFLithoprobeABT32019931996: {
 center: {lat: 55.3372, lng: -116.6750},
 beta: 0.3625,
 betaNorm: -0.4407,
 betaFactorAverage: "NaN",
-stationName: "ABT320-1996"
+stationName: "ABT320"
 },
 MTTFLithoprobeABT32119931996: {
 center: {lat: 54.4025, lng: -115.5608},
 beta: 0.4823,
 betaNorm: -0.3167,
 betaFactorAverage: "NaN",
-stationName: "ABT321-1996"
+stationName: "ABT321"
 },
 MTTFLithoprobeABT32219931996: {
 center: {lat: 54.7958, lng: -115.2586},
 beta: 0.3789,
 betaNorm: -0.4215,
 betaFactorAverage: "NaN",
-stationName: "ABT322-1996"
+stationName: "ABT322"
 },
 MTTFLithoprobeABT32319931996: {
 center: {lat: 53.2619, lng: -116.9858},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ABT323-1996"
+stationName: "ABT323"
 },
 MTTFSAGECSDMT012015: {
 center: {lat: 35.5447, lng: -106.3902},
@@ -2878,4179 +2871,4179 @@ center: {lat: 35.5614, lng: -106.2885},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1050"
+stationName: "MT_TF_SAGE.MT_1050.2005"
 },
 MTTFSAGEMT11502005: {
 center: {lat: 35.5616, lng: -106.2895},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1150"
+stationName: "MT_TF_SAGE.MT_1150.2005"
 },
 MTTFSAGEMT12502005: {
 center: {lat: 35.5619, lng: -106.2906},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1250"
+stationName: "MT_TF_SAGE.MT_1250.2005"
 },
 MTTFSAGEMT13502005: {
 center: {lat: 35.5621, lng: -106.2917},
 beta: 0.0072,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1350"
+stationName: "MT_TF_SAGE.MT_1350.2005"
 },
 MTTFSAGEMT14502005: {
 center: {lat: 35.5624, lng: -106.2928},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1450"
+stationName: "MT_TF_SAGE.MT_1450.2005"
 },
 MTTFSAGEMT1502005: {
 center: {lat: 35.5587, lng: -106.2791},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_150"
+stationName: "MT_TF_SAGE.MT_150.2005"
 },
 MTTFSAGEMT15502005: {
 center: {lat: 35.5626, lng: -106.2938},
 beta: 0.0065,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1550"
+stationName: "MT_TF_SAGE.MT_1550.2005"
 },
 MTTFSAGEMT16502005: {
 center: {lat: 35.5628, lng: -106.2949},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1650"
+stationName: "MT_TF_SAGE.MT_1650.2005"
 },
 MTTFSAGEMT17502005: {
 center: {lat: 35.5631, lng: -106.2960},
 beta: 0.0063,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1750"
+stationName: "MT_TF_SAGE.MT_1750.2005"
 },
 MTTFSAGEMT19502005: {
 center: {lat: 35.5636, lng: -106.2981},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_1950"
+stationName: "MT_TF_SAGE.MT_1950.2005"
 },
 MTTFSAGEMT20502005: {
 center: {lat: 35.5639, lng: -106.2992},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_2050"
+stationName: "MT_TF_SAGE.MT_2050.2005"
 },
 MTTFSAGEMT21502005: {
 center: {lat: 35.5641, lng: -106.3002},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_2150"
+stationName: "MT_TF_SAGE.MT_2150.2005"
 },
 MTTFSAGEMT22502005: {
 center: {lat: 35.5644, lng: -106.3013},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_2250"
+stationName: "MT_TF_SAGE.MT_2250.2005"
 },
 MTTFSAGEMT23502005: {
 center: {lat: 35.5646, lng: -106.3023},
 beta: 0.0058,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_2350"
+stationName: "MT_TF_SAGE.MT_2350.2005"
 },
 MTTFSAGEMT2502005: {
 center: {lat: 35.5590, lng: -106.2801},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_250"
+stationName: "MT_TF_SAGE.MT_250.2005"
 },
 MTTFSAGEMT3502005: {
 center: {lat: 35.5593, lng: -106.2812},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_350"
+stationName: "MT_TF_SAGE.MT_350.2005"
 },
 MTTFSAGEMT4502005: {
 center: {lat: 35.5596, lng: -106.2822},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_450"
+stationName: "MT_TF_SAGE.MT_450.2005"
 },
 MTTFSAGEMT502005: {
 center: {lat: 35.5584, lng: -106.2780},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_50"
+stationName: "MT_TF_SAGE.MT_50.2005"
 },
 MTTFSAGEMT5502005: {
 center: {lat: 35.5600, lng: -106.2832},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_550"
+stationName: "MT_TF_SAGE.MT_550.2005"
 },
 MTTFSAGEMT6502005: {
 center: {lat: 35.5603, lng: -106.2843},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_650"
+stationName: "MT_TF_SAGE.MT_650.2005"
 },
 MTTFSAGEMT7502005: {
 center: {lat: 35.5606, lng: -106.2853},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_750"
+stationName: "MT_TF_SAGE.MT_750.2005"
 },
 MTTFSAGEMT8502005: {
 center: {lat: 35.5609, lng: -106.2863},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_850"
+stationName: "MT_TF_SAGE.MT_850.2005"
 },
 MTTFSAGEMT9502005: {
 center: {lat: 35.5611, lng: -106.2874},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "MT_950"
+stationName: "MT_TF_SAGE.MT_950.2005"
 },
 MTTFSAGESFRMT012005: {
 center: {lat: 35.5938, lng: -106.3225},
 beta: 0.0718,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "SFR-MT01"
+stationName: "MT_TF_SAGE.SFR-MT01.2005"
 },
 MTTFSAGESFRMT022005: {
 center: {lat: 35.5925, lng: -106.3164},
 beta: 0.1006,
 betaNorm: -0.9975,
 betaFactorAverage: "0.1124",
-stationName: "SFR-MT02"
+stationName: "MT_TF_SAGE.SFR-MT02.2005"
 },
 MTTFSAGESFRMT032005: {
 center: {lat: 35.5889, lng: -106.3099},
 beta: 0.0961,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "SFR-MT03"
+stationName: "MT_TF_SAGE.SFR-MT03.2005"
 },
 MTTFSAGEcdr00120112013: {
 center: {lat: 35.7589, lng: -106.1500},
 beta: 0.1449,
 betaNorm: -0.8388,
 betaFactorAverage: "0.1124",
-stationName: "cdr001-2013"
+stationName: "MT_TF_SAGE.cdr001.2011-2013"
 },
 MTTFSAGEcdr00220112013: {
 center: {lat: 35.7600, lng: -106.1165},
 beta: 0.0975,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "cdr002-2013"
+stationName: "MT_TF_SAGE.cdr002.2011-2013"
 },
 MTTFSAGEcdr00320112013: {
 center: {lat: 35.7591, lng: -106.0782},
 beta: 0.2925,
 betaNorm: -0.5338,
 betaFactorAverage: "0.1124",
-stationName: "cdr003-2013"
+stationName: "MT_TF_SAGE.cdr003.2011-2013"
 },
 MTTFSAGEcdr00420112013: {
 center: {lat: 35.7573, lng: -106.0659},
 beta: 0.3679,
 betaNorm: -0.4343,
 betaFactorAverage: "0.1124",
-stationName: "cdr004-2013"
+stationName: "MT_TF_SAGE.cdr004.2011-2013"
 },
 MTTFSAGEcdr00520112013: {
 center: {lat: 35.7561, lng: -106.0542},
 beta: 0.0813,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "cdr005-2013"
+stationName: "MT_TF_SAGE.cdr005.2011-2013"
 },
 MTTFSAGEcdr00620112013: {
 center: {lat: 35.8320, lng: -106.1446},
 beta: 0.2020,
 betaNorm: -0.6947,
 betaFactorAverage: "0.1124",
-stationName: "cdr006-2013"
+stationName: "MT_TF_SAGE.cdr006.2011-2013"
 },
 MTTFSAGEcdr00720112013: {
 center: {lat: 35.8332, lng: -106.1552},
 beta: 0.0757,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "cdr007-2013"
+stationName: "MT_TF_SAGE.cdr007.2011-2013"
 },
 MTTFSAGEcdr00920112013: {
 center: {lat: 35.7521, lng: -106.0398},
 beta: 0.1647,
 betaNorm: -0.7833,
 betaFactorAverage: "0.1124",
-stationName: "cdr009-2013"
+stationName: "MT_TF_SAGE.cdr009.2011-2013"
 },
 MTTFSAGEsag00120112013: {
 center: {lat: 35.7230, lng: -106.2305},
 beta: 0.1706,
 betaNorm: -0.7679,
 betaFactorAverage: "0.1124",
-stationName: "sag001-2013"
+stationName: "MT_TF_SAGE.sag001.2011-2013"
 },
 MTTFSAGEsag00220112013: {
 center: {lat: 35.7302, lng: -106.1988},
 beta: 0.1401,
 betaNorm: -0.8535,
 betaFactorAverage: "0.1124",
-stationName: "sag002-2013"
+stationName: "MT_TF_SAGE.sag002.2011-2013"
 },
 MTTFSAGEsag00320112013: {
 center: {lat: 35.7376, lng: -106.1548},
 beta: 0.0990,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "sag003-2013"
+stationName: "MT_TF_SAGE.sag003.2011-2013"
 },
 MTTFSAGEsag00420112013: {
 center: {lat: 35.7574, lng: -106.1366},
 beta: 0.0614,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1124",
-stationName: "sag004-2013"
+stationName: "MT_TF_SAGE.sag004.2011-2013"
 },
 MTTFSAGEsdp01L12010: {
 center: {lat: 35.5290, lng: -106.2616},
 beta: 0.2042,
 betaNorm: -0.6900,
 betaFactorAverage: "0.1124",
-stationName: "sdp01_L1"
+stationName: "MT_TF_SAGE.sdp01_L1.2010"
 },
 MTTFSAGEsdp01L22010: {
 center: {lat: 35.5290, lng: -106.2616},
 beta: 0.2041,
 betaNorm: -0.6901,
 betaFactorAverage: "0.1124",
-stationName: "sdp01_L2"
+stationName: "MT_TF_SAGE.sdp01_L2.2010"
 },
 MTTFSAGEsdp01fullL2010: {
 center: {lat: 35.5290, lng: -106.2616},
 beta: 0.2014,
 betaNorm: -0.6959,
 betaFactorAverage: "0.1124",
-stationName: "sdp01_full_L"
+stationName: "MT_TF_SAGE.sdp01_full_L.2010"
 },
 MTTFSAGEsdp02L12010: {
 center: {lat: 35.5217, lng: -106.2847},
 beta: 0.2339,
 betaNorm: -0.6309,
 betaFactorAverage: "0.1124",
-stationName: "sdp02_L1"
+stationName: "MT_TF_SAGE.sdp02_L1.2010"
 },
 MTTFSAGEsdp02L22010: {
 center: {lat: 35.5217, lng: -106.2847},
 beta: 0.1221,
 betaNorm: -0.9134,
 betaFactorAverage: "0.1124",
-stationName: "sdp02_L2"
+stationName: "MT_TF_SAGE.sdp02_L2.2010"
 },
 MTTFSAGEsdp02SS2010: {
 center: {lat: 35.5290, lng: -106.2616},
 beta: 0.1912,
 betaNorm: -0.7184,
 betaFactorAverage: "0.1124",
-stationName: "sdp02_SS"
+stationName: "MT_TF_SAGE.sdp02_SS.2010"
 },
 MTTFSAGEsdp02fullL2010: {
 center: {lat: 35.5217, lng: -106.2847},
 beta: 0.1238,
 betaNorm: -0.9073,
 betaFactorAverage: "0.1124",
-stationName: "sdp02_full_L"
+stationName: "MT_TF_SAGE.sdp02_full_L.2010"
 },
 MTTFSAGEsdp201412014: {
 center: {lat: 35.5100, lng: -106.4074},
 beta: 0.8523,
 betaNorm: -0.0694,
 betaFactorAverage: "0.1124",
-stationName: "sdp_2014_1"
+stationName: "MT_TF_SAGE.sdp_2014_1.2014"
 },
 MTTFSAGEsdp201422014: {
 center: {lat: 35.5179, lng: -106.4203},
 beta: 0.2469,
 betaNorm: -0.6074,
 betaFactorAverage: "0.1124",
-stationName: "sdp_2014_2"
+stationName: "MT_TF_SAGE.sdp_2014_2.2014"
 },
 MTTFSAGEsdp201432014: {
 center: {lat: 35.5362, lng: -106.4390},
 beta: 0.3064,
 betaNorm: -0.5138,
 betaFactorAverage: "0.1124",
-stationName: "sdp_2014_3"
+stationName: "MT_TF_SAGE.sdp_2014_3.2014"
 },
 MTTFSAGEsdp201442014: {
 center: {lat: 35.5446, lng: -106.4640},
 beta: 0.2160,
 betaNorm: -0.6656,
 betaFactorAverage: "0.1124",
-stationName: "sdp_2014_4"
+stationName: "MT_TF_SAGE.sdp_2014_4.2014"
 },
 MTTFSAGEsdp201452014: {
 center: {lat: 35.5581, lng: -106.4978},
 beta: 0.1779,
 betaNorm: -0.7499,
 betaFactorAverage: "0.1124",
-stationName: "sdp_2014_5"
+stationName: "MT_TF_SAGE.sdp_2014_5.2014"
 },
 MTTFSAMTEXELG001A2008: {
 center: {lat: -20.2582, lng: 16.3374},
 beta: 0.0446,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG001A"
+stationName: "MT_TF_SAMTEX.ELG001A.2008"
 },
 MTTFSAMTEXELG002A2008: {
 center: {lat: -20.3884, lng: 16.4875},
 beta: 0.0056,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG002A"
+stationName: "MT_TF_SAMTEX.ELG002A.2008"
 },
 MTTFSAMTEXELG003A2008: {
 center: {lat: -20.1012, lng: 16.2209},
 beta: 0.0750,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG003A"
+stationName: "MT_TF_SAMTEX.ELG003A.2008"
 },
 MTTFSAMTEXELG004B2008: {
 center: {lat: -20.4931, lng: 16.5846},
 beta: 0.0104,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG004B"
+stationName: "MT_TF_SAMTEX.ELG004B.2008"
 },
 MTTFSAMTEXELG005A2008: {
 center: {lat: -20.5772, lng: 16.5980},
 beta: 0.0838,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG005A"
+stationName: "MT_TF_SAMTEX.ELG005A.2008"
 },
 MTTFSAMTEXELG007A2008: {
 center: {lat: -20.6992, lng: 16.6078},
 beta: 0.0730,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG007A"
+stationName: "MT_TF_SAMTEX.ELG007A.2008"
 },
 MTTFSAMTEXELG008A2008: {
 center: {lat: -20.1422, lng: 16.4566},
 beta: 0.0467,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG008A"
+stationName: "MT_TF_SAMTEX.ELG008A.2008"
 },
 MTTFSAMTEXELG009A2008: {
 center: {lat: -20.3018, lng: 16.2648},
 beta: 0.0806,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG009A"
+stationName: "MT_TF_SAMTEX.ELG009A.2008"
 },
 MTTFSAMTEXELG010A2008: {
 center: {lat: -20.2266, lng: 16.5258},
 beta: 5.5560,
 betaNorm: 0.7448,
 betaFactorAverage: "NaN",
-stationName: "ELG010A"
+stationName: "MT_TF_SAMTEX.ELG010A.2008"
 },
 MTTFSAMTEXELG011A2008: {
 center: {lat: -20.2798, lng: 16.6320},
 beta: 0.0452,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG011A"
+stationName: "MT_TF_SAMTEX.ELG011A.2008"
 },
 MTTFSAMTEXELG012B2008: {
 center: {lat: -20.3934, lng: 16.3549},
 beta: 0.0283,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG012B"
+stationName: "MT_TF_SAMTEX.ELG012B.2008"
 },
 MTTFSAMTEXELG013A2008: {
 center: {lat: -20.5243, lng: 16.1549},
 beta: 0.2734,
 betaNorm: -0.5632,
 betaFactorAverage: "NaN",
-stationName: "ELG013A"
+stationName: "MT_TF_SAMTEX.ELG013A.2008"
 },
 MTTFSAMTEXELG014A2008: {
 center: {lat: -20.0862, lng: 16.7184},
 beta: 3.6088,
 betaNorm: 0.5574,
 betaFactorAverage: "NaN",
-stationName: "ELG014A"
+stationName: "MT_TF_SAMTEX.ELG014A.2008"
 },
 MTTFSAMTEXELG091A2008: {
 center: {lat: -20.2581, lng: 16.3374},
 beta: 0.3534,
 betaNorm: -0.4518,
 betaFactorAverage: "NaN",
-stationName: "ELG091A"
+stationName: "MT_TF_SAMTEX.ELG091A.2008"
 },
 MTTFSAMTEXELG092A2008: {
 center: {lat: -20.3884, lng: 16.4875},
 beta: 0.1191,
 betaNorm: -0.9241,
 betaFactorAverage: "NaN",
-stationName: "ELG092A"
+stationName: "MT_TF_SAMTEX.ELG092A.2008"
 },
 MTTFSAMTEXELG093A2008: {
 center: {lat: -20.1012, lng: 16.2209},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "ELG093A"
+stationName: "MT_TF_SAMTEX.ELG093A.2008"
 },
 MTTFSAMTEXELG097A2008: {
 center: {lat: -20.6992, lng: 16.6078},
 beta: 4.9982,
 betaNorm: 0.6988,
 betaFactorAverage: "NaN",
-stationName: "ELG097A"
+stationName: "MT_TF_SAMTEX.ELG097A.2008"
 },
 MTTFSAMTEXELG913A2008: {
 center: {lat: -20.5243, lng: 16.1549},
 beta: 2.8881,
 betaNorm: 0.4606,
 betaFactorAverage: "NaN",
-stationName: "ELG913A"
+stationName: "MT_TF_SAMTEX.ELG913A.2008"
 },
 MTTFSAMTEXELG914B2008: {
 center: {lat: -20.0862, lng: 16.7184},
 beta: 0.0763,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "ELG914B"
+stationName: "MT_TF_SAMTEX.ELG914B.2008"
 },
 MTTFSAMTEXELZ001A2008: {
 center: {lat: -17.5523, lng: 24.1460},
 beta: 5.1672,
 betaNorm: 0.7133,
 betaFactorAverage: "1.5527",
-stationName: "ELZ001A"
+stationName: "MT_TF_SAMTEX.ELZ001A.2008"
 },
 MTTFSAMTEXELZ002A2008: {
 center: {lat: -17.5994, lng: 24.2178},
 beta: 0.0415,
 betaNorm: -1.0000,
 betaFactorAverage: "1.5527",
-stationName: "ELZ002A"
+stationName: "MT_TF_SAMTEX.ELZ002A.2008"
 },
 MTTFSAMTEXELZ003A2008: {
 center: {lat: -17.5019, lng: 24.3227},
 beta: 0.0372,
 betaNorm: -1.0000,
 betaFactorAverage: "1.5527",
-stationName: "ELZ003A"
+stationName: "MT_TF_SAMTEX.ELZ003A.2008"
 },
 MTTFSAMTEXELZ101A2008: {
 center: {lat: -17.6676, lng: 24.1182},
 beta: 0.0259,
 betaNorm: -1.0000,
 betaFactorAverage: "1.5527",
-stationName: "ELZ101A"
+stationName: "MT_TF_SAMTEX.ELZ101A.2008"
 },
 MTTFSAMTEXELZ102B2008: {
 center: {lat: -17.6728, lng: 24.2932},
 beta: 0.0458,
 betaNorm: -1.0000,
 betaFactorAverage: "1.5527",
-stationName: "ELZ102B"
+stationName: "MT_TF_SAMTEX.ELZ102B.2008"
 },
 MTTFSAMTEXELZ103A2008: {
 center: {lat: -17.5563, lng: 24.4309},
 beta: 0.0446,
 betaNorm: -1.0000,
 betaFactorAverage: "1.5527",
-stationName: "ELZ103A"
+stationName: "MT_TF_SAMTEX.ELZ103A.2008"
 },
 MTTFSAMTEXELZ191A2008: {
 center: {lat: -17.6676, lng: 24.1182},
 beta: 14.2230,
 betaNorm: 1.1530,
 betaFactorAverage: "1.5527",
-stationName: "ELZ191A"
+stationName: "MT_TF_SAMTEX.ELZ191A.2008"
 },
 MTTFSAMTEXELZ192A2008: {
 center: {lat: -17.6727, lng: 24.2932},
 beta: 0.4327,
 betaNorm: -0.3639,
 betaFactorAverage: "1.5527",
-stationName: "ELZ192A"
+stationName: "MT_TF_SAMTEX.ELZ192A.2008"
 },
 MTTFSAMTEXELZ201A2008: {
 center: {lat: -17.7238, lng: 23.9301},
 beta: 0.0304,
 betaNorm: -1.0000,
 betaFactorAverage: "1.5527",
-stationName: "ELZ201A"
+stationName: "MT_TF_SAMTEX.ELZ201A.2008"
 },
 MTTFSAMTEXELZ291A2008: {
 center: {lat: -17.7238, lng: 23.9303},
 beta: 0.3930,
 betaNorm: -0.4056,
 betaFactorAverage: "1.5527",
-stationName: "ELZ291A"
+stationName: "MT_TF_SAMTEX.ELZ291A.2008"
 },
 MTTFSAMTEXELZ294A2008: {
 center: {lat: -17.7117, lng: 24.5119},
 beta: 0.4436,
 betaNorm: -0.3530,
 betaFactorAverage: "1.5527",
-stationName: "ELZ294A"
+stationName: "MT_TF_SAMTEX.ELZ294A.2008"
 },
 MTTFSAMTEXELZ555A2008: {
 center: {lat: -17.4980, lng: 24.2357},
 beta: 0.0628,
 betaNorm: -1.0000,
 betaFactorAverage: "1.5527",
-stationName: "ELZ555A"
+stationName: "MT_TF_SAMTEX.ELZ555A.2008"
 },
 MTTFSAMTEXETO001A2008: {
 center: {lat: -21.9050, lng: 16.2046},
 beta: 0.3491,
 betaNorm: -0.4570,
 betaFactorAverage: "0.3613",
-stationName: "ETO001A"
+stationName: "MT_TF_SAMTEX.ETO001A.2008"
 },
 MTTFSAMTEXETO002A2008: {
 center: {lat: -21.7902, lng: 16.0830},
 beta: 0.6341,
 betaNorm: -0.1978,
 betaFactorAverage: "0.3971",
-stationName: "ETO002A"
+stationName: "MT_TF_SAMTEX.ETO002A.2008"
 },
 MTTFSAMTEXETO003A2008: {
 center: {lat: -21.6057, lng: 15.9743},
 beta: 0.6969,
 betaNorm: -0.1568,
 betaFactorAverage: "0.4213",
-stationName: "ETO003A"
+stationName: "MT_TF_SAMTEX.ETO003A.2008"
 },
 MTTFSAMTEXETO004A2008: {
 center: {lat: -21.4468, lng: 15.8843},
 beta: 0.6699,
 betaNorm: -0.1740,
 betaFactorAverage: "0.4184",
-stationName: "ETO004A"
+stationName: "MT_TF_SAMTEX.ETO004A.2008"
 },
 MTTFSAMTEXETO005A2008: {
 center: {lat: -21.2240, lng: 15.7986},
 beta: 0.2699,
 betaNorm: -0.5687,
 betaFactorAverage: "0.6886",
-stationName: "ETO005A"
+stationName: "MT_TF_SAMTEX.ETO005A.2008"
 },
 MTTFSAMTEXETO006A2008: {
 center: {lat: -21.1269, lng: 15.6257},
 beta: 0.3235,
 betaNorm: -0.4901,
 betaFactorAverage: "0.7195",
-stationName: "ETO006A"
+stationName: "MT_TF_SAMTEX.ETO006A.2008"
 },
 MTTFSAMTEXETO007C2008: {
 center: {lat: -20.9544, lng: 15.5429},
 beta: 0.2852,
 betaNorm: -0.5449,
 betaFactorAverage: "0.7022",
-stationName: "ETO007C"
+stationName: "MT_TF_SAMTEX.ETO007C.2008"
 },
 MTTFSAMTEXETO008A2008: {
 center: {lat: -20.8103, lng: 15.4843},
 beta: 0.0985,
 betaNorm: -1.0000,
 betaFactorAverage: "0.7082",
-stationName: "ETO008A"
+stationName: "MT_TF_SAMTEX.ETO008A.2008"
 },
 MTTFSAMTEXETO009A2008: {
 center: {lat: -20.6734, lng: 15.3643},
 beta: 0.4350,
 betaNorm: -0.3616,
 betaFactorAverage: "1.0593",
-stationName: "ETO009A"
+stationName: "MT_TF_SAMTEX.ETO009A.2008"
 },
 MTTFSAMTEXETO010A2008: {
 center: {lat: -20.4847, lng: 15.3057},
 beta: 1.3398,
 betaNorm: 0.1271,
 betaFactorAverage: "1.2588",
-stationName: "ETO010A"
+stationName: "MT_TF_SAMTEX.ETO010A.2008"
 },
 MTTFSAMTEXETO011A2008: {
 center: {lat: -20.3212, lng: 15.1626},
 beta: 0.4440,
 betaNorm: -0.3527,
 betaFactorAverage: "1.7636",
-stationName: "ETO011A"
+stationName: "MT_TF_SAMTEX.ETO011A.2008"
 },
 MTTFSAMTEXETO012A2008: {
 center: {lat: -20.1548, lng: 15.0707},
 beta: 1.3910,
 betaNorm: 0.1433,
 betaFactorAverage: "2.6999",
-stationName: "ETO012A"
+stationName: "MT_TF_SAMTEX.ETO012A.2008"
 },
 MTTFSAMTEXETO013A2008: {
 center: {lat: -19.9806, lng: 14.9752},
 beta: 3.9039,
 betaNorm: 0.5915,
 betaFactorAverage: "2.9630",
-stationName: "ETO013A"
+stationName: "MT_TF_SAMTEX.ETO013A.2008"
 },
 MTTFSAMTEXETO014A2008: {
 center: {lat: -19.8121, lng: 14.8573},
 beta: 3.4534,
 betaNorm: 0.5382,
 betaFactorAverage: "3.4273",
-stationName: "ETO014A"
+stationName: "MT_TF_SAMTEX.ETO014A.2008"
 },
 MTTFSAMTEXETO015A2008: {
 center: {lat: -19.6345, lng: 14.7308},
 beta: 4.5214,
 betaNorm: 0.6553,
 betaFactorAverage: "3.5710",
-stationName: "ETO015A"
+stationName: "MT_TF_SAMTEX.ETO015A.2008"
 },
 MTTFSAMTEXETO016A2008: {
 center: {lat: -19.4411, lng: 14.5777},
 beta: 8.7120,
 betaNorm: 0.9401,
 betaFactorAverage: "3.5324",
-stationName: "ETO016A"
+stationName: "MT_TF_SAMTEX.ETO016A.2008"
 },
 MTTFSAMTEXETO017A2008: {
 center: {lat: -19.3011, lng: 14.4583},
 beta: 2.4669,
 betaNorm: 0.3922,
 betaFactorAverage: "3.5418",
-stationName: "ETO017A"
+stationName: "MT_TF_SAMTEX.ETO017A.2008"
 },
 MTTFSAMTEXETO018A2008: {
 center: {lat: -19.1706, lng: 14.3817},
 beta: 4.6137,
 betaNorm: 0.6640,
 betaFactorAverage: "3.1517",
-stationName: "ETO018A"
+stationName: "MT_TF_SAMTEX.ETO018A.2008"
 },
 MTTFSAMTEXETO019A2008: {
 center: {lat: -18.9672, lng: 14.3830},
 beta: 2.6326,
 betaNorm: 0.4204,
 betaFactorAverage: "2.8047",
-stationName: "ETO019A"
+stationName: "MT_TF_SAMTEX.ETO019A.2008"
 },
 MTTFSAMTEXETO020A2008: {
 center: {lat: -18.7683, lng: 14.3382},
 beta: 0.0969,
 betaNorm: -1.0000,
 betaFactorAverage: "2.3079",
-stationName: "ETO020A"
+stationName: "MT_TF_SAMTEX.ETO020A.2008"
 },
 MTTFSAMTEXETO021A2008: {
 center: {lat: -18.5639, lng: 14.3014},
 beta: 1.4752,
 betaNorm: 0.1689,
 betaFactorAverage: "1.4328",
-stationName: "ETO021A"
+stationName: "MT_TF_SAMTEX.ETO021A.2008"
 },
 MTTFSAMTEXETO022A2008: {
 center: {lat: -18.3688, lng: 14.3049},
 beta: 0.3927,
 betaNorm: -0.4059,
 betaFactorAverage: "1.1883",
-stationName: "ETO022A"
+stationName: "MT_TF_SAMTEX.ETO022A.2008"
 },
 MTTFSAMTEXETO023A2008: {
 center: {lat: -18.1611, lng: 14.2942},
 beta: 0.3312,
 betaNorm: -0.4800,
 betaFactorAverage: "0.7494",
-stationName: "ETO023A"
+stationName: "MT_TF_SAMTEX.ETO023A.2008"
 },
 MTTFSAMTEXETO024A2008: {
 center: {lat: -17.9753, lng: 14.2820},
 beta: 0.0496,
 betaNorm: -1.0000,
 betaFactorAverage: "0.5474",
-stationName: "ETO024A"
+stationName: "MT_TF_SAMTEX.ETO024A.2008"
 },
 MTTFSAMTEXETO025A2008: {
 center: {lat: -17.8041, lng: 14.2701},
 beta: 0.8364,
 betaNorm: -0.0776,
 betaFactorAverage: "0.5623",
-stationName: "ETO025A"
+stationName: "MT_TF_SAMTEX.ETO025A.2008"
 },
 MTTFSAMTEXETO026A2008: {
 center: {lat: -17.6060, lng: 14.3214},
 beta: 0.2663,
 betaNorm: -0.5746,
 betaFactorAverage: "0.4794",
-stationName: "ETO026A"
+stationName: "MT_TF_SAMTEX.ETO026A.2008"
 },
 MTTFSAMTEXLIM001A2008: {
 center: {lat: -23.1164, lng: 28.1082},
 beta: 0.3812,
 betaNorm: -0.4189,
 betaFactorAverage: "NaN",
-stationName: "LIM001A"
+stationName: "MT_TF_SAMTEX.LIM001A.2008"
 },
 MTTFSAMTEXLIM002A2008: {
 center: {lat: -23.1754, lng: 28.2725},
 beta: 3.7569,
 betaNorm: 0.5748,
 betaFactorAverage: "NaN",
-stationName: "LIM002A"
+stationName: "MT_TF_SAMTEX.LIM002A.2008"
 },
 MTTFSAMTEXLIM003A2008: {
 center: {lat: -23.2793, lng: 28.4445},
 beta: 8.5793,
 betaNorm: 0.9335,
 betaFactorAverage: "NaN",
-stationName: "LIM003A"
+stationName: "MT_TF_SAMTEX.LIM003A.2008"
 },
 MTTFSAMTEXLIM004A2008: {
 center: {lat: -23.4093, lng: 28.5752},
 beta: 0.7878,
 betaNorm: -0.1036,
 betaFactorAverage: "NaN",
-stationName: "LIM004A"
+stationName: "MT_TF_SAMTEX.LIM004A.2008"
 },
 MTTFSAMTEXLIM006A2008: {
 center: {lat: -23.6163, lng: 28.9111},
 beta: 3.4325,
 betaNorm: 0.5356,
 betaFactorAverage: "NaN",
-stationName: "LIM006A"
+stationName: "MT_TF_SAMTEX.LIM006A.2008"
 },
 MTTFSAMTEXLIM007A2008: {
 center: {lat: -23.7053, lng: 29.0423},
 beta: 2.1079,
 betaNorm: 0.3238,
 betaFactorAverage: "NaN",
-stationName: "LIM007A"
+stationName: "MT_TF_SAMTEX.LIM007A.2008"
 },
 MTTFSAMTEXLIM008A2008: {
 center: {lat: -23.8118, lng: 29.2099},
 beta: 1.4186,
 betaNorm: 0.1519,
 betaFactorAverage: "NaN",
-stationName: "LIM008A"
+stationName: "MT_TF_SAMTEX.LIM008A.2008"
 },
 MTTFSAMTEXRAK001A2008: {
 center: {lat: -17.4261, lng: 14.1713},
 beta: 0.4978,
 betaNorm: -0.3029,
 betaFactorAverage: "0.5116",
-stationName: "RAK001A"
+stationName: "MT_TF_SAMTEX.RAK001A.2008"
 },
 MTTFSAMTEXRAK002A2008: {
 center: {lat: -17.4276, lng: 14.3737},
 beta: 1.6440,
 betaNorm: 0.2159,
 betaFactorAverage: "0.4880",
-stationName: "RAK002A"
+stationName: "MT_TF_SAMTEX.RAK002A.2008"
 },
 MTTFSAMTEXRAK003A2008: {
 center: {lat: -17.4241, lng: 14.5846},
 beta: 0.6541,
 betaNorm: -0.1844,
 betaFactorAverage: "0.4795",
-stationName: "RAK003A"
+stationName: "MT_TF_SAMTEX.RAK003A.2008"
 },
 MTTFSAMTEXRAK004A2008: {
 center: {lat: -17.4588, lng: 14.7994},
 beta: 0.1153,
 betaNorm: -0.9381,
 betaFactorAverage: "0.4452",
-stationName: "RAK004A"
+stationName: "MT_TF_SAMTEX.RAK004A.2008"
 },
 MTTFSAMTEXRAK005A2008: {
 center: {lat: -17.4911, lng: 15.0009},
 beta: 0.2096,
 betaNorm: -0.6785,
 betaFactorAverage: "0.4203",
-stationName: "RAK005A"
+stationName: "MT_TF_SAMTEX.RAK005A.2008"
 },
 MTTFSAMTEXRAK006A2008: {
 center: {lat: -17.6179, lng: 15.1813},
 beta: 0.2757,
 betaNorm: -0.5595,
 betaFactorAverage: "0.4607",
-stationName: "RAK006A"
+stationName: "MT_TF_SAMTEX.RAK006A.2008"
 },
 MTTFSAMTEXRAK007A2008: {
 center: {lat: -17.6669, lng: 15.3293},
 beta: 0.3939,
 betaNorm: -0.4046,
 betaFactorAverage: "0.3038",
-stationName: "RAK007A"
+stationName: "MT_TF_SAMTEX.RAK007A.2008"
 },
 MTTFSAMTEXRAK008A2008: {
 center: {lat: -17.7104, lng: 15.5736},
 beta: 0.0682,
 betaNorm: -1.0000,
 betaFactorAverage: "0.2672",
-stationName: "RAK008A"
+stationName: "MT_TF_SAMTEX.RAK008A.2008"
 },
 MTTFSAMTEXRAK009A2008: {
 center: {lat: -17.7877, lng: 15.7537},
 beta: 0.3311,
 betaNorm: -0.4801,
 betaFactorAverage: "0.3018",
-stationName: "RAK009A"
+stationName: "MT_TF_SAMTEX.RAK009A.2008"
 },
 MTTFSAMTEXRAK010A2008: {
 center: {lat: -17.5202, lng: 15.9736},
 beta: 0.6117,
 betaNorm: -0.2135,
 betaFactorAverage: "0.3386",
-stationName: "RAK010A"
+stationName: "MT_TF_SAMTEX.RAK010A.2008"
 },
 MTTFSAMTEXRAK011A2008: {
 center: {lat: -17.5146, lng: 16.1656},
 beta: 0.2564,
 betaNorm: -0.5910,
 betaFactorAverage: "0.3721",
-stationName: "RAK011A"
+stationName: "MT_TF_SAMTEX.RAK011A.2008"
 },
 MTTFSAMTEXRAK012A2008: {
 center: {lat: -17.4721, lng: 16.3664},
 beta: 0.2880,
 betaNorm: -0.5406,
 betaFactorAverage: "0.3641",
-stationName: "RAK012A"
+stationName: "MT_TF_SAMTEX.RAK012A.2008"
 },
 MTTFSAMTEXRAK013A2008: {
 center: {lat: -17.5188, lng: 16.5832},
 beta: 0.4613,
 betaNorm: -0.3360,
 betaFactorAverage: "0.4568",
-stationName: "RAK013A"
+stationName: "MT_TF_SAMTEX.RAK013A.2008"
 },
 MTTFSAMTEXRAK014A2008: {
 center: {lat: -17.5763, lng: 16.7928},
 beta: 0.5774,
 betaNorm: -0.2385,
 betaFactorAverage: "0.4593",
-stationName: "RAK014A"
+stationName: "MT_TF_SAMTEX.RAK014A.2008"
 },
 MTTFSAMTEXRAK015A2008: {
 center: {lat: -17.6016, lng: 16.9941},
 beta: 0.6109,
 betaNorm: -0.2140,
 betaFactorAverage: "0.4700",
-stationName: "RAK015A"
+stationName: "MT_TF_SAMTEX.RAK015A.2008"
 },
 MTTFSAMTEXRAK016A2008: {
 center: {lat: -17.5825, lng: 17.1771},
 beta: 0.3137,
 betaNorm: -0.5034,
 betaFactorAverage: "0.4410",
-stationName: "RAK016A"
+stationName: "MT_TF_SAMTEX.RAK016A.2008"
 },
 MTTFSAMTEXRAK017A2008: {
 center: {lat: -17.6163, lng: 17.3903},
 beta: 0.9953,
 betaNorm: -0.0021,
 betaFactorAverage: "0.4520",
-stationName: "RAK017A"
+stationName: "MT_TF_SAMTEX.RAK017A.2008"
 },
 MTTFSAMTEXRAK018A2008: {
 center: {lat: -17.6183, lng: 17.5757},
 beta: 0.3555,
 betaNorm: -0.4491,
 betaFactorAverage: "0.4245",
-stationName: "RAK018A"
+stationName: "MT_TF_SAMTEX.RAK018A.2008"
 },
 MTTFSAMTEXRAK019A2008: {
 center: {lat: -17.6144, lng: 17.7895},
 beta: 0.3713,
 betaNorm: -0.4303,
 betaFactorAverage: "0.3953",
-stationName: "RAK019A"
+stationName: "MT_TF_SAMTEX.RAK019A.2008"
 },
 MTTFSAMTEXRAK020A2008: {
 center: {lat: -17.6208, lng: 18.0104},
 beta: 0.2802,
 betaNorm: -0.5526,
 betaFactorAverage: "0.3714",
-stationName: "RAK020A"
+stationName: "MT_TF_SAMTEX.RAK020A.2008"
 },
 MTTFSAMTEXRAK021A2008: {
 center: {lat: -17.6533, lng: 18.2319},
 beta: 0.4083,
 betaNorm: -0.3890,
 betaFactorAverage: "0.3805",
-stationName: "RAK021A"
+stationName: "MT_TF_SAMTEX.RAK021A.2008"
 },
 MTTFSAMTEXRAK022A2008: {
 center: {lat: -17.7370, lng: 18.4065},
 beta: 0.3559,
 betaNorm: -0.4487,
 betaFactorAverage: "0.3292",
-stationName: "RAK022A"
+stationName: "MT_TF_SAMTEX.RAK022A.2008"
 },
 MTTFSAMTEXRAK023A2008: {
 center: {lat: -17.7997, lng: 18.5489},
 beta: 0.3804,
 betaNorm: -0.4198,
 betaFactorAverage: "0.3268",
-stationName: "RAK023A"
+stationName: "MT_TF_SAMTEX.RAK023A.2008"
 },
 MTTFSAMTEXRAK024A2008: {
 center: {lat: -17.8348, lng: 18.7617},
 beta: 0.2995,
 betaNorm: -0.5236,
 betaFactorAverage: "0.3313",
-stationName: "RAK024A"
+stationName: "MT_TF_SAMTEX.RAK024A.2008"
 },
 MTTFSAMTEXRAK025A2008: {
 center: {lat: -17.8333, lng: 18.9401},
 beta: 0.4316,
 betaNorm: -0.3649,
 betaFactorAverage: "0.3724",
-stationName: "RAK025A"
+stationName: "MT_TF_SAMTEX.RAK025A.2008"
 },
 MTTFSAMTEXRAK053A2008: {
 center: {lat: -17.6124, lng: 24.3965},
 beta: 0.3791,
 betaNorm: -0.4213,
 betaFactorAverage: "1.5527",
-stationName: "RAK053A"
+stationName: "MT_TF_SAMTEX.RAK053A.2008"
 },
 MTTFSAMTEXRAK054A2008: {
 center: {lat: -17.8013, lng: 24.6191},
 beta: 0.4107,
 betaNorm: -0.3865,
 betaFactorAverage: "1.5527",
-stationName: "RAK054A"
+stationName: "MT_TF_SAMTEX.RAK054A.2008"
 },
 MTTFSAMTEXRAK099A2008: {
 center: {lat: -17.6686, lng: 15.8664},
 beta: 0.1223,
 betaNorm: -0.9125,
 betaFactorAverage: "0.3269",
-stationName: "RAK099A"
+stationName: "MT_TF_SAMTEX.RAK099A.2008"
 },
 MTTFSAMTEXbot2012005: {
 center: {lat: -27.0388, lng: 27.4164},
 beta: 2.3227,
 betaNorm: 0.3660,
 betaFactorAverage: "NaN",
-stationName: "bot201"
+stationName: "MT_TF_SAMTEX.bot201.2005"
 },
 MTTFSAMTEXbot2022005: {
 center: {lat: -26.9410, lng: 27.2686},
 beta: 2.4209,
 betaNorm: 0.3840,
 betaFactorAverage: "NaN",
-stationName: "bot202"
+stationName: "MT_TF_SAMTEX.bot202.2005"
 },
 MTTFSAMTEXbot2032005: {
 center: {lat: -26.8093, lng: 27.1103},
 beta: 0.0254,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "bot203"
+stationName: "MT_TF_SAMTEX.bot203.2005"
 },
 MTTFSAMTEXbot2042005: {
 center: {lat: -26.6852, lng: 26.9519},
 beta: 29.0712,
 betaNorm: 1.4635,
 betaFactorAverage: "NaN",
-stationName: "bot204"
+stationName: "MT_TF_SAMTEX.bot204.2005"
 },
 MTTFSAMTEXbot2052005: {
 center: {lat: -26.5780, lng: 26.8186},
 beta: 26.3356,
 betaNorm: 1.4205,
 betaFactorAverage: "NaN",
-stationName: "bot205"
+stationName: "MT_TF_SAMTEX.bot205.2005"
 },
 MTTFSAMTEXbot2072005: {
 center: {lat: -26.3746, lng: 26.4914},
 beta: 8.6938,
 betaNorm: 0.9392,
 betaFactorAverage: "NaN",
-stationName: "bot207"
+stationName: "MT_TF_SAMTEX.bot207.2005"
 },
 MTTFSAMTEXbot2082005: {
 center: {lat: -26.2388, lng: 26.3436},
 beta: 5.5911,
 betaNorm: 0.7475,
 betaFactorAverage: "NaN",
-stationName: "bot208"
+stationName: "MT_TF_SAMTEX.bot208.2005"
 },
 MTTFSAMTEXbot2092005: {
 center: {lat: -26.0546, lng: 26.1794},
 beta: 0.3094,
 betaNorm: -0.5094,
 betaFactorAverage: "NaN",
-stationName: "bot209"
+stationName: "MT_TF_SAMTEX.bot209.2005"
 },
 MTTFSAMTEXbot2102005: {
 center: {lat: -26.0082, lng: 26.0389},
 beta: 0.2153,
 betaNorm: -0.6670,
 betaFactorAverage: "NaN",
-stationName: "bot210"
+stationName: "MT_TF_SAMTEX.bot210.2005"
 },
 MTTFSAMTEXbot2112005: {
 center: {lat: -25.8718, lng: 25.8878},
 beta: 2.1405,
 betaNorm: 0.3305,
 betaFactorAverage: "NaN",
-stationName: "bot211"
+stationName: "MT_TF_SAMTEX.bot211.2005"
 },
 MTTFSAMTEXbot2122005: {
 center: {lat: -25.7710, lng: 25.7469},
 beta: 4.5733,
 betaNorm: 0.6602,
 betaFactorAverage: "NaN",
-stationName: "bot212"
+stationName: "MT_TF_SAMTEX.bot212.2005"
 },
 MTTFSAMTEXbot2142005: {
 center: {lat: -25.2305, lng: 25.5862},
 beta: 3.6658,
 betaNorm: 0.5642,
 betaFactorAverage: "2.5066",
-stationName: "bot214"
+stationName: "MT_TF_SAMTEX.bot214.2005"
 },
 MTTFSAMTEXbot2152005: {
 center: {lat: -25.0649, lng: 25.4742},
 beta: 2.1593,
 betaNorm: 0.3343,
 betaFactorAverage: "2.8095",
-stationName: "bot215"
+stationName: "MT_TF_SAMTEX.bot215.2005"
 },
 MTTFSAMTEXbot2162005: {
 center: {lat: -24.9221, lng: 25.3795},
 beta: 3.2578,
 betaNorm: 0.5129,
 betaFactorAverage: "2.6595",
-stationName: "bot216"
+stationName: "MT_TF_SAMTEX.bot216.2005"
 },
 MTTFSAMTEXbot2172005: {
 center: {lat: -24.8830, lng: 25.1481},
 beta: 0.7323,
 betaNorm: -0.1353,
 betaFactorAverage: "NaN",
-stationName: "bot217"
+stationName: "MT_TF_SAMTEX.bot217.2005"
 },
 MTTFSAMTEXbot2182005: {
 center: {lat: -24.7932, lng: 24.9950},
 beta: 3.8562,
 betaNorm: 0.5862,
 betaFactorAverage: "NaN",
-stationName: "bot218"
+stationName: "MT_TF_SAMTEX.bot218.2005"
 },
 MTTFSAMTEXbot2192005: {
 center: {lat: -24.6469, lng: 24.8562},
 beta: 0.6703,
 betaNorm: -0.1737,
 betaFactorAverage: "NaN",
-stationName: "bot219"
+stationName: "MT_TF_SAMTEX.bot219.2005"
 },
 MTTFSAMTEXbot2202005: {
 center: {lat: -24.6158, lng: 24.6615},
 beta: 7.4848,
 betaNorm: 0.8742,
 betaFactorAverage: "NaN",
-stationName: "bot220"
+stationName: "MT_TF_SAMTEX.bot220.2005"
 },
 MTTFSAMTEXbot2212005: {
 center: {lat: -24.5746, lng: 24.4703},
 beta: 2.6001,
 betaNorm: 0.4150,
 betaFactorAverage: "NaN",
-stationName: "bot221"
+stationName: "MT_TF_SAMTEX.bot221.2005"
 },
 MTTFSAMTEXbot2222005: {
 center: {lat: -24.5694, lng: 24.2920},
 beta: 0.7666,
 betaNorm: -0.1154,
 betaFactorAverage: "NaN",
-stationName: "bot222"
+stationName: "MT_TF_SAMTEX.bot222.2005"
 },
 MTTFSAMTEXbot2232005: {
 center: {lat: -24.5455, lng: 24.0665},
 beta: 0.3887,
 betaNorm: -0.4104,
 betaFactorAverage: "NaN",
-stationName: "bot223"
+stationName: "MT_TF_SAMTEX.bot223.2005"
 },
 MTTFSAMTEXbot2242005: {
 center: {lat: -24.4846, lng: 23.8842},
 beta: 3.7730,
 betaNorm: 0.5767,
 betaFactorAverage: "2.1181",
-stationName: "bot224"
+stationName: "MT_TF_SAMTEX.bot224.2005"
 },
 MTTFSAMTEXbot2252005: {
 center: {lat: -24.4210, lng: 23.6904},
 beta: 0.6222,
 betaNorm: -0.2060,
 betaFactorAverage: "1.6837",
-stationName: "bot225"
+stationName: "MT_TF_SAMTEX.bot225.2005"
 },
 MTTFSAMTEXbot2262005: {
 center: {lat: -24.3274, lng: 23.4601},
 beta: 1.9794,
 betaNorm: 0.2965,
 betaFactorAverage: "1.6696",
-stationName: "bot226"
+stationName: "MT_TF_SAMTEX.bot226.2005"
 },
 MTTFSAMTEXbot2272005: {
 center: {lat: -24.2485, lng: 23.2942},
 beta: 2.4548,
 betaNorm: 0.3900,
 betaFactorAverage: "1.6502",
-stationName: "bot227"
+stationName: "MT_TF_SAMTEX.bot227.2005"
 },
 MTTFSAMTEXbot2282005: {
 center: {lat: -24.1399, lng: 23.1448},
 beta: 2.0767,
 betaNorm: 0.3174,
 betaFactorAverage: "1.8356",
-stationName: "bot228"
+stationName: "MT_TF_SAMTEX.bot228.2005"
 },
 MTTFSAMTEXbot2292005: {
 center: {lat: -23.9655, lng: 22.9984},
 beta: 2.3947,
 betaNorm: 0.3793,
 betaFactorAverage: "1.6792",
-stationName: "bot229"
+stationName: "MT_TF_SAMTEX.bot229.2005"
 },
 MTTFSAMTEXbot2302005: {
 center: {lat: -23.8107, lng: 22.9017},
 beta: 1.6265,
 betaNorm: 0.2112,
 betaFactorAverage: "1.7264",
-stationName: "bot230"
+stationName: "MT_TF_SAMTEX.bot230.2005"
 },
 MTTFSAMTEXbot2312005: {
 center: {lat: -23.6708, lng: 22.7412},
 beta: 1.2114,
 betaNorm: 0.0833,
 betaFactorAverage: "1.6571",
-stationName: "bot231"
+stationName: "MT_TF_SAMTEX.bot231.2005"
 },
 MTTFSAMTEXbot4012005: {
 center: {lat: -25.2868, lng: 25.0767},
 beta: 2.4446,
 betaNorm: 0.3882,
 betaFactorAverage: "NaN",
-stationName: "bot401"
+stationName: "MT_TF_SAMTEX.bot401.2005"
 },
 MTTFSAMTEXbot4022005: {
 center: {lat: -25.2224, lng: 25.2847},
 beta: 0.1928,
 betaNorm: -0.7150,
 betaFactorAverage: "NaN",
-stationName: "bot402"
+stationName: "MT_TF_SAMTEX.bot402.2005"
 },
 MTTFSAMTEXbot4032005: {
 center: {lat: -25.0345, lng: 25.3259},
 beta: 2.1832,
 betaNorm: 0.3391,
 betaFactorAverage: "NaN",
-stationName: "bot403"
+stationName: "MT_TF_SAMTEX.bot403.2005"
 },
 MTTFSAMTEXbot4042005: {
 center: {lat: -24.8652, lng: 25.3667},
 beta: 1.6946,
 betaNorm: 0.2291,
 betaFactorAverage: "2.5868",
-stationName: "bot404"
+stationName: "MT_TF_SAMTEX.bot404.2005"
 },
 MTTFSAMTEXbot4052005: {
 center: {lat: -24.7285, lng: 25.4990},
 beta: 1.9284,
 betaNorm: 0.2852,
 betaFactorAverage: "2.3155",
-stationName: "bot405"
+stationName: "MT_TF_SAMTEX.bot405.2005"
 },
 MTTFSAMTEXbot4062005: {
 center: {lat: -24.5235, lng: 25.5190},
 beta: 1.2470,
 betaNorm: 0.0959,
 betaFactorAverage: "2.0546",
-stationName: "bot406"
+stationName: "MT_TF_SAMTEX.bot406.2005"
 },
 MTTFSAMTEXbot4072005: {
 center: {lat: -24.3457, lng: 25.5258},
 beta: 1.2863,
 betaNorm: 0.1093,
 betaFactorAverage: "1.9404",
-stationName: "bot407"
+stationName: "MT_TF_SAMTEX.bot407.2005"
 },
 MTTFSAMTEXbot4082005: {
 center: {lat: -24.1705, lng: 25.6036},
 beta: 0.5152,
 betaNorm: -0.2880,
 betaFactorAverage: "1.2874",
-stationName: "bot408"
+stationName: "MT_TF_SAMTEX.bot408.2005"
 },
 MTTFSAMTEXbot4092005: {
 center: {lat: -24.0163, lng: 25.6336},
 beta: 0.8401,
 betaNorm: -0.0757,
 betaFactorAverage: "0.9026",
-stationName: "bot409"
+stationName: "MT_TF_SAMTEX.bot409.2005"
 },
 MTTFSAMTEXbot4102005: {
 center: {lat: -23.8535, lng: 25.6956},
 beta: 0.5370,
 betaNorm: -0.2700,
 betaFactorAverage: "0.8328",
-stationName: "bot410"
+stationName: "MT_TF_SAMTEX.bot410.2005"
 },
 MTTFSAMTEXbot4112005: {
 center: {lat: -23.6732, lng: 25.7617},
 beta: 0.5553,
 betaNorm: -0.2555,
 betaFactorAverage: "0.7232",
-stationName: "bot411"
+stationName: "MT_TF_SAMTEX.bot411.2005"
 },
 MTTFSAMTEXbot4122005: {
 center: {lat: -23.5096, lng: 25.7739},
 beta: 0.3726,
 betaNorm: -0.4287,
 betaFactorAverage: "0.7816",
-stationName: "bot412"
+stationName: "MT_TF_SAMTEX.bot412.2005"
 },
 MTTFSAMTEXbot4132005: {
 center: {lat: -23.3507, lng: 25.8631},
 beta: 0.5300,
 betaNorm: -0.2757,
 betaFactorAverage: "1.5794",
-stationName: "bot413"
+stationName: "MT_TF_SAMTEX.bot413.2005"
 },
 MTTFSAMTEXbot4142005: {
 center: {lat: -23.2143, lng: 26.0575},
 beta: 0.4220,
 betaNorm: -0.3746,
 betaFactorAverage: "1.6340",
-stationName: "bot414"
+stationName: "MT_TF_SAMTEX.bot414.2005"
 },
 MTTFSAMTEXbot4152005: {
 center: {lat: -23.1394, lng: 26.2443},
 beta: 0.9268,
 betaNorm: -0.0330,
 betaFactorAverage: "1.6190",
-stationName: "bot415"
+stationName: "MT_TF_SAMTEX.bot415.2005"
 },
 MTTFSAMTEXbot4162005: {
 center: {lat: -22.9660, lng: 26.3764},
 beta: 1.8311,
 betaNorm: 0.2627,
 betaFactorAverage: "1.7135",
-stationName: "bot416"
+stationName: "MT_TF_SAMTEX.bot416.2005"
 },
 MTTFSAMTEXbot4172005: {
 center: {lat: -22.7771, lng: 26.4019},
 beta: 9.2636,
 betaNorm: 0.9668,
 betaFactorAverage: "1.8811",
-stationName: "bot417"
+stationName: "MT_TF_SAMTEX.bot417.2005"
 },
 MTTFSAMTEXbot4182005: {
 center: {lat: -22.4935, lng: 26.4411},
 beta: 1.0614,
 betaNorm: 0.0259,
 betaFactorAverage: "1.9748",
-stationName: "bot418"
+stationName: "MT_TF_SAMTEX.bot418.2005"
 },
 MTTFSAMTEXbot4192005: {
 center: {lat: -22.3771, lng: 26.5903},
 beta: 0.6907,
 betaNorm: -0.1607,
 betaFactorAverage: "2.1967",
-stationName: "bot419"
+stationName: "MT_TF_SAMTEX.bot419.2005"
 },
 MTTFSAMTEXbot4202005: {
 center: {lat: -22.2935, lng: 26.7676},
 beta: 0.3233,
 betaNorm: -0.4904,
 betaFactorAverage: "2.6340",
-stationName: "bot420"
+stationName: "MT_TF_SAMTEX.bot420.2005"
 },
 MTTFSAMTEXbota132005: {
 center: {lat: -25.5938, lng: 25.5658},
 beta: 2.1135,
 betaNorm: 0.3250,
 betaFactorAverage: "NaN",
-stationName: "bota13"
+stationName: "MT_TF_SAMTEX.bota13.2005"
 },
 MTTFSAMTEXbotb132005: {
 center: {lat: -25.4193, lng: 25.6042},
 beta: 7.6313,
 betaNorm: 0.8826,
 betaFactorAverage: "2.6029",
-stationName: "botb13"
+stationName: "MT_TF_SAMTEX.botb13.2005"
 },
 MTTFSAMTEXdmb0012006: {
 center: {lat: -18.3121, lng: 17.9983},
 beta: 0.2283,
 betaNorm: -0.6415,
 betaFactorAverage: "0.3481",
-stationName: "dmb001"
+stationName: "MT_TF_SAMTEX.dmb001.2006"
 },
 MTTFSAMTEXdmb0022006: {
 center: {lat: -18.4876, lng: 17.9996},
 beta: 0.2421,
 betaNorm: -0.6160,
 betaFactorAverage: "0.3513",
-stationName: "dmb002"
+stationName: "MT_TF_SAMTEX.dmb002.2006"
 },
 MTTFSAMTEXdmb0032006: {
 center: {lat: -18.6668, lng: 17.9986},
 beta: 0.2204,
 betaNorm: -0.6568,
 betaFactorAverage: "0.4312",
-stationName: "dmb003"
+stationName: "MT_TF_SAMTEX.dmb003.2006"
 },
 MTTFSAMTEXdmb0042006: {
 center: {lat: -18.8321, lng: 18.0938},
 beta: 0.2314,
 betaNorm: -0.6357,
 betaFactorAverage: "0.4644",
-stationName: "dmb004"
+stationName: "MT_TF_SAMTEX.dmb004.2006"
 },
 MTTFSAMTEXdmb0052006: {
 center: {lat: -19.0141, lng: 18.0946},
 beta: 0.3359,
 betaNorm: -0.4738,
 betaFactorAverage: "0.6228",
-stationName: "dmb005"
+stationName: "MT_TF_SAMTEX.dmb005.2006"
 },
 MTTFSAMTEXdmb0062006: {
 center: {lat: -19.1954, lng: 18.1091},
 beta: 0.9150,
 betaNorm: -0.0386,
 betaFactorAverage: "0.5725",
-stationName: "dmb006"
+stationName: "MT_TF_SAMTEX.dmb006.2006"
 },
 MTTFSAMTEXdmb0072006: {
 center: {lat: -19.3969, lng: 18.1201},
 beta: 1.1099,
 betaNorm: 0.0453,
 betaFactorAverage: "0.5897",
-stationName: "dmb007"
+stationName: "MT_TF_SAMTEX.dmb007.2006"
 },
 MTTFSAMTEXdmb0082006: {
 center: {lat: -19.5696, lng: 18.1453},
 beta: 0.6578,
 betaNorm: -0.1819,
 betaFactorAverage: "0.5809",
-stationName: "dmb008"
+stationName: "MT_TF_SAMTEX.dmb008.2006"
 },
 MTTFSAMTEXdmb0092006: {
 center: {lat: -19.7295, lng: 18.2069},
 beta: 1.2710,
 betaNorm: 0.1042,
 betaFactorAverage: "0.5810",
-stationName: "dmb009"
+stationName: "MT_TF_SAMTEX.dmb009.2006"
 },
 MTTFSAMTEXdmb0102006: {
 center: {lat: -19.8805, lng: 18.3044},
 beta: 1.0164,
 betaNorm: 0.0071,
 betaFactorAverage: "0.5810",
-stationName: "dmb010"
+stationName: "MT_TF_SAMTEX.dmb010.2006"
 },
 MTTFSAMTEXdmb0112006: {
 center: {lat: -20.0682, lng: 18.2747},
 beta: 0.0694,
 betaNorm: -1.0000,
 betaFactorAverage: "0.5601",
-stationName: "dmb011"
+stationName: "MT_TF_SAMTEX.dmb011.2006"
 },
 MTTFSAMTEXdmb0122006: {
 center: {lat: -20.2175, lng: 18.3432},
 beta: 0.0704,
 betaNorm: -1.0000,
 betaFactorAverage: "0.5016",
-stationName: "dmb012"
+stationName: "MT_TF_SAMTEX.dmb012.2006"
 },
 MTTFSAMTEXdmb0132006: {
 center: {lat: -20.3546, lng: 18.3451},
 beta: 0.1320,
 betaNorm: -0.8796,
 betaFactorAverage: "0.4737",
-stationName: "dmb013"
+stationName: "MT_TF_SAMTEX.dmb013.2006"
 },
 MTTFSAMTEXdmb0142006: {
 center: {lat: -20.6011, lng: 18.3726},
 beta: 0.2324,
 betaNorm: -0.6338,
 betaFactorAverage: "0.5012",
-stationName: "dmb014"
+stationName: "MT_TF_SAMTEX.dmb014.2006"
 },
 MTTFSAMTEXdmb0152006: {
 center: {lat: -20.8341, lng: 18.1949},
 beta: 0.1273,
 betaNorm: -0.8950,
 betaFactorAverage: "0.3558",
-stationName: "dmb015"
+stationName: "MT_TF_SAMTEX.dmb015.2006"
 },
 MTTFSAMTEXdmb0162006: {
 center: {lat: -20.9888, lng: 18.4802},
 beta: 0.3294,
 betaNorm: -0.4823,
 betaFactorAverage: "0.3943",
-stationName: "dmb016"
+stationName: "MT_TF_SAMTEX.dmb016.2006"
 },
 MTTFSAMTEXdmb0172006: {
 center: {lat: -21.1918, lng: 18.5244},
 beta: 0.8308,
 betaNorm: -0.0805,
 betaFactorAverage: "0.6176",
-stationName: "dmb017"
+stationName: "MT_TF_SAMTEX.dmb017.2006"
 },
 MTTFSAMTEXdmb0182006: {
 center: {lat: -21.3531, lng: 18.5600},
 beta: 0.9329,
 betaNorm: -0.0302,
 betaFactorAverage: "0.7111",
-stationName: "dmb018"
+stationName: "MT_TF_SAMTEX.dmb018.2006"
 },
 MTTFSAMTEXdmb0192006: {
 center: {lat: -21.5418, lng: 18.6106},
 beta: 0.4775,
 betaNorm: -0.3211,
 betaFactorAverage: "0.6836",
-stationName: "dmb019"
+stationName: "MT_TF_SAMTEX.dmb019.2006"
 },
 MTTFSAMTEXdmb0202006: {
 center: {lat: -21.6478, lng: 18.7341},
 beta: 0.4160,
 betaNorm: -0.3809,
 betaFactorAverage: "0.6558",
-stationName: "dmb020"
+stationName: "MT_TF_SAMTEX.dmb020.2006"
 },
 MTTFSAMTEXdmb0212006: {
 center: {lat: -21.8249, lng: 18.8378},
 beta: 1.5949,
 betaNorm: 0.2027,
 betaFactorAverage: "0.6527",
-stationName: "dmb021"
+stationName: "MT_TF_SAMTEX.dmb021.2006"
 },
 MTTFSAMTEXdmb0222006: {
 center: {lat: -22.0205, lng: 18.8342},
 beta: 1.1033,
 betaNorm: 0.0427,
 betaFactorAverage: "0.6278",
-stationName: "dmb022"
+stationName: "MT_TF_SAMTEX.dmb022.2006"
 },
 MTTFSAMTEXdmb0232006: {
 center: {lat: -22.1971, lng: 18.8825},
 beta: 1.0666,
 betaNorm: 0.0280,
 betaFactorAverage: "0.6171",
-stationName: "dmb023"
+stationName: "MT_TF_SAMTEX.dmb023.2006"
 },
 MTTFSAMTEXdmb0242006: {
 center: {lat: -22.3686, lng: 18.9420},
 beta: 0.5219,
 betaNorm: -0.2824,
 betaFactorAverage: "0.5854",
-stationName: "dmb024"
+stationName: "MT_TF_SAMTEX.dmb024.2006"
 },
 MTTFSAMTEXdmb0252006: {
 center: {lat: -22.5630, lng: 18.9425},
 beta: 0.4485,
 betaNorm: -0.3482,
 betaFactorAverage: "0.5680",
-stationName: "dmb025"
+stationName: "MT_TF_SAMTEX.dmb025.2006"
 },
 MTTFSAMTEXdmb0262006: {
 center: {lat: -22.7379, lng: 18.9021},
 beta: 0.5317,
 betaNorm: -0.2743,
 betaFactorAverage: "0.4926",
-stationName: "dmb026"
+stationName: "MT_TF_SAMTEX.dmb026.2006"
 },
 MTTFSAMTEXdmb0272006: {
 center: {lat: -22.9080, lng: 18.9386},
 beta: 0.3291,
 betaNorm: -0.4827,
 betaFactorAverage: "0.4921",
-stationName: "dmb027"
+stationName: "MT_TF_SAMTEX.dmb027.2006"
 },
 MTTFSAMTEXdmb0282006: {
 center: {lat: -23.0991, lng: 18.9323},
 beta: 0.1868,
 betaNorm: -0.7285,
 betaFactorAverage: "0.5139",
-stationName: "dmb028"
+stationName: "MT_TF_SAMTEX.dmb028.2006"
 },
 MTTFSAMTEXdmb0292006: {
 center: {lat: -23.2833, lng: 19.0182},
 beta: 0.2590,
 betaNorm: -0.5867,
 betaFactorAverage: "0.4877",
-stationName: "dmb029"
+stationName: "MT_TF_SAMTEX.dmb029.2006"
 },
 MTTFSAMTEXdmb0302006: {
 center: {lat: -23.4535, lng: 19.1110},
 beta: 0.3133,
 betaNorm: -0.5040,
 betaFactorAverage: "0.4601",
-stationName: "dmb030"
+stationName: "MT_TF_SAMTEX.dmb030.2006"
 },
 MTTFSAMTEXdmb0312006: {
 center: {lat: -23.6350, lng: 19.1216},
 beta: 0.4029,
 betaNorm: -0.3948,
 betaFactorAverage: "0.4323",
-stationName: "dmb031"
+stationName: "MT_TF_SAMTEX.dmb031.2006"
 },
 MTTFSAMTEXdmb0322006: {
 center: {lat: -23.7885, lng: 19.2314},
 beta: 0.3994,
 betaNorm: -0.3986,
 betaFactorAverage: "0.4440",
-stationName: "dmb032"
+stationName: "MT_TF_SAMTEX.dmb032.2006"
 },
 MTTFSAMTEXdmb0332006: {
 center: {lat: -23.9785, lng: 19.2331},
 beta: 0.4712,
 betaNorm: -0.3267,
 betaFactorAverage: "0.4917",
-stationName: "dmb033"
+stationName: "MT_TF_SAMTEX.dmb033.2006"
 },
 MTTFSAMTEXdmb0342006: {
 center: {lat: -24.1207, lng: 19.2114},
 beta: 0.4354,
 betaNorm: -0.3611,
 betaFactorAverage: "0.4720",
-stationName: "dmb034"
+stationName: "MT_TF_SAMTEX.dmb034.2006"
 },
 MTTFSAMTEXdmb0352006: {
 center: {lat: -24.3016, lng: 19.2547},
 beta: 0.5140,
 betaNorm: -0.2890,
 betaFactorAverage: "0.3759",
-stationName: "dmb035"
+stationName: "MT_TF_SAMTEX.dmb035.2006"
 },
 MTTFSAMTEXdmb101A2006: {
 center: {lat: -17.8426, lng: 18.0009},
 beta: 0.3584,
 betaNorm: -0.4456,
 betaFactorAverage: "0.3653",
-stationName: "dmb101A"
+stationName: "MT_TF_SAMTEX.dmb101A.2006"
 },
 MTTFSAMTEXdmb102A2006: {
 center: {lat: -18.0129, lng: 18.0001},
 beta: 0.2392,
 betaNorm: -0.6213,
 betaFactorAverage: "0.3520",
-stationName: "dmb102A"
+stationName: "MT_TF_SAMTEX.dmb102A.2006"
 },
 MTTFSAMTEXk2g0022006: {
 center: {lat: -21.8567, lng: 21.6144},
 beta: 1.6184,
 betaNorm: 0.2091,
 betaFactorAverage: "1.4878",
-stationName: "k2g002"
+stationName: "MT_TF_SAMTEX.k2g002.2006"
 },
 MTTFSAMTEXk2g0032006: {
 center: {lat: -22.0261, lng: 21.5374},
 beta: 2.1978,
 betaNorm: 0.3420,
 betaFactorAverage: "1.5068",
-stationName: "k2g003"
+stationName: "MT_TF_SAMTEX.k2g003.2006"
 },
 MTTFSAMTEXk2g0042006: {
 center: {lat: -22.1851, lng: 21.5959},
 beta: 1.8662,
 betaNorm: 0.2710,
 betaFactorAverage: "1.4195",
-stationName: "k2g004"
+stationName: "MT_TF_SAMTEX.k2g004.2006"
 },
 MTTFSAMTEXk2g0052006: {
 center: {lat: -22.3881, lng: 21.7186},
 beta: 3.1216,
 betaNorm: 0.4944,
 betaFactorAverage: "1.4635",
-stationName: "k2g005"
+stationName: "MT_TF_SAMTEX.k2g005.2006"
 },
 MTTFSAMTEXk2g0062006: {
 center: {lat: -22.5302, lng: 21.8331},
 beta: 2.0221,
 betaNorm: 0.3058,
 betaFactorAverage: "1.4858",
-stationName: "k2g006"
+stationName: "MT_TF_SAMTEX.k2g006.2006"
 },
 MTTFSAMTEXk2g0072006: {
 center: {lat: -22.6349, lng: 21.9201},
 beta: 1.8690,
 betaNorm: 0.2716,
 betaFactorAverage: "1.4710",
-stationName: "k2g007"
+stationName: "MT_TF_SAMTEX.k2g007.2006"
 },
 MTTFSAMTEXk2g0082006: {
 center: {lat: -22.8316, lng: 22.0431},
 beta: 1.0186,
 betaNorm: 0.0080,
 betaFactorAverage: "1.4068",
-stationName: "k2g008"
+stationName: "MT_TF_SAMTEX.k2g008.2006"
 },
 MTTFSAMTEXk2g0092006: {
 center: {lat: -22.9332, lng: 22.1329},
 beta: 1.0224,
 betaNorm: 0.0096,
 betaFactorAverage: "1.4113",
-stationName: "k2g009"
+stationName: "MT_TF_SAMTEX.k2g009.2006"
 },
 MTTFSAMTEXk2g0102006: {
 center: {lat: -23.0877, lng: 22.2524},
 beta: 0.9403,
 betaNorm: -0.0267,
 betaFactorAverage: "1.5401",
-stationName: "k2g010"
+stationName: "MT_TF_SAMTEX.k2g010.2006"
 },
 MTTFSAMTEXk2g0112006: {
 center: {lat: -23.2174, lng: 22.3717},
 beta: 1.3298,
 betaNorm: 0.1238,
 betaFactorAverage: "1.4042",
-stationName: "k2g011"
+stationName: "MT_TF_SAMTEX.k2g011.2006"
 },
 MTTFSAMTEXk2g0122006: {
 center: {lat: -23.3601, lng: 22.4887},
 beta: 1.4264,
 betaNorm: 0.1542,
 betaFactorAverage: "1.4381",
-stationName: "k2g012"
+stationName: "MT_TF_SAMTEX.k2g012.2006"
 },
 MTTFSAMTEXk2g0132006: {
 center: {lat: -23.4995, lng: 22.6049},
 beta: 1.7652,
 betaNorm: 0.2468,
 betaFactorAverage: "1.3461",
-stationName: "k2g013"
+stationName: "MT_TF_SAMTEX.k2g013.2006"
 },
 MTTFSAMTEXk2g0142006: {
 center: {lat: -23.6491, lng: 22.7198},
 beta: 1.2144,
 betaNorm: 0.0844,
 betaFactorAverage: "1.6174",
-stationName: "k2g014"
+stationName: "MT_TF_SAMTEX.k2g014.2006"
 },
 MTTFSAMTEXkal0012008: {
 center: {lat: -21.9945, lng: 21.7517},
 beta: 1.4778,
 betaNorm: 0.1696,
 betaFactorAverage: "1.4453",
-stationName: "kal001"
+stationName: "MT_TF_SAMTEX.kal001.2008"
 },
 MTTFSAMTEXkal0022008: {
 center: {lat: -22.0055, lng: 21.9436},
 beta: 1.0764,
 betaNorm: 0.0320,
 betaFactorAverage: "1.4293",
-stationName: "kal002"
+stationName: "MT_TF_SAMTEX.kal002.2008"
 },
 MTTFSAMTEXkal0032008: {
 center: {lat: -22.0557, lng: 22.1299},
 beta: 1.1795,
 betaNorm: 0.0717,
 betaFactorAverage: "1.3800",
-stationName: "kal003"
+stationName: "MT_TF_SAMTEX.kal003.2008"
 },
 MTTFSAMTEXkal0042008: {
 center: {lat: -22.1098, lng: 22.3157},
 beta: 0.6557,
 betaNorm: -0.1833,
 betaFactorAverage: "1.3610",
-stationName: "kal004"
+stationName: "MT_TF_SAMTEX.kal004.2008"
 },
 MTTFSAMTEXkal0052008: {
 center: {lat: -22.1636, lng: 22.4995},
 beta: 0.7327,
 betaNorm: -0.1351,
 betaFactorAverage: "1.2721",
-stationName: "kal005"
+stationName: "MT_TF_SAMTEX.kal005.2008"
 },
 MTTFSAMTEXkal0062008: {
 center: {lat: -22.2065, lng: 22.6882},
 beta: 1.0051,
 betaNorm: 0.0022,
 betaFactorAverage: "1.1228",
-stationName: "kal006"
+stationName: "MT_TF_SAMTEX.kal006.2008"
 },
 MTTFSAMTEXkal0072008: {
 center: {lat: -22.2759, lng: 22.8697},
 beta: 0.7346,
 betaNorm: -0.1340,
 betaFactorAverage: "0.9284",
-stationName: "kal007"
+stationName: "MT_TF_SAMTEX.kal007.2008"
 },
 MTTFSAMTEXkal0082008: {
 center: {lat: -22.3433, lng: 23.0487},
 beta: 1.4383,
 betaNorm: 0.1579,
 betaFactorAverage: "0.8924",
-stationName: "kal008"
+stationName: "MT_TF_SAMTEX.kal008.2008"
 },
 MTTFSAMTEXkal0092008: {
 center: {lat: -22.3671, lng: 23.2385},
 beta: 0.9618,
 betaNorm: -0.0169,
 betaFactorAverage: "0.7222",
-stationName: "kal009"
+stationName: "MT_TF_SAMTEX.kal009.2008"
 },
 MTTFSAMTEXkal0102008: {
 center: {lat: -22.3701, lng: 23.4359},
 beta: 0.9880,
 betaNorm: -0.0052,
 betaFactorAverage: "0.6659",
-stationName: "kal010"
+stationName: "MT_TF_SAMTEX.kal010.2008"
 },
 MTTFSAMTEXkal0112008: {
 center: {lat: -22.3723, lng: 23.6399},
 beta: 0.6602,
 betaNorm: -0.1803,
 betaFactorAverage: "0.6443",
-stationName: "kal011"
+stationName: "MT_TF_SAMTEX.kal011.2008"
 },
 MTTFSAMTEXkal0122008: {
 center: {lat: -22.5105, lng: 23.8362},
 beta: 0.5682,
 betaNorm: -0.2455,
 betaFactorAverage: "0.6140",
-stationName: "kal012"
+stationName: "MT_TF_SAMTEX.kal012.2008"
 },
 MTTFSAMTEXkal0132008: {
 center: {lat: -22.6430, lng: 24.0034},
 beta: 0.6348,
 betaNorm: -0.1974,
 betaFactorAverage: "0.5823",
-stationName: "kal013"
+stationName: "MT_TF_SAMTEX.kal013.2008"
 },
 MTTFSAMTEXkal0142008: {
 center: {lat: -22.6409, lng: 24.1683},
 beta: 0.4942,
 betaNorm: -0.3061,
 betaFactorAverage: "0.5557",
-stationName: "kal014"
+stationName: "MT_TF_SAMTEX.kal014.2008"
 },
 MTTFSAMTEXkal0152008: {
 center: {lat: -22.6370, lng: 24.3618},
 beta: 0.3401,
 betaNorm: -0.4684,
 betaFactorAverage: "0.5460",
-stationName: "kal015"
+stationName: "MT_TF_SAMTEX.kal015.2008"
 },
 MTTFSAMTEXkal0162008: {
 center: {lat: -22.6404, lng: 24.5514},
 beta: 0.4037,
 betaNorm: -0.3939,
 betaFactorAverage: "0.5315",
-stationName: "kal016"
+stationName: "MT_TF_SAMTEX.kal016.2008"
 },
 MTTFSAMTEXkal0172008: {
 center: {lat: -22.6447, lng: 24.7564},
 beta: 0.5162,
 betaNorm: -0.2871,
 betaFactorAverage: "0.5280",
-stationName: "kal017"
+stationName: "MT_TF_SAMTEX.kal017.2008"
 },
 MTTFSAMTEXkal0182008: {
 center: {lat: -22.4721, lng: 24.8665},
 beta: 0.7542,
 betaNorm: -0.1225,
 betaFactorAverage: "0.5593",
-stationName: "kal018"
+stationName: "MT_TF_SAMTEX.kal018.2008"
 },
 MTTFSAMTEXkal0192008: {
 center: {lat: -22.3858, lng: 25.0470},
 beta: 0.4568,
 betaNorm: -0.3403,
 betaFactorAverage: "0.6053",
-stationName: "kal019"
+stationName: "MT_TF_SAMTEX.kal019.2008"
 },
 MTTFSAMTEXkal0202008: {
 center: {lat: -22.2767, lng: 25.2046},
 beta: 0.3617,
 betaNorm: -0.4417,
 betaFactorAverage: "0.7459",
-stationName: "kal020"
+stationName: "MT_TF_SAMTEX.kal020.2008"
 },
 MTTFSAMTEXkal0212008: {
 center: {lat: -22.1751, lng: 25.3452},
 beta: 0.7704,
 betaNorm: -0.1133,
 betaFactorAverage: "0.7910",
-stationName: "kal021"
+stationName: "MT_TF_SAMTEX.kal021.2008"
 },
 MTTFSAMTEXkal0222008: {
 center: {lat: -22.0558, lng: 25.5121},
 beta: 1.2741,
 betaNorm: 0.1052,
 betaFactorAverage: "0.8856",
-stationName: "kal022"
+stationName: "MT_TF_SAMTEX.kal022.2008"
 },
 MTTFSAMTEXkal0232008: {
 center: {lat: -21.9386, lng: 25.6730},
 beta: 1.3023,
 betaNorm: 0.1147,
 betaFactorAverage: "0.9075",
-stationName: "kal023"
+stationName: "MT_TF_SAMTEX.kal023.2008"
 },
 MTTFSAMTEXkal0242008: {
 center: {lat: -21.8299, lng: 25.8229},
 beta: 1.2798,
 betaNorm: 0.1072,
 betaFactorAverage: "0.9629",
-stationName: "kal024"
+stationName: "MT_TF_SAMTEX.kal024.2008"
 },
 MTTFSAMTEXkap0012003: {
 center: {lat: -32.3996, lng: 20.2089},
 beta: 0.0173,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kap001"
+stationName: "MT_TF_SAMTEX.kap001.2003"
 },
 MTTFSAMTEXkap0022003: {
 center: {lat: -32.2288, lng: 20.3561},
 beta: 0.0410,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kap002"
+stationName: "MT_TF_SAMTEX.kap002.2003"
 },
 MTTFSAMTEXkap0032003: {
 center: {lat: -32.1393, lng: 20.4675},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap003"
+stationName: "MT_TF_SAMTEX.kap003.2003"
 },
 MTTFSAMTEXkap0042003: {
 center: {lat: -31.9110, lng: 20.7014},
 beta: 0.1415,
 betaNorm: -0.8494,
 betaFactorAverage: "NaN",
-stationName: "kap004"
+stationName: "MT_TF_SAMTEX.kap004.2003"
 },
 MTTFSAMTEXkap0052003: {
 center: {lat: -31.8316, lng: 20.7775},
 beta: 0.1214,
 betaNorm: -0.9159,
 betaFactorAverage: "NaN",
-stationName: "kap005"
+stationName: "MT_TF_SAMTEX.kap005.2003"
 },
 MTTFSAMTEXkap0062003: {
 center: {lat: -31.6724, lng: 20.9211},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap006"
+stationName: "MT_TF_SAMTEX.kap006.2003"
 },
 MTTFSAMTEXkap0072003: {
 center: {lat: -31.5121, lng: 21.0586},
 beta: 0.0808,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kap007"
+stationName: "MT_TF_SAMTEX.kap007.2003"
 },
 MTTFSAMTEXkap0082003: {
 center: {lat: -31.4055, lng: 21.1894},
 beta: 0.5336,
 betaNorm: -0.2728,
 betaFactorAverage: "NaN",
-stationName: "kap008"
+stationName: "MT_TF_SAMTEX.kap008.2003"
 },
 MTTFSAMTEXkap0092003: {
 center: {lat: -31.2780, lng: 21.3008},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap009"
+stationName: "MT_TF_SAMTEX.kap009.2003"
 },
 MTTFSAMTEXkap0102003: {
 center: {lat: -31.1480, lng: 21.4669},
 beta: 0.1761,
 betaNorm: -0.7543,
 betaFactorAverage: "NaN",
-stationName: "kap010"
+stationName: "MT_TF_SAMTEX.kap010.2003"
 },
 MTTFSAMTEXkap0112003: {
 center: {lat: -31.0074, lng: 21.5772},
 beta: 0.5402,
 betaNorm: -0.2675,
 betaFactorAverage: "NaN",
-stationName: "kap011"
+stationName: "MT_TF_SAMTEX.kap011.2003"
 },
 MTTFSAMTEXkap0122003: {
 center: {lat: -30.8682, lng: 21.7431},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap012"
+stationName: "MT_TF_SAMTEX.kap012.2003"
 },
 MTTFSAMTEXkap0132003: {
 center: {lat: -30.7344, lng: 21.8911},
 beta: 0.2152,
 betaNorm: -0.6672,
 betaFactorAverage: "NaN",
-stationName: "kap013"
+stationName: "MT_TF_SAMTEX.kap013.2003"
 },
 MTTFSAMTEXkap0142003: {
 center: {lat: -30.6161, lng: 22.0058},
 beta: 0.1059,
 betaNorm: -0.9749,
 betaFactorAverage: "NaN",
-stationName: "kap014"
+stationName: "MT_TF_SAMTEX.kap014.2003"
 },
 MTTFSAMTEXkap0152003: {
 center: {lat: -30.4663, lng: 22.1769},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap015"
+stationName: "MT_TF_SAMTEX.kap015.2003"
 },
 MTTFSAMTEXkap0162003: {
 center: {lat: -30.3407, lng: 22.2969},
 beta: 0.3865,
 betaNorm: -0.4129,
 betaFactorAverage: "NaN",
-stationName: "kap016"
+stationName: "MT_TF_SAMTEX.kap016.2003"
 },
 MTTFSAMTEXkap0172003: {
 center: {lat: -30.2188, lng: 22.4139},
 beta: 2.4555,
 betaNorm: 0.3901,
 betaFactorAverage: "NaN",
-stationName: "kap017"
+stationName: "MT_TF_SAMTEX.kap017.2003"
 },
 MTTFSAMTEXkap0182003: {
 center: {lat: -30.0843, lng: 22.5714},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap018"
+stationName: "MT_TF_SAMTEX.kap018.2003"
 },
 MTTFSAMTEXkap0192003: {
 center: {lat: -29.9107, lng: 22.7011},
 beta: 0.6717,
 betaNorm: -0.1728,
 betaFactorAverage: "NaN",
-stationName: "kap019"
+stationName: "MT_TF_SAMTEX.kap019.2003"
 },
 MTTFSAMTEXkap0202003: {
 center: {lat: -29.8046, lng: 22.8550},
 beta: 0.2109,
 betaNorm: -0.6759,
 betaFactorAverage: "NaN",
-stationName: "kap020"
+stationName: "MT_TF_SAMTEX.kap020.2003"
 },
 MTTFSAMTEXkap0212003: {
 center: {lat: -29.6485, lng: 22.9972},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap021"
+stationName: "MT_TF_SAMTEX.kap021.2003"
 },
 MTTFSAMTEXkap0222003: {
 center: {lat: -29.4938, lng: 23.1125},
 beta: 0.4548,
 betaNorm: -0.3422,
 betaFactorAverage: "NaN",
-stationName: "kap022"
+stationName: "MT_TF_SAMTEX.kap022.2003"
 },
 MTTFSAMTEXkap0232003: {
 center: {lat: -29.3627, lng: 23.2353},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap023"
+stationName: "MT_TF_SAMTEX.kap023.2003"
 },
 MTTFSAMTEXkap0242003: {
 center: {lat: -29.2349, lng: 23.3700},
 beta: 0.4018,
 betaNorm: -0.3960,
 betaFactorAverage: "NaN",
-stationName: "kap024"
+stationName: "MT_TF_SAMTEX.kap024.2003"
 },
 MTTFSAMTEXkap0252003: {
 center: {lat: -29.1418, lng: 23.5506},
 beta: 0.8640,
 betaNorm: -0.0635,
 betaFactorAverage: "NaN",
-stationName: "kap025"
+stationName: "MT_TF_SAMTEX.kap025.2003"
 },
 MTTFSAMTEXkap0262003: {
 center: {lat: -28.9525, lng: 23.6153},
 beta: 0.3409,
 betaNorm: -0.4674,
 betaFactorAverage: "NaN",
-stationName: "kap026"
+stationName: "MT_TF_SAMTEX.kap026.2003"
 },
 MTTFSAMTEXkap0272003: {
 center: {lat: -28.8010, lng: 23.7869},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap027"
+stationName: "MT_TF_SAMTEX.kap027.2003"
 },
 MTTFSAMTEXkap0282003: {
 center: {lat: -28.6703, lng: 23.8844},
 beta: 0.6295,
 betaNorm: -0.2010,
 betaFactorAverage: "NaN",
-stationName: "kap028"
+stationName: "MT_TF_SAMTEX.kap028.2003"
 },
 MTTFSAMTEXkap0292003: {
 center: {lat: -28.5399, lng: 24.0044},
 beta: 1.3498,
 betaNorm: 0.1303,
 betaFactorAverage: "NaN",
-stationName: "kap029"
+stationName: "MT_TF_SAMTEX.kap029.2003"
 },
 MTTFSAMTEXkap0302003: {
 center: {lat: -28.0143, lng: 24.6208},
 beta: 0.5584,
 betaNorm: -0.2530,
 betaFactorAverage: "NaN",
-stationName: "kap030"
+stationName: "MT_TF_SAMTEX.kap030.2003"
 },
 MTTFSAMTEXkap0312003: {
 center: {lat: -28.2431, lng: 24.2594},
 beta: 0.4297,
 betaNorm: -0.3668,
 betaFactorAverage: "NaN",
-stationName: "kap031"
+stationName: "MT_TF_SAMTEX.kap031.2003"
 },
 MTTFSAMTEXkap0322003: {
 center: {lat: -28.1357, lng: 24.3700},
 beta: 4.2621,
 betaNorm: 0.6296,
 betaFactorAverage: "NaN",
-stationName: "kap032"
+stationName: "MT_TF_SAMTEX.kap032.2003"
 },
 MTTFSAMTEXkap0332003: {
 center: {lat: -28.0143, lng: 24.6211},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap033"
+stationName: "MT_TF_SAMTEX.kap033.2003"
 },
 MTTFSAMTEXkap0342003: {
 center: {lat: -27.8568, lng: 24.6842},
 beta: 1.5021,
 betaNorm: 0.1767,
 betaFactorAverage: "NaN",
-stationName: "kap034"
+stationName: "MT_TF_SAMTEX.kap034.2003"
 },
 MTTFSAMTEXkap0352003: {
 center: {lat: -27.7119, lng: 24.7992},
 beta: 4.6944,
 betaNorm: 0.6716,
 betaFactorAverage: "NaN",
-stationName: "kap035"
+stationName: "MT_TF_SAMTEX.kap035.2003"
 },
 MTTFSAMTEXkap0362003: {
 center: {lat: -27.5421, lng: 25.0319},
 beta: 8.9882,
 betaNorm: 0.9537,
 betaFactorAverage: "NaN",
-stationName: "kap036"
+stationName: "MT_TF_SAMTEX.kap036.2003"
 },
 MTTFSAMTEXkap0372003: {
 center: {lat: -27.4293, lng: 25.0694},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap037"
+stationName: "MT_TF_SAMTEX.kap037.2003"
 },
 MTTFSAMTEXkap0382003: {
 center: {lat: -27.3033, lng: 25.2094},
 beta: 2.0927,
 betaNorm: 0.3207,
 betaFactorAverage: "NaN",
-stationName: "kap038"
+stationName: "MT_TF_SAMTEX.kap038.2003"
 },
 MTTFSAMTEXkap0392003: {
 center: {lat: -27.1668, lng: 25.3344},
 beta: 3.7854,
 betaNorm: 0.5781,
 betaFactorAverage: "NaN",
-stationName: "kap039"
+stationName: "MT_TF_SAMTEX.kap039.2003"
 },
 MTTFSAMTEXkap0402003: {
 center: {lat: -27.0288, lng: 25.4775},
 beta: 4.4482,
 betaNorm: 0.6482,
 betaFactorAverage: "NaN",
-stationName: "kap040"
+stationName: "MT_TF_SAMTEX.kap040.2003"
 },
 MTTFSAMTEXkap0412003: {
 center: {lat: -26.9064, lng: 25.6111},
 beta: 16.4923,
 betaNorm: 1.2173,
 betaFactorAverage: "NaN",
-stationName: "kap041"
+stationName: "MT_TF_SAMTEX.kap041.2003"
 },
 MTTFSAMTEXkap0422003: {
 center: {lat: -26.7685, lng: 25.7200},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap042"
+stationName: "MT_TF_SAMTEX.kap042.2003"
 },
 MTTFSAMTEXkap0432003: {
 center: {lat: -26.5918, lng: 25.8378},
 beta: 2.9678,
 betaNorm: 0.4724,
 betaFactorAverage: "NaN",
-stationName: "kap043"
+stationName: "MT_TF_SAMTEX.kap043.2003"
 },
 MTTFSAMTEXkap0442003: {
 center: {lat: -26.4682, lng: 25.9811},
 beta: 1.9451,
 betaNorm: 0.2889,
 betaFactorAverage: "NaN",
-stationName: "kap044"
+stationName: "MT_TF_SAMTEX.kap044.2003"
 },
 MTTFSAMTEXkap0452003: {
 center: {lat: -26.3202, lng: 26.0864},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap045"
+stationName: "MT_TF_SAMTEX.kap045.2003"
 },
 MTTFSAMTEXkap0462003: {
 center: {lat: -26.2307, lng: 26.1406},
 beta: 4.0955,
 betaNorm: 0.6123,
 betaFactorAverage: "NaN",
-stationName: "kap046"
+stationName: "MT_TF_SAMTEX.kap046.2003"
 },
 MTTFSAMTEXkap0472003: {
 center: {lat: -26.0466, lng: 26.3481},
 beta: 1.3236,
 betaNorm: 0.1218,
 betaFactorAverage: "NaN",
-stationName: "kap047"
+stationName: "MT_TF_SAMTEX.kap047.2003"
 },
 MTTFSAMTEXkap0482003: {
 center: {lat: -25.9280, lng: 26.4508},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap048"
+stationName: "MT_TF_SAMTEX.kap048.2003"
 },
 MTTFSAMTEXkap0492003: {
 center: {lat: -25.7621, lng: 26.6083},
 beta: 0.0650,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kap049"
+stationName: "MT_TF_SAMTEX.kap049.2003"
 },
 MTTFSAMTEXkap0502003: {
 center: {lat: -25.6141, lng: 26.7389},
 beta: 0.2367,
 betaNorm: -0.6259,
 betaFactorAverage: "NaN",
-stationName: "kap050"
+stationName: "MT_TF_SAMTEX.kap050.2003"
 },
 MTTFSAMTEXkap0512003: {
 center: {lat: -25.4741, lng: 26.8400},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap051"
+stationName: "MT_TF_SAMTEX.kap051.2003"
 },
 MTTFSAMTEXkap0522003: {
 center: {lat: -25.3280, lng: 26.9283},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap052"
+stationName: "MT_TF_SAMTEX.kap052.2003"
 },
 MTTFSAMTEXkap0532003: {
 center: {lat: -25.2489, lng: 27.1019},
 beta: 0.6903,
 betaNorm: -0.1610,
 betaFactorAverage: "NaN",
-stationName: "kap053"
+stationName: "MT_TF_SAMTEX.kap053.2003"
 },
 MTTFSAMTEXkap0552003: {
 center: {lat: -24.9243, lng: 27.3511},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap055"
+stationName: "MT_TF_SAMTEX.kap055.2003"
 },
 MTTFSAMTEXkap0562003: {
 center: {lat: -24.7786, lng: 27.4756},
 beta: 0.0951,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kap056"
+stationName: "MT_TF_SAMTEX.kap056.2003"
 },
 MTTFSAMTEXkap0572003: {
 center: {lat: -24.6388, lng: 27.5967},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap057"
+stationName: "MT_TF_SAMTEX.kap057.2003"
 },
 MTTFSAMTEXkap0582003: {
 center: {lat: -24.5005, lng: 27.7572},
 beta: 0.5562,
 betaNorm: -0.2548,
 betaFactorAverage: "NaN",
-stationName: "kap058"
+stationName: "MT_TF_SAMTEX.kap058.2003"
 },
 MTTFSAMTEXkap0592003: {
 center: {lat: -24.3816, lng: 27.8589},
 beta: 0.8034,
 betaNorm: -0.0951,
 betaFactorAverage: "NaN",
-stationName: "kap059"
+stationName: "MT_TF_SAMTEX.kap059.2003"
 },
 MTTFSAMTEXkap0602003: {
 center: {lat: -24.2341, lng: 28.0061},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap060"
+stationName: "MT_TF_SAMTEX.kap060.2003"
 },
 MTTFSAMTEXkap0612003: {
 center: {lat: -24.1160, lng: 28.1233},
 beta: 0.1982,
 betaNorm: -0.7030,
 betaFactorAverage: "NaN",
-stationName: "kap061"
+stationName: "MT_TF_SAMTEX.kap061.2003"
 },
 MTTFSAMTEXkap0622003: {
 center: {lat: -23.8264, lng: 28.3575},
 beta: 0.6242,
 betaNorm: -0.2047,
 betaFactorAverage: "NaN",
-stationName: "kap062"
+stationName: "MT_TF_SAMTEX.kap062.2003"
 },
 MTTFSAMTEXkap0632003: {
 center: {lat: -23.8266, lng: 28.3575},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap063"
+stationName: "MT_TF_SAMTEX.kap063.2003"
 },
 MTTFSAMTEXkap0642003: {
 center: {lat: -23.6657, lng: 28.4158},
 beta: 0.3414,
 betaNorm: -0.4667,
 betaFactorAverage: "NaN",
-stationName: "kap064"
+stationName: "MT_TF_SAMTEX.kap064.2003"
 },
 MTTFSAMTEXkap0652003: {
 center: {lat: -23.5657, lng: 28.6044},
 beta: 0.5826,
 betaNorm: -0.2347,
 betaFactorAverage: "NaN",
-stationName: "kap065"
+stationName: "MT_TF_SAMTEX.kap065.2003"
 },
 MTTFSAMTEXkap0662003: {
 center: {lat: -23.4513, lng: 28.7153},
 beta: 0.3201,
 betaNorm: -0.4947,
 betaFactorAverage: "NaN",
-stationName: "kap066"
+stationName: "MT_TF_SAMTEX.kap066.2003"
 },
 MTTFSAMTEXkap0672003: {
 center: {lat: -23.1744, lng: 28.9481},
 beta: 1.2841,
 betaNorm: 0.1086,
 betaFactorAverage: "NaN",
-stationName: "kap067"
+stationName: "MT_TF_SAMTEX.kap067.2003"
 },
 MTTFSAMTEXkap0682003: {
 center: {lat: -23.1744, lng: 28.9481},
 beta: 1.2910,
 betaNorm: 0.1109,
 betaFactorAverage: "NaN",
-stationName: "kap068"
+stationName: "MT_TF_SAMTEX.kap068.2003"
 },
 MTTFSAMTEXkap0692003: {
 center: {lat: -23.0405, lng: 29.1175},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap069"
+stationName: "MT_TF_SAMTEX.kap069.2003"
 },
 MTTFSAMTEXkap0702003: {
 center: {lat: -22.8603, lng: 29.2208},
 beta: 0.2129,
 betaNorm: -0.6718,
 betaFactorAverage: "NaN",
-stationName: "kap070"
+stationName: "MT_TF_SAMTEX.kap070.2003"
 },
 MTTFSAMTEXkap0712003: {
 center: {lat: -22.7474, lng: 29.3500},
 beta: 1.5563,
 betaNorm: 0.1921,
 betaFactorAverage: "NaN",
-stationName: "kap071"
+stationName: "MT_TF_SAMTEX.kap071.2003"
 },
 MTTFSAMTEXkap0722003: {
 center: {lat: -22.6310, lng: 29.5103},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap072"
+stationName: "MT_TF_SAMTEX.kap072.2003"
 },
 MTTFSAMTEXkap0732003: {
 center: {lat: -22.4593, lng: 29.5844},
 beta: 0.4801,
 betaNorm: -0.3187,
 betaFactorAverage: "NaN",
-stationName: "kap073"
+stationName: "MT_TF_SAMTEX.kap073.2003"
 },
 MTTFSAMTEXkap0742003: {
 center: {lat: -22.3099, lng: 29.7181},
 beta: 0.1595,
 betaNorm: -0.7973,
 betaFactorAverage: "NaN",
-stationName: "kap074"
+stationName: "MT_TF_SAMTEX.kap074.2003"
 },
 MTTFSAMTEXkap0752003: {
 center: {lat: -22.1918, lng: 29.8581},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kap075"
+stationName: "MT_TF_SAMTEX.kap075.2003"
 },
 MTTFSAMTEXkim00120032006: {
 center: {lat: -27.6585, lng: 23.1706},
 beta: 0.5601,
 betaNorm: -0.2517,
 betaFactorAverage: "2.1714",
-stationName: "kim001-2006"
+stationName: "MT_TF_SAMTEX.kim001.2003-2006"
 },
 MTTFSAMTEXkim00220032006: {
 center: {lat: -27.8121, lng: 23.3028},
 beta: 0.7609,
 betaNorm: -0.1187,
 betaFactorAverage: "2.1794",
-stationName: "kim002-2006"
+stationName: "MT_TF_SAMTEX.kim002.2003-2006"
 },
 MTTFSAMTEXkim00320032006: {
 center: {lat: -27.9480, lng: 23.4909},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kim003-2006"
+stationName: "MT_TF_SAMTEX.kim003.2003-2006"
 },
 MTTFSAMTEXkim004H20032006: {
 center: {lat: -28.0241, lng: 23.6201},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kim004_H-2006"
+stationName: "MT_TF_SAMTEX.kim004_H.2003-2006"
 },
 MTTFSAMTEXkim004L20032006: {
 center: {lat: -28.0246, lng: 23.6192},
 beta: 0.6387,
 betaNorm: -0.1947,
 betaFactorAverage: "NaN",
-stationName: "kim004_L-2006"
+stationName: "MT_TF_SAMTEX.kim004_L.2003-2006"
 },
 MTTFSAMTEXkim00520032006: {
 center: {lat: -28.1588, lng: 23.7890},
 beta: 3.9282,
 betaNorm: 0.5942,
 betaFactorAverage: "NaN",
-stationName: "kim005-2006"
+stationName: "MT_TF_SAMTEX.kim005.2003-2006"
 },
 MTTFSAMTEXkim00620032006: {
 center: {lat: -28.2313, lng: 23.9220},
 beta: 10.2406,
 betaNorm: 1.0103,
 betaFactorAverage: "NaN",
-stationName: "kim006-2006"
+stationName: "MT_TF_SAMTEX.kim006.2003-2006"
 },
 MTTFSAMTEXkim00720032006: {
 center: {lat: -28.5410, lng: 24.1881},
 beta: 12.7907,
 betaNorm: 1.1069,
 betaFactorAverage: "NaN",
-stationName: "kim007-2006"
+stationName: "MT_TF_SAMTEX.kim007.2003-2006"
 },
 MTTFSAMTEXkim009H20032006: {
 center: {lat: -28.7341, lng: 24.5125},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kim009_H-2006"
+stationName: "MT_TF_SAMTEX.kim009_H.2003-2006"
 },
 MTTFSAMTEXkim009L20032006: {
 center: {lat: -28.7363, lng: 24.5133},
 beta: 4.2756,
 betaNorm: 0.6310,
 betaFactorAverage: "NaN",
-stationName: "kim009_L-2006"
+stationName: "MT_TF_SAMTEX.kim009_L.2003-2006"
 },
 MTTFSAMTEXkim01020032006: {
 center: {lat: -28.8846, lng: 24.7109},
 beta: 23.8152,
 betaNorm: 1.3769,
 betaFactorAverage: "NaN",
-stationName: "kim010-2006"
+stationName: "MT_TF_SAMTEX.kim010.2003-2006"
 },
 MTTFSAMTEXkim01120032006: {
 center: {lat: -29.0244, lng: 24.8553},
 beta: 0.0000,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "kim011-2006"
+stationName: "MT_TF_SAMTEX.kim011.2003-2006"
 },
 MTTFSAMTEXkim01220032006: {
 center: {lat: -29.1324, lng: 25.0125},
 beta: 0.6259,
 betaNorm: -0.2035,
 betaFactorAverage: "NaN",
-stationName: "kim012-2006"
+stationName: "MT_TF_SAMTEX.kim012.2003-2006"
 },
 MTTFSAMTEXkim01320032006: {
 center: {lat: -29.2616, lng: 25.1404},
 beta: 2.2587,
 betaNorm: 0.3539,
 betaFactorAverage: "NaN",
-stationName: "kim013-2006"
+stationName: "MT_TF_SAMTEX.kim013.2003-2006"
 },
 MTTFSAMTEXkim01420032006: {
 center: {lat: -29.3899, lng: 25.2898},
 beta: 1.0628,
 betaNorm: 0.0264,
 betaFactorAverage: "NaN",
-stationName: "kim014-2006"
+stationName: "MT_TF_SAMTEX.kim014.2003-2006"
 },
 MTTFSAMTEXkim01520032006: {
 center: {lat: -29.4938, lng: 25.4458},
 beta: 1.2527,
 betaNorm: 0.0978,
 betaFactorAverage: "NaN",
-stationName: "kim015-2006"
+stationName: "MT_TF_SAMTEX.kim015.2003-2006"
 },
 MTTFSAMTEXkim01620032006: {
 center: {lat: -29.6443, lng: 25.6164},
 beta: 0.6482,
 betaNorm: -0.1883,
 betaFactorAverage: "2.5193",
-stationName: "kim016-2006"
+stationName: "MT_TF_SAMTEX.kim016.2003-2006"
 },
 MTTFSAMTEXkim01720032006: {
 center: {lat: -29.7757, lng: 25.7719},
 beta: 1.3398,
 betaNorm: 0.1270,
 betaFactorAverage: "0.9775",
-stationName: "kim017-2006"
+stationName: "MT_TF_SAMTEX.kim017.2003-2006"
 },
 MTTFSAMTEXkim018H20032006: {
 center: {lat: -29.8613, lng: 25.9026},
 beta: 0.0693,
 betaNorm: -1.0000,
 betaFactorAverage: "0.9775",
-stationName: "kim018_H-2006"
+stationName: "MT_TF_SAMTEX.kim018_H.2003-2006"
 },
 MTTFSAMTEXkim018L20032006: {
 center: {lat: -29.8613, lng: 25.9028},
 beta: 0.5230,
 betaNorm: -0.2815,
 betaFactorAverage: "0.9775",
-stationName: "kim018_L-2006"
+stationName: "MT_TF_SAMTEX.kim018_L.2003-2006"
 },
 MTTFSAMTEXkim01920032006: {
 center: {lat: -29.9599, lng: 26.0276},
 beta: 0.0727,
 betaNorm: -1.0000,
 betaFactorAverage: "0.9124",
-stationName: "kim019-2006"
+stationName: "MT_TF_SAMTEX.kim019.2003-2006"
 },
 MTTFSAMTEXkim02020032006: {
 center: {lat: -30.0794, lng: 26.1695},
 beta: 0.7293,
 betaNorm: -0.1371,
 betaFactorAverage: "0.7276",
-stationName: "kim020-2006"
+stationName: "MT_TF_SAMTEX.kim020.2003-2006"
 },
 MTTFSAMTEXkim02120032006: {
 center: {lat: -30.1838, lng: 26.3161},
 beta: 0.3876,
 betaNorm: -0.4116,
 betaFactorAverage: "0.5385",
-stationName: "kim021-2006"
+stationName: "MT_TF_SAMTEX.kim021.2003-2006"
 },
 MTTFSAMTEXkim20120032006: {
 center: {lat: -27.5121, lng: 23.4006},
 beta: 0.1066,
 betaNorm: -0.9721,
 betaFactorAverage: "2.1794",
-stationName: "kim201-2006"
+stationName: "MT_TF_SAMTEX.kim201.2003-2006"
 },
 MTTFSAMTEXkim21320032006: {
 center: {lat: -29.3482, lng: 25.2317},
 beta: 0.4780,
 betaNorm: -0.3205,
 betaFactorAverage: "NaN",
-stationName: "kim213-2006"
+stationName: "MT_TF_SAMTEX.kim213.2003-2006"
 },
 MTTFSAMTEXkim21420032006: {
 center: {lat: -29.4205, lng: 25.3419},
 beta: 3.0900,
 betaNorm: 0.4900,
 betaFactorAverage: "NaN",
-stationName: "kim214-2006"
+stationName: "MT_TF_SAMTEX.kim214.2003-2006"
 },
 MTTFSAMTEXkim21520032006: {
 center: {lat: -29.5702, lng: 25.5152},
 beta: 1.5256,
 betaNorm: 0.1834,
 betaFactorAverage: "NaN",
-stationName: "kim215-2006"
+stationName: "MT_TF_SAMTEX.kim215.2003-2006"
 },
 MTTFSAMTEXkim31420032006: {
 center: {lat: -29.4630, lng: 25.3950},
 beta: 0.2481,
 betaNorm: -0.6053,
 betaFactorAverage: "NaN",
-stationName: "kim314-2006"
+stationName: "MT_TF_SAMTEX.kim314.2003-2006"
 },
 MTTFSAMTEXkim4012004: {
 center: {lat: -27.5535, lng: 22.9906},
 beta: 1.0917,
 betaNorm: 0.0381,
 betaFactorAverage: "1.3474",
-stationName: "kim401"
+stationName: "MT_TF_SAMTEX.kim401.2004"
 },
 MTTFSAMTEXkim4022004: {
 center: {lat: -27.4363, lng: 22.8558},
 beta: 5.3212,
 betaNorm: 0.7260,
 betaFactorAverage: "1.4498",
-stationName: "kim402"
+stationName: "MT_TF_SAMTEX.kim402.2004"
 },
 MTTFSAMTEXkim4032004: {
 center: {lat: -27.3049, lng: 22.7308},
 beta: 2.7784,
 betaNorm: 0.4438,
 betaFactorAverage: "1.7910",
-stationName: "kim403"
+stationName: "MT_TF_SAMTEX.kim403.2004"
 },
 MTTFSAMTEXkim4042004: {
 center: {lat: -27.1996, lng: 22.5756},
 beta: 0.7260,
 betaNorm: -0.1391,
 betaFactorAverage: "1.6970",
-stationName: "kim404"
+stationName: "MT_TF_SAMTEX.kim404.2004"
 },
 MTTFSAMTEXkim4052004: {
 center: {lat: -27.0963, lng: 22.4493},
 beta: 2.0761,
 betaNorm: 0.3173,
 betaFactorAverage: "1.9178",
-stationName: "kim405"
+stationName: "MT_TF_SAMTEX.kim405.2004"
 },
 MTTFSAMTEXkim4062004: {
 center: {lat: -26.9735, lng: 22.2922},
 beta: 2.1084,
 betaNorm: 0.3240,
 betaFactorAverage: "1.9123",
-stationName: "kim406"
+stationName: "MT_TF_SAMTEX.kim406.2004"
 },
 MTTFSAMTEXkim4072004: {
 center: {lat: -26.8219, lng: 22.1295},
 beta: 2.6790,
 betaNorm: 0.4280,
 betaFactorAverage: "1.8587",
-stationName: "kim407"
+stationName: "MT_TF_SAMTEX.kim407.2004"
 },
 MTTFSAMTEXkim4082004: {
 center: {lat: -26.7180, lng: 22.0256},
 beta: 1.4928,
 betaNorm: 0.1740,
 betaFactorAverage: "1.5125",
-stationName: "kim408"
+stationName: "MT_TF_SAMTEX.kim408.2004"
 },
 MTTFSAMTEXkim4092004: {
 center: {lat: -26.6288, lng: 21.8714},
 beta: 0.6627,
 betaNorm: -0.1787,
 betaFactorAverage: "1.2762",
-stationName: "kim409"
+stationName: "MT_TF_SAMTEX.kim409.2004"
 },
 MTTFSAMTEXkim4102004: {
 center: {lat: -26.5102, lng: 21.7151},
 beta: 1.5992,
 betaNorm: 0.2039,
 betaFactorAverage: "1.3373",
-stationName: "kim410"
+stationName: "MT_TF_SAMTEX.kim410.2004"
 },
 MTTFSAMTEXkim4112004: {
 center: {lat: -26.3810, lng: 21.5637},
 beta: 0.5002,
 betaNorm: -0.3009,
 betaFactorAverage: "1.2449",
-stationName: "kim411"
+stationName: "MT_TF_SAMTEX.kim411.2004"
 },
 MTTFSAMTEXkim4122004: {
 center: {lat: -26.2866, lng: 21.4195},
 beta: 0.5019,
 betaNorm: -0.2994,
 betaFactorAverage: "1.1216",
-stationName: "kim412"
+stationName: "MT_TF_SAMTEX.kim412.2004"
 },
 MTTFSAMTEXkim4132004: {
 center: {lat: -26.1521, lng: 21.2218},
 beta: 0.4154,
 betaNorm: -0.3816,
 betaFactorAverage: "0.7509",
-stationName: "kim413"
+stationName: "MT_TF_SAMTEX.kim413.2004"
 },
 MTTFSAMTEXkim4182004: {
 center: {lat: -25.5602, lng: 20.5693},
 beta: 0.8263,
 betaNorm: -0.0829,
 betaFactorAverage: "0.8908",
-stationName: "kim418"
+stationName: "MT_TF_SAMTEX.kim418.2004"
 },
 MTTFSAMTEXkim4192004: {
 center: {lat: -25.4785, lng: 20.4423},
 beta: 0.4312,
 betaNorm: -0.3653,
 betaFactorAverage: "0.9700",
-stationName: "kim419"
+stationName: "MT_TF_SAMTEX.kim419.2004"
 },
 MTTFSAMTEXkim4202004: {
 center: {lat: -25.3555, lng: 20.2618},
 beta: 0.6539,
 betaNorm: -0.1845,
 betaFactorAverage: "0.8219",
-stationName: "kim420"
+stationName: "MT_TF_SAMTEX.kim420.2004"
 },
 MTTFSAMTEXkim4212004: {
 center: {lat: -25.2177, lng: 20.1520},
 beta: 2.5824,
 betaNorm: 0.4120,
 betaFactorAverage: "0.7892",
-stationName: "kim421"
+stationName: "MT_TF_SAMTEX.kim421.2004"
 },
 MTTFSAMTEXkim4222004: {
 center: {lat: -25.1069, lng: 19.9520},
 beta: 0.7775,
 betaNorm: -0.1093,
 betaFactorAverage: "0.7218",
-stationName: "kim422"
+stationName: "MT_TF_SAMTEX.kim422.2004"
 },
 MTTFSAMTEXkim4232004: {
 center: {lat: -24.9946, lng: 19.8343},
 beta: 0.5488,
 betaNorm: -0.2606,
 betaFactorAverage: "0.6780",
-stationName: "kim423"
+stationName: "MT_TF_SAMTEX.kim423.2004"
 },
 MTTFSAMTEXkim4242004: {
 center: {lat: -24.8399, lng: 19.6893},
 beta: 0.1563,
 betaNorm: -0.8059,
 betaFactorAverage: "0.6431",
-stationName: "kim424"
+stationName: "MT_TF_SAMTEX.kim424.2004"
 },
 MTTFSAMTEXkim4252004: {
 center: {lat: -24.7399, lng: 19.5497},
 beta: 0.5985,
 betaNorm: -0.2229,
 betaFactorAverage: "0.5904",
-stationName: "kim425"
+stationName: "MT_TF_SAMTEX.kim425.2004"
 },
 MTTFSAMTEXkim4262004: {
 center: {lat: -24.6210, lng: 19.4165},
 beta: 0.5275,
 betaNorm: -0.2778,
 betaFactorAverage: "0.5595",
-stationName: "kim426"
+stationName: "MT_TF_SAMTEX.kim426.2004"
 },
 MTTFSAMTEXkim4272004: {
 center: {lat: -24.5108, lng: 19.2518},
 beta: 0.1150,
 betaNorm: -0.9393,
 betaFactorAverage: "0.4049",
-stationName: "kim427"
+stationName: "MT_TF_SAMTEX.kim427.2004"
 },
 MTTFSAMTEXkim4282004: {
 center: {lat: -24.4016, lng: 19.1249},
 beta: 0.4050,
 betaNorm: -0.3926,
 betaFactorAverage: "0.5000",
-stationName: "kim428"
+stationName: "MT_TF_SAMTEX.kim428.2004"
 },
 MTTFSAMTEXkim4292004: {
 center: {lat: -24.2699, lng: 18.9704},
 beta: 0.4022,
 betaNorm: -0.3955,
 betaFactorAverage: "0.4622",
-stationName: "kim429"
+stationName: "MT_TF_SAMTEX.kim429.2004"
 },
 MTTFSAMTEXkim4302004: {
 center: {lat: -24.1471, lng: 18.8251},
 beta: 0.0778,
 betaNorm: -1.0000,
 betaFactorAverage: "0.4928",
-stationName: "kim430"
+stationName: "MT_TF_SAMTEX.kim430.2004"
 },
 MTTFSAMTEXkim4312004: {
 center: {lat: -24.0560, lng: 18.6681},
 beta: 0.3814,
 betaNorm: -0.4186,
 betaFactorAverage: "0.5045",
-stationName: "kim431"
+stationName: "MT_TF_SAMTEX.kim431.2004"
 },
 MTTFSAMTEXkim4322004: {
 center: {lat: -23.9163, lng: 18.5468},
 beta: 0.2656,
 betaNorm: -0.5758,
 betaFactorAverage: "0.4812",
-stationName: "kim432"
+stationName: "MT_TF_SAMTEX.kim432.2004"
 },
 MTTFSAMTEXkim4332004: {
 center: {lat: -23.7916, lng: 18.4101},
 beta: 2.2994,
 betaNorm: 0.3616,
 betaFactorAverage: "0.5172",
-stationName: "kim433"
+stationName: "MT_TF_SAMTEX.kim433.2004"
 },
 MTTFSAMTEXkim4342004: {
 center: {lat: -23.6905, lng: 18.2698},
 beta: 0.0921,
 betaNorm: -1.0000,
 betaFactorAverage: "0.5332",
-stationName: "kim434"
+stationName: "MT_TF_SAMTEX.kim434.2004"
 },
 MTTFSAMTEXkim4352004: {
 center: {lat: -23.5938, lng: 18.1248},
 beta: 0.9103,
 betaNorm: -0.0408,
 betaFactorAverage: "0.5520",
-stationName: "kim435"
+stationName: "MT_TF_SAMTEX.kim435.2004"
 },
 MTTFSAMTEXkim4362004: {
 center: {lat: -23.4538, lng: 17.9595},
 beta: 0.8088,
 betaNorm: -0.0922,
 betaFactorAverage: "0.6400",
-stationName: "kim436"
+stationName: "MT_TF_SAMTEX.kim436.2004"
 },
 MTTFSAMTEXkim4372004: {
 center: {lat: -23.3302, lng: 17.8367},
 beta: 0.4034,
 betaNorm: -0.3943,
 betaFactorAverage: "0.8999",
-stationName: "kim437"
+stationName: "MT_TF_SAMTEX.kim437.2004"
 },
 MTTFSAMTEXkim4382004: {
 center: {lat: -23.2369, lng: 17.7204},
 beta: 0.7958,
 betaNorm: -0.0992,
 betaFactorAverage: "0.8603",
-stationName: "kim438"
+stationName: "MT_TF_SAMTEX.kim438.2004"
 },
 MTTFSAMTEXkim4392004: {
 center: {lat: -23.0946, lng: 17.5173},
 beta: 0.1434,
 betaNorm: -0.8433,
 betaFactorAverage: "0.6619",
-stationName: "kim439"
+stationName: "MT_TF_SAMTEX.kim439.2004"
 },
 MTTFSAMTEXkim4402004: {
 center: {lat: -22.9746, lng: 17.3794},
 beta: 0.2998,
 betaNorm: -0.5232,
 betaFactorAverage: "0.5824",
-stationName: "kim440"
+stationName: "MT_TF_SAMTEX.kim440.2004"
 },
 MTTFSAMTEXkim4412004: {
 center: {lat: -22.8516, lng: 17.2112},
 beta: 3.1857,
 betaNorm: 0.5032,
 betaFactorAverage: "0.5321",
-stationName: "kim441"
+stationName: "MT_TF_SAMTEX.kim441.2004"
 },
 MTTFSAMTEXkim4422004: {
 center: {lat: -22.7508, lng: 17.0962},
 beta: 0.6943,
 betaNorm: -0.1584,
 betaFactorAverage: "0.5277",
-stationName: "kim442"
+stationName: "MT_TF_SAMTEX.kim442.2004"
 },
 MTTFSAMTEXkim4432004: {
 center: {lat: -22.6085, lng: 16.9031},
 beta: 0.0706,
 betaNorm: -1.0000,
 betaFactorAverage: "0.5108",
-stationName: "kim443"
+stationName: "MT_TF_SAMTEX.kim443.2004"
 },
 MTTFSAMTEXkim4442004: {
 center: {lat: -22.5438, lng: 16.7820},
 beta: 0.1892,
 betaNorm: -0.7231,
 betaFactorAverage: "0.5024",
-stationName: "kim444"
+stationName: "MT_TF_SAMTEX.kim444.2004"
 },
 MTTFSAMTEXkim4452004: {
 center: {lat: -22.4324, lng: 16.6706},
 beta: 0.0676,
 betaNorm: -1.0000,
 betaFactorAverage: "0.5296",
-stationName: "kim445"
+stationName: "MT_TF_SAMTEX.kim445.2004"
 },
 MTTFSAMTEXkim4462004: {
 center: {lat: -22.3199, lng: 16.5115},
 beta: 0.1246,
 betaNorm: -0.9045,
 betaFactorAverage: "0.5063",
-stationName: "kim446"
+stationName: "MT_TF_SAMTEX.kim446.2004"
 },
 MTTFSAMTEXkim4472004: {
 center: {lat: -22.1871, lng: 16.3656},
 beta: 0.4380,
 betaNorm: -0.3585,
 betaFactorAverage: "0.3760",
-stationName: "kim447"
+stationName: "MT_TF_SAMTEX.kim447.2004"
 },
 MTTFSAMTEXkof0012004: {
 center: {lat: -29.3466, lng: 24.7826},
 beta: 17.2084,
 betaNorm: 1.2357,
 betaFactorAverage: "NaN",
-stationName: "kof001"
+stationName: "MT_TF_SAMTEX.kof001.2004"
 },
 MTTFSAMTEXkof0022004: {
 center: {lat: -29.2221, lng: 24.8718},
 beta: 2.0430,
 betaNorm: 0.3103,
 betaFactorAverage: "NaN",
-stationName: "kof002"
+stationName: "MT_TF_SAMTEX.kof002.2004"
 },
 MTTFSAMTEXkof0032004: {
 center: {lat: -28.9730, lng: 25.1693},
 beta: 11.7838,
 betaNorm: 1.0713,
 betaFactorAverage: "NaN",
-stationName: "kof003"
+stationName: "MT_TF_SAMTEX.kof003.2004"
 },
 MTTFSAMTEXkof0042004: {
 center: {lat: -28.7880, lng: 25.2733},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kof004"
+stationName: "MT_TF_SAMTEX.kof004.2004"
 },
 MTTFSAMTEXkof0052004: {
 center: {lat: -28.5489, lng: 25.5503},
 beta: 0.4242,
 betaNorm: -0.3725,
 betaFactorAverage: "NaN",
-stationName: "kof005"
+stationName: "MT_TF_SAMTEX.kof005.2004"
 },
 MTTFSAMTEXkof0062004: {
 center: {lat: -28.3764, lng: 25.6506},
 beta: 0.5976,
 betaNorm: -0.2236,
 betaFactorAverage: "NaN",
-stationName: "kof006"
+stationName: "MT_TF_SAMTEX.kof006.2004"
 },
 MTTFSAMTEXkof0072004: {
 center: {lat: -28.2755, lng: 25.8092},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "kof007"
+stationName: "MT_TF_SAMTEX.kof007.2004"
 },
 MTTFSAMTEXkof0082004: {
 center: {lat: -28.1042, lng: 25.9667},
 beta: 0.7695,
 betaNorm: -0.1138,
 betaFactorAverage: "NaN",
-stationName: "kof008"
+stationName: "MT_TF_SAMTEX.kof008.2004"
 },
 MTTFSAMTEXkof0092004: {
 center: {lat: -27.9989, lng: 26.0897},
 beta: 1.0054,
 betaNorm: 0.0023,
 betaFactorAverage: "NaN",
-stationName: "kof009"
+stationName: "MT_TF_SAMTEX.kof009.2004"
 },
 MTTFSAMTEXmak0012006: {
 center: {lat: -20.1775, lng: 26.0308},
 beta: 0.3960,
 betaNorm: -0.4023,
 betaFactorAverage: "NaN",
-stationName: "mak001"
+stationName: "MT_TF_SAMTEX.mak001.2006"
 },
 MTTFSAMTEXmak0022006: {
 center: {lat: -20.1561, lng: 25.8426},
 beta: 0.1876,
 betaNorm: -0.7268,
 betaFactorAverage: "NaN",
-stationName: "mak002"
+stationName: "MT_TF_SAMTEX.mak002.2006"
 },
 MTTFSAMTEXmak0032006: {
 center: {lat: -20.1301, lng: 25.6437},
 beta: 0.2005,
 betaNorm: -0.6980,
 betaFactorAverage: "NaN",
-stationName: "mak003"
+stationName: "MT_TF_SAMTEX.mak003.2006"
 },
 MTTFSAMTEXmak0042006: {
 center: {lat: -20.1573, lng: 25.4584},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "mak004"
+stationName: "MT_TF_SAMTEX.mak004.2006"
 },
 MTTFSAMTEXmak0052006: {
 center: {lat: -20.1914, lng: 25.2589},
 beta: 0.2190,
 betaNorm: -0.6595,
 betaFactorAverage: "NaN",
-stationName: "mak005"
+stationName: "MT_TF_SAMTEX.mak005.2006"
 },
 MTTFSAMTEXmak0062006: {
 center: {lat: -20.2103, lng: 25.0914},
 beta: 0.2199,
 betaNorm: -0.6579,
 betaFactorAverage: "NaN",
-stationName: "mak006"
+stationName: "MT_TF_SAMTEX.mak006.2006"
 },
 MTTFSAMTEXmak0072006: {
 center: {lat: -20.2391, lng: 24.9006},
 beta: 0.4316,
 betaNorm: -0.3649,
 betaFactorAverage: "NaN",
-stationName: "mak007"
+stationName: "MT_TF_SAMTEX.mak007.2006"
 },
 MTTFSAMTEXmak0082006: {
 center: {lat: -20.2447, lng: 24.7084},
 beta: 11.2917,
 betaNorm: 1.0528,
 betaFactorAverage: "NaN",
-stationName: "mak008"
+stationName: "MT_TF_SAMTEX.mak008.2006"
 },
 MTTFSAMTEXmak0092006: {
 center: {lat: -20.1986, lng: 24.5111},
 beta: 0.7323,
 betaNorm: -0.1353,
 betaFactorAverage: "NaN",
-stationName: "mak009"
+stationName: "MT_TF_SAMTEX.mak009.2006"
 },
 MTTFSAMTEXmak0102006: {
 center: {lat: -20.1878, lng: 24.3423},
 beta: 0.6861,
 betaNorm: -0.1636,
 betaFactorAverage: "2.2634",
-stationName: "mak010"
+stationName: "MT_TF_SAMTEX.mak010.2006"
 },
 MTTFSAMTEXoka0022006: {
 center: {lat: -20.3308, lng: 22.6206},
 beta: 0.3291,
 betaNorm: -0.4826,
 betaFactorAverage: "0.9950",
-stationName: "oka002"
+stationName: "MT_TF_SAMTEX.oka002.2006"
 },
 MTTFSAMTEXoka0032006: {
 center: {lat: -20.1824, lng: 22.4639},
 beta: 0.4379,
 betaNorm: -0.3587,
 betaFactorAverage: "1.0873",
-stationName: "oka003"
+stationName: "MT_TF_SAMTEX.oka003.2006"
 },
 MTTFSAMTEXoka0042006: {
 center: {lat: -20.0483, lng: 22.3158},
 beta: 0.6764,
 betaNorm: -0.1698,
 betaFactorAverage: "NaN",
-stationName: "oka004"
+stationName: "MT_TF_SAMTEX.oka004.2006"
 },
 MTTFSAMTEXoka0052006: {
 center: {lat: -19.8920, lng: 22.2425},
 beta: 4.2714,
 betaNorm: 0.6306,
 betaFactorAverage: "NaN",
-stationName: "oka005"
+stationName: "MT_TF_SAMTEX.oka005.2006"
 },
 MTTFSAMTEXoka0062006: {
 center: {lat: -19.7157, lng: 22.1931},
 beta: 1.1789,
 betaNorm: 0.0715,
 betaFactorAverage: "NaN",
-stationName: "oka006"
+stationName: "MT_TF_SAMTEX.oka006.2006"
 },
 MTTFSAMTEXoka0072006: {
 center: {lat: -19.5459, lng: 22.1341},
 beta: 2.0454,
 betaNorm: 0.3108,
 betaFactorAverage: "NaN",
-stationName: "oka007"
+stationName: "MT_TF_SAMTEX.oka007.2006"
 },
 MTTFSAMTEXoka0082006: {
 center: {lat: -19.3814, lng: 22.1564},
 beta: 1.7621,
 betaNorm: 0.2460,
 betaFactorAverage: "NaN",
-stationName: "oka008"
+stationName: "MT_TF_SAMTEX.oka008.2006"
 },
 MTTFSAMTEXoka0092006: {
 center: {lat: -19.1853, lng: 22.2231},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "oka009"
+stationName: "MT_TF_SAMTEX.oka009.2006"
 },
 MTTFSAMTEXoka0102006: {
 center: {lat: -19.0150, lng: 22.2925},
 beta: 1.2410,
 betaNorm: 0.0938,
 betaFactorAverage: "NaN",
-stationName: "oka010"
+stationName: "MT_TF_SAMTEX.oka010.2006"
 },
 MTTFSAMTEXoka0112006: {
 center: {lat: -18.8285, lng: 22.2239},
 beta: 1.3109,
 betaNorm: 0.1176,
 betaFactorAverage: "NaN",
-stationName: "oka011"
+stationName: "MT_TF_SAMTEX.oka011.2006"
 },
 MTTFSAMTEXoka0122006: {
 center: {lat: -18.6905, lng: 22.1067},
 beta: 2.5813,
 betaNorm: 0.4118,
 betaFactorAverage: "NaN",
-stationName: "oka012"
+stationName: "MT_TF_SAMTEX.oka012.2006"
 },
 MTTFSAMTEXoka0132006: {
 center: {lat: -18.5673, lng: 21.9855},
 beta: 0.2673,
 betaNorm: -0.5731,
 betaFactorAverage: "NaN",
-stationName: "oka013"
+stationName: "MT_TF_SAMTEX.oka013.2006"
 },
 MTTFSAMTEXoka0142006: {
 center: {lat: -18.4388, lng: 21.8858},
 beta: 6.1458,
 betaNorm: 0.7886,
 betaFactorAverage: "NaN",
-stationName: "oka014"
+stationName: "MT_TF_SAMTEX.oka014.2006"
 },
 MTTFSAMTEXoka0152006: {
 center: {lat: -18.2990, lng: 21.7862},
 beta: 0.8116,
 betaNorm: -0.0906,
 betaFactorAverage: "2.0597",
-stationName: "oka015"
+stationName: "MT_TF_SAMTEX.oka015.2006"
 },
 MTTFSAMTEXrtz2012005: {
 center: {lat: -25.3138, lng: 25.5703},
 beta: 3.4896,
 betaNorm: 0.5428,
 betaFactorAverage: "2.6455",
-stationName: "rtz201"
+stationName: "MT_TF_SAMTEX.rtz201.2005"
 },
 MTTFSAMTEXrtz2022005: {
 center: {lat: -25.2900, lng: 25.3533},
 beta: 1.9089,
 betaNorm: 0.2808,
 betaFactorAverage: "NaN",
-stationName: "rtz202"
+stationName: "MT_TF_SAMTEX.rtz202.2005"
 },
 MTTFSAMTEXrtz2032005: {
 center: {lat: -25.2863, lng: 25.0767},
 beta: 2.4973,
 betaNorm: 0.3975,
 betaFactorAverage: "NaN",
-stationName: "rtz203"
+stationName: "MT_TF_SAMTEX.rtz203.2005"
 },
 MTTFSAMTEXrtz2042005: {
 center: {lat: -25.3756, lng: 24.6686},
 beta: 1.8240,
 betaNorm: 0.2610,
 betaFactorAverage: "NaN",
-stationName: "rtz204"
+stationName: "MT_TF_SAMTEX.rtz204.2005"
 },
 MTTFSAMTEXrtz2052005: {
 center: {lat: -25.3266, lng: 24.8418},
 beta: 0.9205,
 betaNorm: -0.0360,
 betaFactorAverage: "NaN",
-stationName: "rtz205"
+stationName: "MT_TF_SAMTEX.rtz205.2005"
 },
 MTTFSAMTEXrtz2062005: {
 center: {lat: -25.3758, lng: 24.6687},
 beta: 7.5252,
 betaNorm: 0.8765,
 betaFactorAverage: "NaN",
-stationName: "rtz206"
+stationName: "MT_TF_SAMTEX.rtz206.2005"
 },
 MTTFSAMTEXrtz2072005: {
 center: {lat: -25.3938, lng: 24.4633},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "rtz207"
+stationName: "MT_TF_SAMTEX.rtz207.2005"
 },
 MTTFSAMTEXrtz2082005: {
 center: {lat: -25.4058, lng: 24.2781},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "rtz208"
+stationName: "MT_TF_SAMTEX.rtz208.2005"
 },
 MTTFSAMTEXrtz2092005: {
 center: {lat: -25.4138, lng: 24.0793},
 beta: 13.2740,
 betaNorm: 1.1230,
 betaFactorAverage: "NaN",
-stationName: "rtz209"
+stationName: "MT_TF_SAMTEX.rtz209.2005"
 },
 MTTFSAMTEXrtz2102005: {
 center: {lat: -25.4218, lng: 23.8817},
 beta: 0.0375,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "rtz210"
+stationName: "MT_TF_SAMTEX.rtz210.2005"
 },
 MTTFSAMTEXrtz2112005: {
 center: {lat: -25.3024, lng: 23.6915},
 beta: 0.0187,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "rtz211"
+stationName: "MT_TF_SAMTEX.rtz211.2005"
 },
 MTTFSAMTEXrtz2122005: {
 center: {lat: -25.2094, lng: 23.5319},
 beta: 1.3549,
 betaNorm: 0.1319,
 betaFactorAverage: "NaN",
-stationName: "rtz212"
+stationName: "MT_TF_SAMTEX.rtz212.2005"
 },
 MTTFSAMTEXrtz2132005: {
 center: {lat: -25.1280, lng: 23.3436},
 beta: 0.2457,
 betaNorm: -0.6096,
 betaFactorAverage: "NaN",
-stationName: "rtz213"
+stationName: "MT_TF_SAMTEX.rtz213.2005"
 },
 MTTFSAMTEXrtz4012005: {
 center: {lat: -24.2360, lng: 23.2450},
 beta: 2.6423,
 betaNorm: 0.4220,
 betaFactorAverage: "1.6502",
-stationName: "rtz401"
+stationName: "MT_TF_SAMTEX.rtz401.2005"
 },
 MTTFSAMTEXrtz4022005: {
 center: {lat: -24.3408, lng: 23.0779},
 beta: 3.2449,
 betaNorm: 0.5112,
 betaFactorAverage: "1.6796",
-stationName: "rtz402"
+stationName: "MT_TF_SAMTEX.rtz402.2005"
 },
 MTTFSAMTEXrtz4032005: {
 center: {lat: -24.3422, lng: 22.8808},
 beta: 0.6927,
 betaNorm: -0.1594,
 betaFactorAverage: "1.5565",
-stationName: "rtz403"
+stationName: "MT_TF_SAMTEX.rtz403.2005"
 },
 MTTFSAMTEXrtz4042005: {
 center: {lat: -24.3455, lng: 22.6828},
 beta: 0.7803,
 betaNorm: -0.1077,
 betaFactorAverage: "NaN",
-stationName: "rtz404"
+stationName: "MT_TF_SAMTEX.rtz404.2005"
 },
 MTTFSAMTEXrtz4072005: {
 center: {lat: -24.5766, lng: 22.2594},
 beta: 0.8582,
 betaNorm: -0.0664,
 betaFactorAverage: "NaN",
-stationName: "rtz407"
+stationName: "MT_TF_SAMTEX.rtz407.2005"
 },
 MTTFSAMTEXrtz4082005: {
 center: {lat: -24.5727, lng: 22.0620},
 beta: 0.6620,
 betaNorm: -0.1791,
 betaFactorAverage: "NaN",
-stationName: "rtz408"
+stationName: "MT_TF_SAMTEX.rtz408.2005"
 },
 MTTFSAMTEXrtz4092005: {
 center: {lat: -24.5716, lng: 21.9065},
 beta: 0.0976,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "rtz409"
+stationName: "MT_TF_SAMTEX.rtz409.2005"
 },
 MTTFSAMTEXrtz4102005: {
 center: {lat: -24.3916, lng: 21.8728},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "rtz410"
+stationName: "MT_TF_SAMTEX.rtz410.2005"
 },
 MTTFSAMTEXrtz4112005: {
 center: {lat: -24.2128, lng: 21.8475},
 beta: 0.3549,
 betaNorm: -0.4499,
 betaFactorAverage: "NaN",
-stationName: "rtz411"
+stationName: "MT_TF_SAMTEX.rtz411.2005"
 },
 MTTFSAMTEXrtz4122005: {
 center: {lat: -24.0446, lng: 21.7926},
 beta: 0.3477,
 betaNorm: -0.4588,
 betaFactorAverage: "NaN",
-stationName: "rtz412"
+stationName: "MT_TF_SAMTEX.rtz412.2005"
 },
 MTTFSAMTEXrtz4132005: {
 center: {lat: -23.9391, lng: 21.6325},
 beta: 0.4302,
 betaNorm: -0.3663,
 betaFactorAverage: "NaN",
-stationName: "rtz413"
+stationName: "MT_TF_SAMTEX.rtz413.2005"
 },
 MTTFSAMTEXrtz4142005: {
 center: {lat: -23.8433, lng: 21.4656},
 beta: 0.2362,
 betaNorm: -0.6267,
 betaFactorAverage: "NaN",
-stationName: "rtz414"
+stationName: "MT_TF_SAMTEX.rtz414.2005"
 },
 MTTFSAMTEXrtz4152005: {
 center: {lat: -23.7863, lng: 21.2773},
 beta: 0.4649,
 betaNorm: -0.3326,
 betaFactorAverage: "NaN",
-stationName: "rtz415"
+stationName: "MT_TF_SAMTEX.rtz415.2005"
 },
 MTTFSAMTEXrtz4162005: {
 center: {lat: -23.7155, lng: 21.1028},
 beta: 0.2545,
 betaNorm: -0.5944,
 betaFactorAverage: "0.3820",
-stationName: "rtz416"
+stationName: "MT_TF_SAMTEX.rtz416.2005"
 },
 MTTFSAMTEXrtz4172005: {
 center: {lat: -23.6305, lng: 20.9262},
 beta: 0.3435,
 betaNorm: -0.4641,
 betaFactorAverage: "0.4085",
-stationName: "rtz417"
+stationName: "MT_TF_SAMTEX.rtz417.2005"
 },
 MTTFSAMTEXrtz4182005: {
 center: {lat: -23.5319, lng: 20.7650},
 beta: 0.4347,
 betaNorm: -0.3618,
 betaFactorAverage: "0.3641",
-stationName: "rtz418"
+stationName: "MT_TF_SAMTEX.rtz418.2005"
 },
 MTTFSAMTEXrtz4192005: {
 center: {lat: -23.5507, lng: 20.5686},
 beta: 0.5126,
 betaNorm: -0.2902,
 betaFactorAverage: "0.3733",
-stationName: "rtz419"
+stationName: "MT_TF_SAMTEX.rtz419.2005"
 },
 MTTFSAMTEXrtz4202005: {
 center: {lat: -23.4346, lng: 20.4190},
 beta: 0.1640,
 betaNorm: -0.7851,
 betaFactorAverage: "0.4415",
-stationName: "rtz420"
+stationName: "MT_TF_SAMTEX.rtz420.2005"
 },
 MTTFSAMTEXrtz4212005: {
 center: {lat: -23.2915, lng: 20.3098},
 beta: 0.1284,
 betaNorm: -0.8915,
 betaFactorAverage: "0.4389",
-stationName: "rtz421"
+stationName: "MT_TF_SAMTEX.rtz421.2005"
 },
 MTTFSAMTEXrtz4222005: {
 center: {lat: -23.0974, lng: 20.2583},
 beta: 0.6725,
 betaNorm: -0.1723,
 betaFactorAverage: "1.2215",
-stationName: "rtz422"
+stationName: "MT_TF_SAMTEX.rtz422.2005"
 },
 MTTFSAMTEXrtz4242005: {
 center: {lat: -22.7613, lng: 20.2179},
 beta: 0.5218,
 betaNorm: -0.2825,
 betaFactorAverage: "1.2287",
-stationName: "rtz424"
+stationName: "MT_TF_SAMTEX.rtz424.2005"
 },
 MTTFSAMTEXrtz4252005: {
 center: {lat: -22.5832, lng: 20.2211},
 beta: 0.9178,
 betaNorm: -0.0372,
 betaFactorAverage: "1.2614",
-stationName: "rtz425"
+stationName: "MT_TF_SAMTEX.rtz425.2005"
 },
 MTTFSAMTEXrtzf012005: {
 center: {lat: -23.9663, lng: 21.7268},
 beta: 0.9126,
 betaNorm: -0.0397,
 betaFactorAverage: "NaN",
-stationName: "rtzf01"
+stationName: "MT_TF_SAMTEX.rtzf01.2005"
 },
 MTTFSAMTEXrtzf022005: {
 center: {lat: -24.5702, lng: 21.8075},
 beta: 0.4902,
 betaNorm: -0.3096,
 betaFactorAverage: "NaN",
-stationName: "rtzf02"
+stationName: "MT_TF_SAMTEX.rtzf02.2005"
 },
 MTTFSAMTEXrtzf032005: {
 center: {lat: -24.5714, lng: 22.0067},
 beta: 2.4899,
 betaNorm: 0.3962,
 betaFactorAverage: "NaN",
-stationName: "rtzf03"
+stationName: "MT_TF_SAMTEX.rtzf03.2005"
 },
 MTTFSAMTEXrtzfb12005: {
 center: {lat: -24.4486, lng: 22.4414},
 beta: 1.0558,
 betaNorm: 0.0236,
 betaFactorAverage: "NaN",
-stationName: "rtzfb1"
+stationName: "MT_TF_SAMTEX.rtzfb1.2005"
 },
 MTTFSAMTEXsan0012008: {
 center: {lat: -23.3176, lng: 24.4380},
 beta: 0.6361,
 betaNorm: -0.1964,
 betaFactorAverage: "0.5127",
-stationName: "san001"
+stationName: "MT_TF_SAMTEX.san001.2008"
 },
 MTTFSAMTEXsan0022008: {
 center: {lat: -23.1426, lng: 24.2840},
 beta: 0.6476,
 betaNorm: -0.1887,
 betaFactorAverage: "0.5275",
-stationName: "san002"
+stationName: "MT_TF_SAMTEX.san002.2008"
 },
 MTTFSAMTEXsan0032008: {
 center: {lat: -22.9698, lng: 24.1747},
 beta: 0.6950,
 betaNorm: -0.1580,
 betaFactorAverage: "0.5365",
-stationName: "san003"
+stationName: "MT_TF_SAMTEX.san003.2008"
 },
 MTTFSAMTEXsan0042008: {
 center: {lat: -22.8071, lng: 24.1654},
 beta: 0.5015,
 betaNorm: -0.2998,
 betaFactorAverage: "0.5586",
-stationName: "san004"
+stationName: "MT_TF_SAMTEX.san004.2008"
 },
 MTTFSAMTEXsan0062008: {
 center: {lat: -22.4890, lng: 24.1695},
 beta: 0.2572,
 betaNorm: -0.5897,
 betaFactorAverage: "0.5750",
-stationName: "san006"
+stationName: "MT_TF_SAMTEX.san006.2008"
 },
 MTTFSAMTEXsan0072008: {
 center: {lat: -22.3131, lng: 24.1723},
 beta: 0.4084,
 betaNorm: -0.3889,
 betaFactorAverage: "0.5857",
-stationName: "san007"
+stationName: "MT_TF_SAMTEX.san007.2008"
 },
 MTTFSAMTEXsan0082008: {
 center: {lat: -22.1284, lng: 24.1769},
 beta: 0.5299,
 betaNorm: -0.2758,
 betaFactorAverage: "0.5558",
-stationName: "san008"
+stationName: "MT_TF_SAMTEX.san008.2008"
 },
 MTTFSAMTEXsan0092008: {
 center: {lat: -22.0218, lng: 24.0456},
 beta: 0.4615,
 betaNorm: -0.3358,
 betaFactorAverage: "0.5784",
-stationName: "san009"
+stationName: "MT_TF_SAMTEX.san009.2008"
 },
 MTTFSAMTEXsan0102008: {
 center: {lat: -21.8468, lng: 23.9909},
 beta: 0.6043,
 betaNorm: -0.2187,
 betaFactorAverage: "0.6004",
-stationName: "san010"
+stationName: "MT_TF_SAMTEX.san010.2008"
 },
 MTTFSAMTEXsan0112008: {
 center: {lat: -21.6532, lng: 24.0658},
 beta: 0.5542,
 betaNorm: -0.2563,
 betaFactorAverage: "0.5625",
-stationName: "san011"
+stationName: "MT_TF_SAMTEX.san011.2008"
 },
 MTTFSAMTEXsan0122008: {
 center: {lat: -21.4604, lng: 24.1447},
 beta: 0.8617,
 betaNorm: -0.0647,
 betaFactorAverage: "0.5877",
-stationName: "san012"
+stationName: "MT_TF_SAMTEX.san012.2008"
 },
 MTTFSAMTEXsan0132008: {
 center: {lat: -21.2780, lng: 24.1025},
 beta: 0.4268,
 betaNorm: -0.3698,
 betaFactorAverage: "0.6133",
-stationName: "san013"
+stationName: "MT_TF_SAMTEX.san013.2008"
 },
 MTTFSAMTEXsan0142008: {
 center: {lat: -21.0974, lng: 24.1819},
 beta: 0.8547,
 betaNorm: -0.0682,
 betaFactorAverage: "0.6603",
-stationName: "san014"
+stationName: "MT_TF_SAMTEX.san014.2008"
 },
 MTTFSAMTEXwin0022006: {
 center: {lat: -20.1528, lng: 23.2756},
 beta: 0.7564,
 betaNorm: -0.1212,
 betaFactorAverage: "0.5634",
-stationName: "win002"
+stationName: "MT_TF_SAMTEX.win002.2006"
 },
 MTTFSAMTEXwin0032006: {
 center: {lat: -20.2569, lng: 23.1408},
 beta: 0.2912,
 betaNorm: -0.5358,
 betaFactorAverage: "0.5465",
-stationName: "win003"
+stationName: "MT_TF_SAMTEX.win003.2006"
 },
 MTTFSAMTEXwin0042006: {
 center: {lat: -20.3456, lng: 22.9655},
 beta: 0.5216,
 betaNorm: -0.2827,
 betaFactorAverage: "0.9436",
-stationName: "win004"
+stationName: "MT_TF_SAMTEX.win004.2006"
 },
 MTTFSAMTEXwin0052006: {
 center: {lat: -20.4026, lng: 22.7711},
 beta: 1.3616,
 betaNorm: 0.1341,
 betaFactorAverage: "0.9950",
-stationName: "win005"
+stationName: "MT_TF_SAMTEX.win005.2006"
 },
 MTTFSAMTEXwin0062006: {
 center: {lat: -20.5103, lng: 22.6169},
 beta: 0.4554,
 betaNorm: -0.3416,
 betaFactorAverage: "0.9950",
-stationName: "win006"
+stationName: "MT_TF_SAMTEX.win006.2006"
 },
 MTTFSAMTEXwin0072006: {
 center: {lat: -20.6749, lng: 22.5335},
 beta: 0.3541,
 betaNorm: -0.4508,
 betaFactorAverage: "1.0478",
-stationName: "win007"
+stationName: "MT_TF_SAMTEX.win007.2006"
 },
 MTTFSAMTEXwin0082006: {
 center: {lat: -20.8356, lng: 22.4482},
 beta: 0.2807,
 betaNorm: -0.5517,
 betaFactorAverage: "0.7523",
-stationName: "win008"
+stationName: "MT_TF_SAMTEX.win008.2006"
 },
 MTTFSAMTEXwin0092006: {
 center: {lat: -21.0235, lng: 22.4189},
 beta: 1.5871,
 betaNorm: 0.2006,
 betaFactorAverage: "0.7699",
-stationName: "win009"
+stationName: "MT_TF_SAMTEX.win009.2006"
 },
 MTTFSAMTEXwin0102006: {
 center: {lat: -21.1714, lng: 22.3070},
 beta: 1.4281,
 betaNorm: 0.1548,
 betaFactorAverage: "0.8839",
-stationName: "win010"
+stationName: "MT_TF_SAMTEX.win010.2006"
 },
 MTTFSAMTEXwin0112006: {
 center: {lat: -21.3284, lng: 22.1716},
 beta: 1.9187,
 betaNorm: 0.2830,
 betaFactorAverage: "1.0226",
-stationName: "win011"
+stationName: "MT_TF_SAMTEX.win011.2006"
 },
 MTTFSAMTEXwin0122006: {
 center: {lat: -21.4773, lng: 22.0418},
 beta: 0.1384,
 betaNorm: -0.8589,
 betaFactorAverage: "1.2528",
-stationName: "win012"
+stationName: "MT_TF_SAMTEX.win012.2006"
 },
 MTTFSAMTEXwin0132006: {
 center: {lat: -21.5717, lng: 21.8224},
 beta: 0.4264,
 betaNorm: -0.3702,
 betaFactorAverage: "1.4269",
-stationName: "win013"
+stationName: "MT_TF_SAMTEX.win013.2006"
 },
 MTTFSAMTEXwin0142006: {
 center: {lat: -21.6922, lng: 21.7112},
 beta: 1.4429,
 betaNorm: 0.1592,
 betaFactorAverage: "1.4690",
-stationName: "win014"
+stationName: "MT_TF_SAMTEX.win014.2006"
 },
 MTTFSAMTEXwin0152006: {
 center: {lat: -22.0776, lng: 21.3506},
 beta: 2.0180,
 betaNorm: 0.3049,
 betaFactorAverage: "1.4824",
-stationName: "win015"
+stationName: "MT_TF_SAMTEX.win015.2006"
 },
 MTTFSAMTEXwin0162006: {
 center: {lat: -22.1267, lng: 20.7781},
 beta: 1.3849,
 betaNorm: 0.1414,
 betaFactorAverage: "1.8211",
-stationName: "win016"
+stationName: "MT_TF_SAMTEX.win016.2006"
 },
 MTTFSAMTEXwin0172006: {
 center: {lat: -22.1386, lng: 20.9694},
 beta: 1.7503,
 betaNorm: 0.2431,
 betaFactorAverage: "2.0192",
-stationName: "win017"
+stationName: "MT_TF_SAMTEX.win017.2006"
 },
 MTTFSAMTEXwin0182006: {
 center: {lat: -22.1194, lng: 21.1622},
 beta: 1.3707,
 betaNorm: 0.1370,
 betaFactorAverage: "1.9025",
-stationName: "win018"
+stationName: "MT_TF_SAMTEX.win018.2006"
 },
 MTTFSAMTEXwin0192006: {
 center: {lat: -22.0969, lng: 20.5495},
 beta: 1.0667,
 betaNorm: 0.0280,
 betaFactorAverage: "1.6980",
-stationName: "win019"
+stationName: "MT_TF_SAMTEX.win019.2006"
 },
 MTTFSAMTEXwin0202006: {
 center: {lat: -22.1782, lng: 20.3774},
 beta: 1.0417,
 betaNorm: 0.0178,
 betaFactorAverage: "1.5705",
-stationName: "win020"
+stationName: "MT_TF_SAMTEX.win020.2006"
 },
 MTTFSAMTEXwin0212006: {
 center: {lat: -22.2349, lng: 20.2100},
 beta: 6.5916,
 betaNorm: 0.8190,
 betaFactorAverage: "1.4286",
-stationName: "win021"
+stationName: "MT_TF_SAMTEX.win021.2006"
 },
 MTTFSAMTEXwin0222006: {
 center: {lat: -22.2721, lng: 20.0389},
 beta: 2.4190,
 betaNorm: 0.3836,
 betaFactorAverage: "1.3489",
-stationName: "win022"
+stationName: "MT_TF_SAMTEX.win022.2006"
 },
 MTTFSAMTEXwin0232006: {
 center: {lat: -22.3061, lng: 19.8824},
 beta: 0.7301,
 betaNorm: -0.1366,
 betaFactorAverage: "1.2611",
-stationName: "win023"
+stationName: "MT_TF_SAMTEX.win023.2006"
 },
 MTTFSAMTEXwin0242006: {
 center: {lat: -22.3106, lng: 19.6909},
 beta: 0.5634,
 betaNorm: -0.2492,
 betaFactorAverage: "1.1134",
-stationName: "win024"
+stationName: "MT_TF_SAMTEX.win024.2006"
 },
 MTTFSAMTEXwin0252006: {
 center: {lat: -22.3381, lng: 19.5036},
 beta: 0.4874,
 betaNorm: -0.3121,
 betaFactorAverage: "1.0866",
-stationName: "win025"
+stationName: "MT_TF_SAMTEX.win025.2006"
 },
 MTTFSAMTEXwin0262006: {
 center: {lat: -22.3399, lng: 19.3056},
 beta: 0.4816,
 betaNorm: -0.3173,
 betaFactorAverage: "1.0065",
-stationName: "win026"
+stationName: "MT_TF_SAMTEX.win026.2006"
 },
 MTTFSAMTEXwin0272006: {
 center: {lat: -22.3892, lng: 19.1292},
 beta: 0.2551,
 betaNorm: -0.5932,
 betaFactorAverage: "0.6823",
-stationName: "win027"
+stationName: "MT_TF_SAMTEX.win027.2006"
 },
 MTTFSAMTEXwin0292006: {
 center: {lat: -22.4062, lng: 18.7317},
 beta: 0.1793,
 betaNorm: -0.7465,
 betaFactorAverage: "0.5740",
-stationName: "win029"
+stationName: "MT_TF_SAMTEX.win029.2006"
 },
 MTTFSAMTEXwin0302006: {
 center: {lat: -22.4102, lng: 18.5441},
 beta: 0.8609,
 betaNorm: -0.0651,
 betaFactorAverage: "0.6120",
-stationName: "win030"
+stationName: "MT_TF_SAMTEX.win030.2006"
 },
 MTTFSAMTEXwin0312006: {
 center: {lat: -22.3716, lng: 18.3575},
 beta: 0.4454,
 betaNorm: -0.3513,
 betaFactorAverage: "0.6126",
-stationName: "win031"
+stationName: "MT_TF_SAMTEX.win031.2006"
 },
 MTTFSAMTEXwin0322006: {
 center: {lat: -22.3558, lng: 18.1644},
 beta: 0.3416,
 betaNorm: -0.4665,
 betaFactorAverage: "0.6470",
-stationName: "win032"
+stationName: "MT_TF_SAMTEX.win032.2006"
 },
 MTTFSAMTEXwin0332006: {
 center: {lat: -22.3719, lng: 17.9707},
 beta: 0.6875,
 betaNorm: -0.1627,
 betaFactorAverage: "0.7594",
-stationName: "win033"
+stationName: "MT_TF_SAMTEX.win033.2006"
 },
 MTTFSAMTEXwin0342006: {
 center: {lat: -22.3914, lng: 17.7706},
 beta: 0.5005,
 betaNorm: -0.3006,
 betaFactorAverage: "0.6579",
-stationName: "win034"
+stationName: "MT_TF_SAMTEX.win034.2006"
 },
 MTTFSAMTEXwin0352006: {
 center: {lat: -22.4371, lng: 17.6050},
 beta: 1.3239,
 betaNorm: 0.1218,
 betaFactorAverage: "0.6025",
-stationName: "win035"
+stationName: "MT_TF_SAMTEX.win035.2006"
 },
 MTTFSAMTEXwin0362006: {
 center: {lat: -22.5043, lng: 17.4031},
 beta: 0.0746,
 betaNorm: -1.0000,
 betaFactorAverage: "0.5382",
-stationName: "win036"
+stationName: "MT_TF_SAMTEX.win036.2006"
 },
 MTTFSAMTEXwin0372006: {
 center: {lat: -22.5318, lng: 17.2017},
 beta: 0.6848,
 betaNorm: -0.1644,
 betaFactorAverage: "0.5339",
-stationName: "win037"
+stationName: "MT_TF_SAMTEX.win037.2006"
 },
 MTTFSAMTEXwin0382006: {
 center: {lat: -22.5621, lng: 16.9986},
 beta: 0.2383,
 betaNorm: -0.6228,
 betaFactorAverage: "0.5108",
-stationName: "win038"
+stationName: "MT_TF_SAMTEX.win038.2006"
 },
 MTTFSAMTEXwin0392006: {
 center: {lat: -22.5982, lng: 16.8019},
 beta: 0.2419,
 betaNorm: -0.6163,
 betaFactorAverage: "0.5024",
-stationName: "win039"
+stationName: "MT_TF_SAMTEX.win039.2006"
 },
 MTTFSAMTEXwin0402006: {
 center: {lat: -22.6677, lng: 16.6258},
 beta: 0.2782,
 betaNorm: -0.5556,
 betaFactorAverage: "0.4735",
-stationName: "win040"
+stationName: "MT_TF_SAMTEX.win040.2006"
 },
 MTTFSAMTEXwin0412006: {
 center: {lat: -22.7346, lng: 16.4650},
 beta: 0.3766,
 betaNorm: -0.4242,
 betaFactorAverage: "0.4735",
-stationName: "win041"
+stationName: "MT_TF_SAMTEX.win041.2006"
 },
 MTTFSAMTEXwin0422006: {
 center: {lat: -22.8180, lng: 16.2806},
 beta: 0.2621,
 betaNorm: -0.5815,
 betaFactorAverage: "0.5271",
-stationName: "win042"
+stationName: "MT_TF_SAMTEX.win042.2006"
 },
 MTTFSAMTEXwita132004: {
 center: {lat: -27.0685, lng: 26.7168},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita13"
+stationName: "MT_TF_SAMTEX.wita13.2004"
 },
 MTTFSAMTEXwita152004: {
 center: {lat: -27.0658, lng: 26.7837},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita15"
+stationName: "MT_TF_SAMTEX.wita15.2004"
 },
 MTTFSAMTEXwita162004: {
 center: {lat: -27.0608, lng: 26.8301},
 beta: 7.8440,
 betaNorm: 0.8945,
 betaFactorAverage: "NaN",
-stationName: "wita16"
+stationName: "MT_TF_SAMTEX.wita16.2004"
 },
 MTTFSAMTEXwita182004: {
 center: {lat: -27.0591, lng: 26.8865},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita18"
+stationName: "MT_TF_SAMTEX.wita18.2004"
 },
 MTTFSAMTEXwita192004: {
 center: {lat: -27.0655, lng: 26.9162},
 beta: 27.6350,
 betaNorm: 1.4415,
 betaFactorAverage: "NaN",
-stationName: "wita19"
+stationName: "MT_TF_SAMTEX.wita19.2004"
 },
 MTTFSAMTEXwita202004: {
 center: {lat: -27.0574, lng: 26.9556},
 beta: 2.8285,
 betaNorm: 0.4516,
 betaFactorAverage: "NaN",
-stationName: "wita20"
+stationName: "MT_TF_SAMTEX.wita20.2004"
 },
 MTTFSAMTEXwita212004: {
 center: {lat: -27.0733, lng: 26.9865},
 beta: 7.5025,
 betaNorm: 0.8752,
 betaFactorAverage: "NaN",
-stationName: "wita21"
+stationName: "MT_TF_SAMTEX.wita21.2004"
 },
 MTTFSAMTEXwita222004: {
 center: {lat: -27.0588, lng: 27.0209},
 beta: 0.0401,
 betaNorm: -1.0000,
 betaFactorAverage: "NaN",
-stationName: "wita22"
+stationName: "MT_TF_SAMTEX.wita22.2004"
 },
 MTTFSAMTEXwita232004: {
 center: {lat: -27.0619, lng: 27.0495},
 beta: 0.2411,
 betaNorm: -0.6179,
 betaFactorAverage: "NaN",
-stationName: "wita23"
+stationName: "MT_TF_SAMTEX.wita23.2004"
 },
 MTTFSAMTEXwita242004: {
 center: {lat: -27.0583, lng: 27.0845},
 beta: 5.3559,
 betaNorm: 0.7288,
 betaFactorAverage: "NaN",
-stationName: "wita24"
+stationName: "MT_TF_SAMTEX.wita24.2004"
 },
 MTTFSAMTEXwita252004: {
 center: {lat: -27.0516, lng: 27.1181},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita25"
+stationName: "MT_TF_SAMTEX.wita25.2004"
 },
 MTTFSAMTEXwita262004: {
 center: {lat: -27.0488, lng: 27.1545},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita26"
+stationName: "MT_TF_SAMTEX.wita26.2004"
 },
 MTTFSAMTEXwita272004: {
 center: {lat: -27.0485, lng: 27.1756},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita27"
+stationName: "MT_TF_SAMTEX.wita27.2004"
 },
 MTTFSAMTEXwita282004: {
 center: {lat: -27.0410, lng: 27.2129},
 beta: 17.3412,
 betaNorm: 1.2391,
 betaFactorAverage: "NaN",
-stationName: "wita28"
+stationName: "MT_TF_SAMTEX.wita28.2004"
 },
 MTTFSAMTEXwita292004: {
 center: {lat: -27.0466, lng: 27.2437},
 beta: 17.0951,
 betaNorm: 1.2329,
 betaFactorAverage: "NaN",
-stationName: "wita29"
+stationName: "MT_TF_SAMTEX.wita29.2004"
 },
 MTTFSAMTEXwita302004: {
 center: {lat: -27.0419, lng: 27.2790},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita30"
+stationName: "MT_TF_SAMTEX.wita30.2004"
 },
 MTTFSAMTEXwita312004: {
 center: {lat: -27.0566, lng: 27.3243},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita31"
+stationName: "MT_TF_SAMTEX.wita31.2004"
 },
 MTTFSAMTEXwita322004: {
 center: {lat: -27.0455, lng: 27.3473},
 beta: 18.7931,
 betaNorm: 1.2740,
 betaFactorAverage: "NaN",
-stationName: "wita32"
+stationName: "MT_TF_SAMTEX.wita32.2004"
 },
 MTTFSAMTEXwita332004: {
 center: {lat: -27.0485, lng: 27.3829},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita33"
+stationName: "MT_TF_SAMTEX.wita33.2004"
 },
 MTTFSAMTEXwita342004: {
 center: {lat: -27.0385, lng: 27.4140},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita34"
+stationName: "MT_TF_SAMTEX.wita34.2004"
 },
 MTTFSAMTEXwita352004: {
 center: {lat: -27.0371, lng: 27.4493},
 beta: 17.9960,
 betaNorm: 1.2552,
 betaFactorAverage: "NaN",
-stationName: "wita35"
+stationName: "MT_TF_SAMTEX.wita35.2004"
 },
 MTTFSAMTEXwita362004: {
 center: {lat: -27.0344, lng: 27.4840},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita36"
+stationName: "MT_TF_SAMTEX.wita36.2004"
 },
 MTTFSAMTEXwita372005: {
 center: {lat: -27.0363, lng: 27.5173},
 beta: 15.9488,
 betaNorm: 1.2027,
 betaFactorAverage: "NaN",
-stationName: "wita37"
+stationName: "MT_TF_SAMTEX.wita37.2005"
 },
 MTTFSAMTEXwita382005: {
 center: {lat: -27.0296, lng: 27.5481},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita38"
+stationName: "MT_TF_SAMTEX.wita38.2005"
 },
 MTTFSAMTEXwita392005: {
 center: {lat: -27.0283, lng: 27.5804},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita39"
+stationName: "MT_TF_SAMTEX.wita39.2005"
 },
 MTTFSAMTEXwita402005: {
 center: {lat: -27.0224, lng: 27.6081},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita40"
+stationName: "MT_TF_SAMTEX.wita40.2005"
 },
 MTTFSAMTEXwita412005: {
 center: {lat: -27.0166, lng: 27.6456},
 beta: 9.0486,
 betaNorm: 0.9566,
 betaFactorAverage: "NaN",
-stationName: "wita41"
+stationName: "MT_TF_SAMTEX.wita41.2005"
 },
 MTTFSAMTEXwita422005: {
 center: {lat: -27.0194, lng: 27.6776},
 beta: 6.9993,
 betaNorm: 0.8451,
 betaFactorAverage: "NaN",
-stationName: "wita42"
+stationName: "MT_TF_SAMTEX.wita42.2005"
 },
 MTTFSAMTEXwita432005: {
 center: {lat: -27.0105, lng: 27.7037},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita43"
+stationName: "MT_TF_SAMTEX.wita43.2005"
 },
 MTTFSAMTEXwita442005: {
 center: {lat: -27.0071, lng: 27.7359},
 beta: 15.1861,
 betaNorm: 1.1814,
 betaFactorAverage: "NaN",
-stationName: "wita44"
+stationName: "MT_TF_SAMTEX.wita44.2005"
 },
 MTTFSAMTEXwita452005: {
 center: {lat: -27.0002, lng: 27.7818},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "wita45"
+stationName: "MT_TF_SAMTEX.wita45.2005"
 },
 MTTFSAMTEXwita462005: {
 center: {lat: -27.0030, lng: 27.8198},
 beta: 3.6401,
 betaNorm: 0.5611,
 betaFactorAverage: "NaN",
-stationName: "wita46"
+stationName: "MT_TF_SAMTEX.wita46.2005"
 },
 MTTFSAMTEXwita472005: {
 center: {lat: -26.9908, lng: 27.8484},
 beta: 7.1071,
 betaNorm: 0.8517,
 betaFactorAverage: "NaN",
-stationName: "wita47"
+stationName: "MT_TF_SAMTEX.wita47.2005"
 },
 MTTFSAMTEXwita482005: {
 center: {lat: -26.9874, lng: 27.8809},
 beta: 28.1480,
 betaNorm: 1.4494,
 betaFactorAverage: "NaN",
-stationName: "wita48"
+stationName: "MT_TF_SAMTEX.wita48.2005"
 },
 MTTFSAMTEXwitb102004: {
 center: {lat: -26.4408, lng: 26.2023},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb10"
+stationName: "MT_TF_SAMTEX.witb10.2004"
 },
 MTTFSAMTEXwitb112004: {
 center: {lat: -26.4674, lng: 26.2170},
 beta: 15.2902,
 betaNorm: 1.1844,
 betaFactorAverage: "NaN",
-stationName: "witb11"
+stationName: "MT_TF_SAMTEX.witb11.2004"
 },
 MTTFSAMTEXwitb122004: {
 center: {lat: -26.5005, lng: 26.2429},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb12"
+stationName: "MT_TF_SAMTEX.witb12.2004"
 },
 MTTFSAMTEXwitb132004: {
 center: {lat: -26.5180, lng: 26.2562},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb13"
+stationName: "MT_TF_SAMTEX.witb13.2004"
 },
 MTTFSAMTEXwitb142004: {
 center: {lat: -26.5496, lng: 26.2734},
 beta: 20.0364,
 betaNorm: 1.3018,
 betaFactorAverage: "NaN",
-stationName: "witb14"
+stationName: "MT_TF_SAMTEX.witb14.2004"
 },
 MTTFSAMTEXwitb152004: {
 center: {lat: -26.5749, lng: 26.2943},
 beta: 25.1458,
 betaNorm: 1.4005,
 betaFactorAverage: "NaN",
-stationName: "witb15"
+stationName: "MT_TF_SAMTEX.witb15.2004"
 },
 MTTFSAMTEXwitb162004: {
 center: {lat: -26.6021, lng: 26.3143},
 beta: 7.4090,
 betaNorm: 0.8698,
 betaFactorAverage: "NaN",
-stationName: "witb16"
+stationName: "MT_TF_SAMTEX.witb16.2004"
 },
 MTTFSAMTEXwitb172004: {
 center: {lat: -26.6205, lng: 26.3268},
 beta: 25.2902,
 betaNorm: 1.4030,
 betaFactorAverage: "NaN",
-stationName: "witb17"
+stationName: "MT_TF_SAMTEX.witb17.2004"
 },
 MTTFSAMTEXwitb182004: {
 center: {lat: -26.6488, lng: 26.3401},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb18"
+stationName: "MT_TF_SAMTEX.witb18.2004"
 },
 MTTFSAMTEXwitb192004: {
 center: {lat: -26.6696, lng: 26.3590},
 beta: 24.7126,
 betaNorm: 1.3929,
 betaFactorAverage: "NaN",
-stationName: "witb19"
+stationName: "MT_TF_SAMTEX.witb19.2004"
 },
 MTTFSAMTEXwitb202004: {
 center: {lat: -26.6996, lng: 26.3704},
 beta: 0.6743,
 betaNorm: -0.1712,
 betaFactorAverage: "NaN",
-stationName: "witb20"
+stationName: "MT_TF_SAMTEX.witb20.2004"
 },
 MTTFSAMTEXwitb212004: {
 center: {lat: -26.7208, lng: 26.3818},
 beta: 0.1162,
 betaNorm: -0.9350,
 betaFactorAverage: "NaN",
-stationName: "witb21"
+stationName: "MT_TF_SAMTEX.witb21.2004"
 },
 MTTFSAMTEXwitb222004: {
 center: {lat: -26.7530, lng: 26.4043},
 beta: 2.1664,
 betaNorm: 0.3357,
 betaFactorAverage: "NaN",
-stationName: "witb22"
+stationName: "MT_TF_SAMTEX.witb22.2004"
 },
 MTTFSAMTEXwitb232004: {
 center: {lat: -26.7838, lng: 26.4193},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb23"
+stationName: "MT_TF_SAMTEX.witb23.2004"
 },
 MTTFSAMTEXwitb242004: {
 center: {lat: -26.8010, lng: 26.4381},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb24"
+stationName: "MT_TF_SAMTEX.witb24.2004"
 },
 MTTFSAMTEXwitb252004: {
 center: {lat: -26.8221, lng: 26.4520},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb25"
+stationName: "MT_TF_SAMTEX.witb25.2004"
 },
 MTTFSAMTEXwitb262004: {
 center: {lat: -26.8541, lng: 26.4701},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb26"
+stationName: "MT_TF_SAMTEX.witb26.2004"
 },
 MTTFSAMTEXwitb272004: {
 center: {lat: -26.8738, lng: 26.4831},
 beta: 21.7169,
 betaNorm: 1.3368,
 betaFactorAverage: "NaN",
-stationName: "witb27"
+stationName: "MT_TF_SAMTEX.witb27.2004"
 },
 MTTFSAMTEXwitb282004: {
 center: {lat: -26.9071, lng: 26.4998},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb28"
+stationName: "MT_TF_SAMTEX.witb28.2004"
 },
 MTTFSAMTEXwitb292004: {
 center: {lat: -26.9380, lng: 26.5170},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb29"
+stationName: "MT_TF_SAMTEX.witb29.2004"
 },
 MTTFSAMTEXwitb312004: {
 center: {lat: -26.9835, lng: 26.5465},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb31"
+stationName: "MT_TF_SAMTEX.witb31.2004"
 },
 MTTFSAMTEXwitb322004: {
 center: {lat: -27.0058, lng: 26.5743},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb32"
+stationName: "MT_TF_SAMTEX.witb32.2004"
 },
 MTTFSAMTEXwitb332004: {
 center: {lat: -27.0202, lng: 26.6012},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb33"
+stationName: "MT_TF_SAMTEX.witb33.2004"
 },
 MTTFSAMTEXwitb342004: {
 center: {lat: -27.0374, lng: 26.6240},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb34"
+stationName: "MT_TF_SAMTEX.witb34.2004"
 },
 MTTFSAMTEXwitb352004: {
 center: {lat: -27.0446, lng: 26.6606},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb35"
+stationName: "MT_TF_SAMTEX.witb35.2004"
 },
 MTTFSAMTEXwitb362004: {
 center: {lat: -27.0602, lng: 26.6909},
 beta: NaN,
 betaNorm: NaN,
 betaFactorAverage: "NaN",
-stationName: "witb36"
+stationName: "MT_TF_SAMTEX.witb36.2004"
 },
 MTTFUSArrayALW482015: {
 center: {lat: 34.6837, lng: -87.0171},
@@ -8737,56 +8730,56 @@ center: {lat: 46.4153, lng: -114.2110},
 beta: 0.1170,
 betaNorm: -0.9319,
 betaFactorAverage: "0.3653",
-stationName: "M2E13"
+stationName: "MT_TF_USArray.M2E13.2008"
 },
 MTTFUSArrayMBB0120082013: {
 center: {lat: 35.8805, lng: -120.4030},
 beta: 1.2076,
 betaNorm: 0.0819,
 betaFactorAverage: "1.2076",
-stationName: "MBB01-2013"
+stationName: "MBB01"
 },
 MTTFUSArrayMBB0220082013: {
 center: {lat: 44.6685, lng: -123.2820},
 beta: 0.4602,
 betaNorm: -0.3371,
 betaFactorAverage: "0.6559",
-stationName: "MBB02-2013"
+stationName: "MBB02"
 },
 MTTFUSArrayMBB0320082013: {
 center: {lat: 37.0289, lng: -93.0241},
 beta: 2.9459,
 betaNorm: 0.4692,
 betaFactorAverage: "2.8892",
-stationName: "MBB03-2013"
+stationName: "MBB03"
 },
 MTTFUSArrayMBB0420082013: {
 center: {lat: 34.0298, lng: -106.8530},
 beta: 0.2191,
 betaNorm: -0.6593,
 betaFactorAverage: "0.2191",
-stationName: "MBB04-2013"
+stationName: "MBB04"
 },
 MTTFUSArrayMBB0520082013: {
 center: {lat: 37.2085, lng: -80.5740},
 beta: 0.1780,
 betaNorm: -0.7495,
 betaFactorAverage: "0.5333",
-stationName: "MBB05-2013"
+stationName: "MBB05"
 },
 MTTFUSArrayMBB0620082013: {
 center: {lat: 46.6962, lng: -106.2590},
 beta: 0.1598,
 betaNorm: -0.7964,
 betaFactorAverage: "0.1806",
-stationName: "MBB06-2013"
+stationName: "MBB06"
 },
 MTTFUSArrayMBB0720082013: {
 center: {lat: 48.3926, lng: -95.8865},
 beta: 0.7440,
 betaNorm: -0.1284,
 betaFactorAverage: "1.6088",
-stationName: "MBB07-2013"
+stationName: "MBB07"
 },
 MTTFUSArrayMIC402013: {
 center: {lat: 47.9143, lng: -89.1494},
@@ -13238,261 +13231,278 @@ center: {lat: 43.1735, lng: -113.7879},
 beta: 0.1192,
 betaNorm: -0.9236,
 betaFactorAverage: "0.1932",
-stationName: "SR150-2004"
+stationName: "SR150"
 },
 MTTFYSRPSR20520032004: {
 center: {lat: 44.4743, lng: -114.2179},
 beta: 0.1659,
 betaNorm: -0.7802,
 betaFactorAverage: "0.1835",
-stationName: "SR205-2004"
+stationName: "SR205"
 },
 MTTFYSRPSR20920032004: {
 center: {lat: 44.3905, lng: -114.1549},
 beta: 0.0370,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1959",
-stationName: "SR209-2004"
+stationName: "SR209"
 },
 MTTFYSRPSR21220032004: {
 center: {lat: 44.1898, lng: -113.9541},
 beta: 0.1730,
 betaNorm: -0.7620,
 betaFactorAverage: "0.2089",
-stationName: "SR212-2004"
+stationName: "SR212"
 },
 MTTFYSRPSR21620032004: {
 center: {lat: 44.0334, lng: -113.7615},
 beta: 0.3299,
 betaNorm: -0.4816,
 betaFactorAverage: "0.1819",
-stationName: "SR216-2004"
+stationName: "SR216"
 },
 MTTFYSRPSR22020032004: {
 center: {lat: 43.9124, lng: -113.5789},
 beta: 0.1913,
 betaNorm: -0.7182,
 betaFactorAverage: "0.1770",
-stationName: "SR220-2004"
+stationName: "SR220"
 },
 MTTFYSRPSR22220032004: {
 center: {lat: 43.8292, lng: -113.4923},
 beta: 0.1357,
 betaNorm: -0.8675,
 betaFactorAverage: "0.1862",
-stationName: "SR222-2004"
+stationName: "SR222"
 },
 MTTFYSRPSR22520032004: {
 center: {lat: 43.7898, lng: -113.3501},
 beta: 0.3733,
 betaNorm: -0.4279,
 betaFactorAverage: "0.1945",
-stationName: "SR225-2004"
+stationName: "SR225"
 },
 MTTFYSRPSR22720032004: {
 center: {lat: 43.7236, lng: -113.2579},
 beta: 0.0731,
 betaNorm: -1.0000,
 betaFactorAverage: "0.2035",
-stationName: "SR227-2004"
+stationName: "SR227"
 },
 MTTFYSRPSR22920032004: {
 center: {lat: 43.6314, lng: -113.1347},
 beta: 0.5565,
 betaNorm: -0.2545,
 betaFactorAverage: "0.2056",
-stationName: "SR229-2004"
+stationName: "SR229"
 },
 MTTFYSRPSR23220032004: {
 center: {lat: 43.5566, lng: -113.0382},
 beta: 0.1489,
 betaNorm: -0.8272,
 betaFactorAverage: "0.2068",
-stationName: "SR232-2004"
+stationName: "SR232"
 },
 MTTFYSRPSR23620032004: {
 center: {lat: 43.4495, lng: -112.9560},
 beta: 0.2904,
 betaNorm: -0.5371,
 betaFactorAverage: "0.2272",
-stationName: "SR236-2004"
+stationName: "SR236"
 },
 MTTFYSRPSR23820032004: {
 center: {lat: 43.4341, lng: -112.9503},
 beta: 0.2236,
 betaNorm: -0.6505,
 betaFactorAverage: "0.2209",
-stationName: "SR238-2004"
+stationName: "SR238"
 },
 MTTFYSRPSR24020032004: {
 center: {lat: 43.4002, lng: -112.8919},
 beta: 0.0826,
 betaNorm: -1.0000,
 betaFactorAverage: "0.2209",
-stationName: "SR240-2004"
+stationName: "SR240"
 },
 MTTFYSRPSR24420032004: {
 center: {lat: 43.3457, lng: -112.7530},
 beta: 0.1433,
 betaNorm: -0.8437,
 betaFactorAverage: "0.2401",
-stationName: "SR244-2004"
+stationName: "SR244"
 },
 MTTFYSRPSR24720032004: {
 center: {lat: 43.2861, lng: -112.6997},
 beta: 0.1245,
 betaNorm: -0.9048,
 betaFactorAverage: "0.2382",
-stationName: "SR247-2004"
+stationName: "SR247"
 },
 MTTFYSRPSR25020032004: {
 center: {lat: 43.2418, lng: -112.6242},
 beta: 0.2017,
 betaNorm: -0.6953,
 betaFactorAverage: "0.2397",
-stationName: "SR250-2004"
+stationName: "SR250"
 },
 MTTFYSRPSR25220032004: {
 center: {lat: 43.1962, lng: -112.5550},
 beta: 0.3476,
 betaNorm: -0.4589,
 betaFactorAverage: "0.2680",
-stationName: "SR252-2004"
+stationName: "SR252"
 },
 MTTFYSRPSR25520032004: {
 center: {lat: 43.1294, lng: -112.4747},
 beta: 0.2780,
 betaNorm: -0.5560,
 betaFactorAverage: "0.2596",
-stationName: "SR255-2004"
+stationName: "SR255"
 },
 MTTFYSRPSR25820032004: {
 center: {lat: 43.0526, lng: -112.3318},
 beta: 0.1968,
 betaNorm: -0.7060,
 betaFactorAverage: "0.2754",
-stationName: "SR258-2004"
+stationName: "SR258"
 },
 MTTFYSRPSR26420032004: {
 center: {lat: 42.8860, lng: -112.2129},
 beta: 0.7544,
 betaNorm: -0.1224,
 betaFactorAverage: "0.2669",
-stationName: "SR264-2004"
+stationName: "SR264"
 },
 MTTFYSRPSR26520032004: {
 center: {lat: 42.8408, lng: -112.0546},
 beta: 0.2974,
 betaNorm: -0.5266,
 betaFactorAverage: "0.2922",
-stationName: "SR265-2004"
+stationName: "SR265"
 },
 MTTFYSRPSR27020032004: {
 center: {lat: 42.7614, lng: -111.9620},
 beta: 0.9938,
 betaNorm: -0.0027,
 betaFactorAverage: "0.3326",
-stationName: "SR270-2004"
+stationName: "SR270"
 },
 MTTFYSRPSR27120032004: {
 center: {lat: 42.7459, lng: -111.9356},
 beta: 0.0256,
 betaNorm: -1.0000,
 betaFactorAverage: "0.3326",
-stationName: "SR271-2004"
+stationName: "SR271"
 },
 MTTFYSRPSR27420032004: {
 center: {lat: 42.6616, lng: -111.8819},
 beta: 0.1810,
 betaNorm: -0.7423,
 betaFactorAverage: "0.3416",
-stationName: "SR274-2004"
+stationName: "SR274"
 },
 MTTFYSRPSR27820032004: {
 center: {lat: 42.5609, lng: -111.6988},
 beta: 0.8632,
 betaNorm: -0.0639,
 betaFactorAverage: "0.3595",
-stationName: "SR278-2004"
+stationName: "SR278"
 },
 MTTFYSRPSR28020032004: {
 center: {lat: 42.4891, lng: -111.6168},
 beta: 0.2962,
 betaNorm: -0.5284,
 betaFactorAverage: "0.3420",
-stationName: "SR280-2004"
+stationName: "SR280"
 },
 MTTFYSRPSR28220032004: {
 center: {lat: 42.3699, lng: -111.5031},
 beta: 0.2823,
 betaNorm: -0.5493,
 betaFactorAverage: "0.3667",
-stationName: "SR282-2004"
+stationName: "SR282"
 },
 MTTFYSRPSR28620032004: {
 center: {lat: 42.2870, lng: -111.3520},
 beta: 0.1646,
 betaNorm: -0.7835,
 betaFactorAverage: "0.3701",
-stationName: "SR286-2004"
+stationName: "SR286"
 },
 MTTFYSRPSR29020032004: {
 center: {lat: 42.1241, lng: -111.1488},
 beta: 0.6903,
 betaNorm: -0.1609,
 betaFactorAverage: "0.3729",
-stationName: "SR290-2004"
+stationName: "SR290"
 },
 MTTFYSRPSR91020032004: {
 center: {lat: 42.6348, lng: -113.8543},
 beta: 0.0081,
 betaNorm: -1.0000,
 betaFactorAverage: "0.1583",
-stationName: "SR910-2004"
+stationName: "SR910"
 },
 MTTFYSRPSR92020032004: {
 center: {lat: 42.9148, lng: -113.4216},
 beta: 0.2288,
 betaNorm: -0.6406,
 betaFactorAverage: "0.2187",
-stationName: "SR920-2004"
+stationName: "SR920"
 },
 MTTFYSRPSR93020032004: {
 center: {lat: 43.1888, lng: -113.0423},
 beta: 0.2704,
 betaNorm: -0.5680,
 betaFactorAverage: "0.2152",
-stationName: "SR930-2004"
+stationName: "SR930"
 },
 MTTFYSRPSR95420032004: {
 center: {lat: 43.6897, lng: -112.3757},
 beta: 0.1044,
 betaNorm: -0.9814,
 betaFactorAverage: "0.2482",
-stationName: "SR954-2004"
+stationName: "SR954"
 },
 MTTFYSRPSR96620032004: {
 center: {lat: 43.9483, lng: -112.0390},
 beta: 0.1354,
 betaNorm: -0.8685,
 betaFactorAverage: "0.2934",
-stationName: "SR966-2004"
+stationName: "SR966"
 },
 MTTFYSRPSR98020032004: {
 center: {lat: 44.2581, lng: -111.5530},
 beta: 0.4839,
 betaNorm: -0.3152,
 betaFactorAverage: "0.3100",
-stationName: "SR980-2004"
+stationName: "SR980"
 },
 MTTFYSRPSR99020032004: {
 center: {lat: 44.4631, lng: -111.2287},
 beta: 0.3844,
 betaNorm: -0.4152,
 betaFactorAverage: "0.2854",
-stationName: "SR990-2004"
+stationName: "SR990"
 },
 };
+
+function betaToColor(n,type) {                                                                                                                
+ var R = Math.floor(255*(-0.51*Math.sin(2*3.14*n/305)+0.46));
+ var G = Math.floor(255*(0.58*Math.sin(2*3.14*n/911)+0.24));
+ var B = Math.floor(255*(0.34*Math.sin(2*3.14*n/308)+0.52));
+ if(type==0) {
+  return "#" + hex(R) + hex(G) + hex(B);
+ } else {
+ return "rgb("+R+","+G+","+B+")";
+ }
+}
+
+function hex(x) {
+ return ("0" + parseInt(x).toString(16)).slice(-2);
+}
+
+
 function initMap() {
  // Create the map.
  var map = new google.maps.Map(document.getElementById('map'), {
@@ -13506,11 +13516,11 @@ var infowindow = new google.maps.InfoWindow();
 
 function placeCircle(location, color, info, name) {
  var cityCircle = new google.maps.Circle({
-  strokeColor: betaToColor(color),
-  strokeOpacity: 0.35,
-  strokeWeight: 1,
-fillColor: betaToColor(color),
-fillOpacity: 0.35,
+strokeColor: betaToColor(color,0),
+strokeOpacity: 0.75,
+strokeWeight: 1,
+fillColor: betaToColor(color,0),
+fillOpacity: 0.75,
 map: map,
 center: location,
 radius: 30000
@@ -13524,12 +13534,57 @@ google.maps.event.addListener(cityCircle,'click',function() {
   });
 }
 
+google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
+    var maxIntensity = 1;
+    var minIntensity = -1;
+    var legendWidth = $('#legendGradient').outerWidth();
+
+var gradientCss = '(left';
+for (var j = 0; j <= 255; ++j) {
+     gradientCss += ', ' + betaToColor(j,1);
+}
+gradientCss += ')';
+
+$('#legendGradient').css('background', '-webkit-linear-gradient' + gradientCss);
+$('#legendGradient').css('background', '-moz-linear-gradient' + gradientCss);
+$('#legendGradient').css('background', '-o-linear-gradient' + gradientCss);
+$('#legendGradient').css('background', 'linear-gradient' + gradientCss);
+
+
+
+    for (var i = minIntensity; i <= maxIntensity; ++i) {
+        var offset = (i-minIntensity) * legendWidth / (maxIntensity-minIntensity) ;
+        if (i > minIntensity && i < maxIntensity) {
+            offset -= 0.5;
+        } else if (i == maxIntensity) {
+            offset -= 1;
+        }
+
+        $('#legend').append($('<div>').css({
+            'position': 'absolute',
+            'left': offset + 'px',
+            'top': '15px',
+            'width': '1px',
+            'height': '3px',
+            'background': 'black'
+        }));
+        $('#legend').append($('<div>').css({
+            'position': 'absolute',
+            'left': (offset - 5) + 'px',
+            'top': '18px',
+            'width': '10px',
+            'text-align': 'center'
+        }).html(i));
+    }
+
+});
+
 
 
 // Construct the circle for each station
 for (var station in stations) {
  // Add the circle for this city to the map.
- placeCircle(stations[station].center,(stations[station].betaNorm+1)/2,stations[station].betaNorm,stations[station].stationName);
+ placeCircle(stations[station].center,(stations[station].betaNorm+1)/2*255,stations[station].betaNorm,stations[station].stationName);
 }
 
 }
